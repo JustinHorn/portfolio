@@ -7,7 +7,7 @@ import { UTTT, CookieClicker, WeWereHere } from "component/Portfolio/index";
 
 import Slider from "react-slick";
 
-import Header from "con";
+import Header from "component/Header";
 
 const settings = {
   dots: true,
@@ -28,15 +28,9 @@ class App extends Component {
             <Technologies />
             <hr />
             <Slider {...settings}>
-              <div>
-                <UTTT />
-              </div>
-              <div>
-                <CookieClicker />
-              </div>
-              <div>
-                <WeWereHere />
-              </div>
+              <UTTT />
+              <CookieClicker />
+              <WeWereHere />
             </Slider>
           </div>
 
