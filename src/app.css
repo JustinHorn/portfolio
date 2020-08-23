@@ -2,10 +2,13 @@
   font-family: "Roboto", sans-serif;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
-  --header-blue: #e8ded2;
+  --soft: #e8ded2;
   --header-aside: black;
   --header-p: #5eaaa8;
   --portfolio: #5eaaa8;
+  --medium: #a3d2ca;
+  --contrast: #5eaaa8;
+  --hard: #056676;
 }
 
 main {

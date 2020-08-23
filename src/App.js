@@ -25,6 +25,8 @@ const App = () => {
             <br />
           </div>
         </div>
+        <div className="otherSkills"></div>
+        <hr />
         <Footer></Footer>
       </main>
     </div>

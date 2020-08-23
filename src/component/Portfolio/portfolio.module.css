@@ -16,22 +16,16 @@
   min-width: 400px;
 }
 
-.project button {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 10%;
-}
-
 .nav {
   margin: 10px 0;
 }
-.nav button {
+
+.nav button,
+.project button {
   border: 1px solid black;
   border-radius: 10%;
-  color: white;
-  background-color: black;
+  color: #056676;
+  background-color: var(--soft);
   margin: 0 10px;
   font-size: 1rem;
   font-weight: bold;

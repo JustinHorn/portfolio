@@ -52,7 +52,7 @@ const Nav = ({ options, display, setDisplay, className }) => {
         <button
           key={index}
           onClick={(e) => setDisplay(value)}
-          style={{ color: display === value ? "#e67070" : "" }}
+          style={{ color: display === value ? "black" : "" }}
         >
           {value.toUpperCase()}
         </button>
