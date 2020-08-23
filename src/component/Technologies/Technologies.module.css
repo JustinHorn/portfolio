@@ -3,8 +3,8 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-areas:
-    "MERN tools"
-    "other other";
+    "favourite tools"
+    "experience experience";
 }
 
 @media screen and (max-width: 753px) {
@@ -12,18 +12,18 @@
     grid-template-areas:
       "MERN"
       "tools"
-      "other";
+      "experience";
   }
 }
 
-.MERN {
-  grid-area: MERN;
+.favourite {
+  grid-area: favourite;
 }
 .tools {
   grid-area: tools;
 }
-.other {
-  grid-area: other;
+.experience {
+  grid-area: experience;
 }
 .icons {
   display: flex;

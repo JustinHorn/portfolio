@@ -1,6 +1,19 @@
 import React from "react";
 
-import styles from "./Icon.module.css";
+import styles from "./icon.module.css";
+
+const LinkIcon = ({ src, href }) => {
+  return (
+    <a href={href}>
+      <div
+        className={"icon"}
+        style={{ backgroundImage: "url(" + src + ")" }}
+      ></div>
+    </a>
+  );
+};
+
+export { LinkIcon };
 
 export default function PublicIcon(props) {
   return <Icon {...props} location={"/img/icons/" + props.fileName} />;

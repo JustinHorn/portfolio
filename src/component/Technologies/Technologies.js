@@ -1,33 +1,23 @@
 import React from "react";
 
-import PublicIcon from "./Icon";
+import PublicIcon from "component/Icon";
 
-import styles from "./Technologies.module.css";
+import styles from "./technologies.module.css";
+
+import { technologies } from "data";
 
 const Technologies = () => {
+  const { icons } = technologies;
   return (
-    <div className={styles.technologies}>
-      <div className={styles.MERN}>
-        <h4>fav tech</h4>
-        <DisplayIcons names={["MongoDB", "Express", "React", "NodeJs"]} />
-      </div>
-      <div className={styles.tools}>
-        <h4>tools</h4>
-        <DisplayIcons names={["Git", "Github", "VSCode"]} />
-      </div>
-      <div className={styles.other}>
-        <h4> experience</h4>
-        <DisplayIcons
-          names={[
-            "html5",
-            "css3",
-            "javascript",
-            "java",
-            "python",
-            "kotlin",
-            "android",
-          ]}
-        />
+    <div>
+      <h3>Technologies</h3>
+      <div className={styles.technologies}>
+        {Object.keys(icons).map((key, index) => (
+          <div key={index} className={styles[key]}>
+            <h4>{key}</h4>
+            <TechIcons names={icons[key]} />
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -35,7 +25,7 @@ const Technologies = () => {
 
 export default Technologies;
 
-const DisplayIcons = ({ names }) => {
+const TechIcons = ({ names }) => {
   return (
     <div className={styles.icons}>
       {names.map((v, i) => (

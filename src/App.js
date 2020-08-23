@@ -3,11 +3,15 @@ import "./app.css";
 
 import Technologies from "component/Technologies";
 
-import { UTTT, CookieClicker, WeWereHere } from "component/Portfolio/index";
+import { Project } from "component/Portfolio/index";
 
 import Slider from "react-slick";
 
 import Header from "component/Header";
+
+import Footer from "component/Footer";
+
+import data from "data";
 
 const settings = {
   dots: true,
@@ -27,43 +31,35 @@ class App extends Component {
           <div className="body">
             <Technologies />
             <hr />
-            <Slider {...settings}>
-              <UTTT />
-              <CookieClicker />
-              <WeWereHere />
-            </Slider>
+            <Projects name="Personal Projects" data={data.portfolio.projects} />
+            <br />
+            <hr />
+            <br />
+            <Projects
+              name="Group Projects"
+              data={data.portfolio.groupProjects}
+            />
           </div>
-
           <hr />
-          <footer>
-            <div className="social">
-              <Icon
-                src="/img/icons/linkedin.png"
-                href="https://www.linkedin.com/in/justin-horn-b9a18a1a3/"
-              />
-
-              <Icon
-                src="/img/icons/github.png"
-                href="https://github.com/JustinHorn"
-              />
-            </div>
-            <p>ju-horn@web.de</p>
-          </footer>
+          <Footer></Footer>
         </main>
       </div>
     );
   }
 }
 
-function Icon({ src, href }) {
+const Projects = ({ name, data }) => {
   return (
-    <a href={href}>
-      <div
-        className={"icon"}
-        style={{ backgroundImage: "url(" + src + ")" }}
-      ></div>
-    </a>
+    <div>
+      <h2>{name}</h2>
+
+      <Slider {...settings}>
+        {data.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+      </Slider>
+    </div>
   );
-}
+};
 
 export default App;
