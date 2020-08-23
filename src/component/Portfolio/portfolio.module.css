@@ -7,6 +7,14 @@
   grid-template-columns: 50% 50%;
 }
 
+@media screen and (max-width: 600px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .project {
   margin-bottom: 10px;
 }
@@ -27,7 +35,6 @@
   color: var(--contrast);
   background-color: var(--soft);
   margin: 0 10px;
-  font-size: 1rem;
   font-weight: bold;
   padding: 0 3px;
   text-transform: uppercase;

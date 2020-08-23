@@ -9,10 +9,9 @@
 
 @media screen and (max-width: 753px) {
   .technologies {
-    grid-template-areas:
-      "MERN"
-      "tools"
-      "experience";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

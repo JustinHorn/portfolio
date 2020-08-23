@@ -20,7 +20,10 @@ export default {
       ),
 
       new Project("Todo List", "https://justinhorn.github.io/todo/"),
-      new Project("Ancient Weapons", " http://justinhorn.name/AncientWeapons/"),
+      new Project(
+        "Ancient Weapons",
+        " http://justinhorn.github.io/AncientWeapons/"
+      ),
     ],
   },
 
