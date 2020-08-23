@@ -17,11 +17,14 @@ const App = () => {
 
         <div className="body">
           <Technologies />
-          <hr />
+          <div className="portfolio">
+            <hr />
 
-          <Portfolio></Portfolio>
+            <Portfolio></Portfolio>
+            <br />
+            <br />
+          </div>
         </div>
-        <hr />
         <Footer></Footer>
       </main>
     </div>

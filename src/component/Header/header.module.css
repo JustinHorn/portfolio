@@ -1,3 +1,16 @@
+header {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--header-blue);
+}
+
+.imgTitle {
+  flex-grow: 1;
+  display: flex;
+}
+
 .img {
   width: 128px;
   height: 128px;
@@ -8,18 +21,27 @@
   background-position: center center;
 }
 
-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--header-blue);
-}
-
-header aside {
-  margin-left: 5%;
+.imgTitle aside {
+  min-width: 20ch;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: var(--header-aside);
+}
+
+.aboutMe {
+  flex-grow: 1;
+  max-width: 70ch;
+
+  color: black;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutMe p {
+  text-align: justify;
+  font-size: 2.5ch;
+  padding: 10px;
 }

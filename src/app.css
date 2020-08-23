@@ -1,13 +1,16 @@
 .App {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
-  --header-blue: rgba(10, 239, 247, 0.5);
-  --header-aside: rgb(139, 65, 65);
+  --header-blue: #e8ded2;
+  --header-aside: black;
+  --header-p: #5eaaa8;
+  --portfolio: #5eaaa8;
 }
 
 main {
   margin: 0 auto;
-  background-color: white;
+  background-color: #a3d2ca;
   min-height: 100vh;
   max-width: 1000px;
   box-shadow: 0 0 21px #00000011, 0 0 63px #00000011;
@@ -15,4 +18,8 @@ main {
 
 .body {
   padding: 10px 0;
+}
+
+.portfolio {
+  background-color: var(--portfolio);
 }
