@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./app.css";
 
 import Technologies from "component/Technologies";
@@ -21,36 +21,57 @@ const settings = {
   autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1,
+  arrows: false,
 };
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <main>
-          <Header></Header>
-          <div className="body">
-            <Technologies />
-            <hr />
-            <Projects name="Personal Projects" data={data.portfolio.projects} />
-            <br />
-            <hr />
-            <br />
-            <Projects
-              name="Group Projects"
-              data={data.portfolio.groupProjects}
-            />
-          </div>
-          <hr />
-          <Footer></Footer>
-        </main>
-      </div>
-    );
-  }
-}
-
-const Projects = ({ name, data }) => {
+const App = () => {
+  const [display, setDisplay] = useState("webdev");
   return (
-    <div>
+    <div className="App">
+      <main>
+        <Header></Header>
+
+        <nav>
+          {["webdev", "further"].map((value, index) => (
+            <button
+              key={index}
+              onClick={(e) => setDisplay(value)}
+              style={{ color: display === value ? "#e67070" : "" }}
+            >
+              {value.toUpperCase()}
+            </button>
+          ))}
+        </nav>
+        <div className="body">{display === "webdev" && <WebDev />}</div>
+        <hr />
+        <Footer></Footer>
+      </main>
+    </div>
+  );
+};
+
+const WebDev = () => (
+  <>
+    <Technologies />
+    <hr />
+    <div className="projects">
+      <Projects
+        className="pp"
+        name="Personal Projects"
+        data={data.portfolio.projects}
+      />
+
+      <Projects
+        className="gp"
+        name="Group Projects"
+        data={data.portfolio.groupProjects}
+      />
+    </div>
+  </>
+);
+
+const Projects = ({ name, data, className }) => {
+  return (
+    <div className={className}>
       <h2>{name}</h2>
 
       <Slider {...settings}>

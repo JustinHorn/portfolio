@@ -17,13 +17,12 @@ export default {
         "https://justinhorn.github.io/group-one-cookbook/"
       ),
 
-      new Project(
-        "Meme Generator",
-        "https://justinhorn.github.io/memeCreator/"
-      ),
+      new Project("Todo List", "https://justinhorn.github.io/todo/"),
+      new Project("Ancient Weapons", " http://justinhorn.name/AncientWeapons/"),
     ],
   },
   technologies,
+  footer,
 };
 
 function Project(name, url) {
@@ -46,3 +45,18 @@ export const technologies = {
     ],
   },
 };
+
+export const footer = {
+  icons: [
+    new FooterIcon(
+      "linkedin.png",
+      "https://www.linkedin.com/in/justin-horn-b9a18a1a3/"
+    ),
+    new FooterIcon("github.png", "https://github.com/JustinHorn"),
+  ],
+};
+
+function FooterIcon(src, href) {
+  this.src = "/img/icons/" + src;
+  this.href = href;
+}

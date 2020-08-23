@@ -1,22 +1,22 @@
 import React from "react";
 
 import { LinkIcon } from "component/Icon";
+import { footer } from "data";
 
-const Footer = () => (
-  <footer>
-    <div className="social">
-      <LinkIcon
-        src="/img/icons/linkedin.png"
-        href="https://www.linkedin.com/in/justin-horn-b9a18a1a3/"
-      />
+import styles from "./footer.module.css";
 
-      <LinkIcon
-        src="/img/icons/github.png"
-        href="https://github.com/JustinHorn"
-      />
-    </div>
-    <p>ju-horn@web.de</p>
-  </footer>
-);
+const { icons } = footer;
+const Footer = () => {
+  return (
+    <footer>
+      <div className={styles.social}>
+        {icons.map((icon, index) => (
+          <LinkIcon key={index} className={styles.icon} {...icon} />
+        ))}
+      </div>
+      <p>ju-horn@web.de</p>
+    </footer>
+  );
+};
 
 export default Footer;

@@ -14,7 +14,7 @@ const Technologies = () => {
       <div className={styles.technologies}>
         {Object.keys(icons).map((key, index) => (
           <div key={index} className={styles[key]}>
-            <h4>{key}</h4>
+            <h4>{key[0].toUpperCase() + key.slice(1)}</h4>
             <TechIcons names={icons[key]} />
           </div>
         ))}

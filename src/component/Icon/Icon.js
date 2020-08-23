@@ -2,11 +2,11 @@ import React from "react";
 
 import styles from "./icon.module.css";
 
-const LinkIcon = ({ src, href }) => {
+const LinkIcon = ({ src, href, className }) => {
   return (
     <a href={href}>
       <div
-        className={"icon"}
+        className={className}
         style={{ backgroundImage: "url(" + src + ")" }}
       ></div>
     </a>
