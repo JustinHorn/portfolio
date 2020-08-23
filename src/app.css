@@ -26,3 +26,30 @@ main {
 .portfolio {
   background-color: var(--portfolio);
 }
+
+.otherSkills {
+  display: flex;
+
+  justify-content: center;
+}
+
+.otherSkills > p {
+  text-align: justify;
+  max-width: 70ch;
+
+  padding: 10px;
+}
+.otherSkills {
+  font-size: 2.5ch;
+}
+
+.otherSkills button {
+  border: none;
+  border-radius: 10%;
+  color: black;
+  background-color: var(--soft);
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 0 3px;
+  text-transform: uppercase;
+}

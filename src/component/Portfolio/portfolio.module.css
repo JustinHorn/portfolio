@@ -22,12 +22,17 @@
 
 .nav button,
 .project button {
-  border: 1px solid black;
+  border: none;
   border-radius: 10%;
-  color: #056676;
+  color: var(--contrast);
   background-color: var(--soft);
   margin: 0 10px;
   font-size: 1rem;
   font-weight: bold;
   padding: 0 3px;
+  text-transform: uppercase;
+}
+
+.project button {
+  color: black;
 }

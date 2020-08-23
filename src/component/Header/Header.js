@@ -16,8 +16,8 @@ const Header = () => {
       <div className={styles.aboutMe}>
         <p>
           Hi! Problem solving is my life. Programming is my tool. <br />
-          Out of interest I have developed for Desktop, Mobile and the Web. Now
-          I want to make it my profession and solve your problems!
+          Out of interest I have developed for Desktop, Mobile and lately the
+          Web. Now I want to make it my profession and solve your problems!
         </p>
       </div>
     </header>
