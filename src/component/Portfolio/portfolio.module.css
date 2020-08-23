@@ -1,9 +1,39 @@
 .projects {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.both {
+  grid-template-columns: 50% 50%;
+}
+
+.project {
+  margin-bottom: 10px;
 }
 
 .project iframe {
   height: 500px;
   min-width: 400px;
+}
+
+.project button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10%;
+}
+
+.nav {
+  margin: 10px 0;
+}
+.nav button {
+  border: 1px solid black;
+  border-radius: 10%;
+  color: white;
+  background-color: black;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 3px;
 }

@@ -1,3 +1,4 @@
-import { Project } from "./Portfolio";
+import Portfolio, { Project } from "./Portfolio";
 
+export default Portfolio;
 export { Project };

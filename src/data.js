@@ -1,5 +1,7 @@
 export default {
-  portfolio: {
+  webdev: {
+    technologies,
+
     projects: [
       new Project(
         "Ultimate Tic Tac Toe",
@@ -21,7 +23,7 @@ export default {
       new Project("Ancient Weapons", " http://justinhorn.name/AncientWeapons/"),
     ],
   },
-  technologies,
+
   footer,
 };
 
