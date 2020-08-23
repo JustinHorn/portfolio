@@ -1,0 +1,9 @@
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.project iframe {
+  height: 500px;
+  min-width: 400px;
+}

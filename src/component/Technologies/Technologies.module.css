@@ -1,0 +1,40 @@
+.technologies {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "MERN tools"
+    "other other";
+}
+
+@media screen and (max-width: 753px) {
+  .technologies {
+    grid-template-areas:
+      "MERN"
+      "tools"
+      "other";
+  }
+}
+
+.MERN {
+  grid-area: MERN;
+}
+.tools {
+  grid-area: tools;
+}
+.other {
+  grid-area: other;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.icons > span {
+  margin-right: 10px;
+}
+
+.iconSpacing {
+  margin: 0 10px;
+}

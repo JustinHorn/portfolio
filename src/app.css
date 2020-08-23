@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  --header-blue: rgba(10, 239, 247, 0.5);
+  --header-aside: rgb(139, 65, 65);
+}
+
+main {
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+  max-width: 1000px;
+  box-shadow: 0 0 21px #00000011, 0 0 63px #00000011;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-blue);
+}
+
+header aside {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--header-aside);
+}
+
+.body {
+  padding: 10px 0;
+}
+
+.item-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
