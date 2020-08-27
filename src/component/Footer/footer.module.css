@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.p {
+  margin-bottom: 0;
+}
+
 .icon {
   background-size: cover, contain;
   background-repeat: no-repeat;

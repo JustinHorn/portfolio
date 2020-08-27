@@ -14,7 +14,7 @@ const Footer = () => {
           <LinkIcon key={index} className={styles.icon} {...icon} />
         ))}
       </div>
-      <p>ju-horn@web.de</p>
+      <p className={styles.p}>ju-horn@web.de</p>
     </footer>
   );
 };

@@ -22,7 +22,6 @@ const App = () => {
 
             <Portfolio></Portfolio>
             <br />
-            <br />
           </div>
         </div>
         <div className="otherSkills">
