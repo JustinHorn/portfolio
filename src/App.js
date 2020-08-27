@@ -28,7 +28,7 @@ const App = () => {
         <div className="otherSkills">
           <p>
             Checkout my older Projects here
-            <a href="https://justinnhorn.github.io/otherProjects">
+            <a href="https://justinhorn.github.io/otherProjects">
               <button>Other</button>
             </a>
             <br />
