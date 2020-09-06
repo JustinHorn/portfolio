@@ -33,6 +33,12 @@ main {
   box-shadow: 0 0 21px #00000011, 0 0 63px #00000011;
 }
 
+@media screen and (max-width: 425px) {
+  main {
+    max-width: 100%;
+  }
+}
+
 .body {
   padding: 10px 0;
 }

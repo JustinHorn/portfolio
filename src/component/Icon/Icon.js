@@ -6,7 +6,7 @@ const LinkIcon = ({ src, href, className }) => {
   return (
     <a href={href}>
       <div
-        className={className}
+        className={className + " "}
         style={{ backgroundImage: "url(" + src + ")" }}
       ></div>
     </a>
@@ -24,7 +24,7 @@ function Icon({ location, name }) {
     <div className={styles.iconLayout}>
       <div className={styles.iconWrapper}>
         <div
-          className={styles.icon}
+          className={styles.icon + " "}
           style={{ backgroundImage: "url(" + location + ")" }}
         ></div>
       </div>

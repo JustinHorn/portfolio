@@ -23,21 +23,26 @@ const Portfolio = () => {
 
   return (
     <>
-      <h2>Projects</h2>
-      <Nav
-        className={styles.nav}
-        options={["personal", "group", "both"]}
-        display={display}
-        setDisplay={setDisplay}
-      />
+      <h2>Personal Projects</h2>
 
       <div className={styles.projects + " " + styles[display]}>
-        {["personal", "both"].includes(display) && (
+        {/*{["personal", "both"].includes(display) && (
           <Projects className="pp" name="Personal" data={webdev.projects} />
         )}
         {["group", "both"].includes(display) && (
           <Projects className="gp" name="Group" data={webdev.groupProjects} />
-        )}
+        )}*/}
+
+        {webdev.projects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+      </div>
+      <h2>Group Projects</h2>
+
+      <div className={styles.projects + " " + styles[display]}>
+        {webdev.groupProjects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
       </div>
     </>
   );
@@ -80,7 +85,7 @@ export const Project = (project) => {
       <iframe title={project.name} src={project.url} frameBorder="0" />
       <br />
       <a href={project.url}>
-        <button>Visit</button>
+        <button className="">Visit</button>
       </a>
     </div>
   );

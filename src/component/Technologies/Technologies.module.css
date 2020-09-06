@@ -3,8 +3,13 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-areas:
-    "favourite tools"
-    "experience experience";
+    "favourite"
+    "tools"
+    "experience";
+}
+
+.technologies h4 {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 753px) {

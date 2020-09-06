@@ -2,6 +2,8 @@ import React from "react";
 
 import styles from "./header.module.css";
 
+import data from "data";
+
 const Header = () => {
   return (
     <header>
@@ -14,11 +16,7 @@ const Header = () => {
       </div>
       <hr />
       <div className={styles.aboutMe}>
-        <p>
-          Hi! Problem solving is my life. Programming is my tool. <br />
-          Out of interest I have developed for Desktop, Mobile and lately the
-          Web. Now I want to make it my profession and solve your problems!
-        </p>
+        <p>{data.header.aboutMe}</p>
       </div>
     </header>
   );

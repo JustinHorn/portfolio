@@ -1,6 +1,7 @@
 .projects {
-  display: grid;
-  grid-template-columns: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .both {
@@ -19,9 +20,21 @@
   margin-bottom: 10px;
 }
 
+.project h2 {
+  font-weight: bold;
+}
+
 .project iframe {
+  background-color: white;
   height: 500px;
   min-width: 400px;
+}
+
+@media screen and (max-width: 500px) {
+  .project iframe {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 .nav {
@@ -38,6 +51,7 @@
   font-weight: bold;
   padding: 0 3px;
   text-transform: uppercase;
+  transition: all 0.5s ease;
 }
 
 .project button {
