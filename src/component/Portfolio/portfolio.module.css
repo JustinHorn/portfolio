@@ -57,3 +57,16 @@
 .project button {
   color: black;
 }
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}

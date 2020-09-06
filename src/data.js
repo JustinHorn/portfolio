@@ -16,24 +16,36 @@ export default {
     projects: [
       new Project(
         "Ultimate Tic Tac Toe",
-        "https://justinhorn.github.io/ultimate-tic-tac-toe-react"
+        "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
+        "https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
       ),
       new Project(
         "Cookie Clicker",
-        "https://cookieclicker-justin.herokuapp.com/"
+        "https://cookieclicker-justin.herokuapp.com/",
+        "https://github.com/JustinHorn/CookieClicker"
       ),
-      new Project("We Were Here ", "https://dayplanner.online:3050/"),
+      new Project(
+        "DayPlanner",
+        "https://dayplanner.online/",
+        "https://github.com/JustinHorn/DayPlanner"
+      ),
     ],
     groupProjects: [
       new Project(
         "Cook Book",
-        "https://justinhorn.github.io/group-one-cookbook/"
+        "https://justinhorn.github.io/group-one-cookbook/",
+        "https://github.com/JustinHorn/group-one-cookbook"
       ),
 
-      new Project("Meme Creator", "https://meme-creator-seven.vercel.app/"),
       new Project(
-        "Ancient Weapons",
-        "https://ancient-weapons.vercel.app/sword/Swords"
+        "Meme Creator",
+        "https://meme-creator-seven.vercel.app/",
+        "https://github.com/JustinHorn/memeCreator"
+      ),
+      new Project(
+        "Rickys Quest",
+        "https://rickysquest.netlify.app/",
+        "https://github.com/Ey-Jay/rickysquest"
       ),
     ],
   },
@@ -41,9 +53,10 @@ export default {
   footer,
 };
 
-function Project(name, url) {
+function Project(name, url, github) {
   this.name = name;
   this.url = url;
+  this.github = github;
 }
 
 export const technologies = {

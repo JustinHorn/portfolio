@@ -6,6 +6,8 @@ import data from "data";
 
 import Slider from "react-slick";
 
+import { LinkIcon } from "component/Icon";
+
 const settings = {
   dots: true,
   infinite: true,
@@ -37,7 +39,7 @@ const Portfolio = () => {
           <Project key={index} {...project} />
         ))}
       </div>
-      <h2>Group Projects</h2>
+      <h2>WBS Group Projects</h2>
 
       <div className={styles.projects + " " + styles[display]}>
         {webdev.groupProjects.map((project, index) => (
@@ -84,9 +86,18 @@ export const Project = (project) => {
       <h4> {project.name}</h4>
       <iframe title={project.name} src={project.url} frameBorder="0" />
       <br />
-      <a href={project.url}>
-        <button className="">Visit</button>
-      </a>
+      <div className={styles.links}>
+        <a href={project.url}>
+          <button className="">Visit</button>
+        </a>
+        <a href={project.github} className="rotate">
+          <LinkIcon
+            className={styles.icon}
+            src="/img/icons/github.png"
+            href={project.github}
+          ></LinkIcon>
+        </a>
+      </div>
     </div>
   );
 };
