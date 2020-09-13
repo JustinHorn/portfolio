@@ -9,10 +9,10 @@ const Header = () => {
     <header>
       <div className={styles.imgTitle}>
         <div className={styles.img}></div>
-        <aside>
+        <div className={styles.aside}>
           <h3>Justin Horn</h3>
           <p>Fullstack Developer</p>
-        </aside>
+        </div>
       </div>
       <hr />
       <div className={styles.aboutMe}>

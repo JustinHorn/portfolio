@@ -20,33 +20,30 @@ const settings = {
 };
 
 const Portfolio = () => {
-  const [display, setDisplay] = useState("personal");
   const { webdev } = data;
 
   return (
-    <>
-      <h2>Personal Projects</h2>
+    <div className={styles.portfolio}>
+      <div className={styles.group}>
+        <h2>Personal Projects</h2>
 
-      <div className={styles.projects + " " + styles[display]}>
-        {/*{["personal", "both"].includes(display) && (
-          <Projects className="pp" name="Personal" data={webdev.projects} />
-        )}
-        {["group", "both"].includes(display) && (
-          <Projects className="gp" name="Group" data={webdev.groupProjects} />
-        )}*/}
-
-        {webdev.projects.map((project, index) => (
-          <Project key={index} {...project} />
-        ))}
+        <div className={styles.projects}>
+          {webdev.projects.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
+        </div>
       </div>
-      <h2>WBS Group Projects</h2>
 
-      <div className={styles.projects + " " + styles[display]}>
-        {webdev.groupProjects.map((project, index) => (
-          <Project key={index} {...project} />
-        ))}
+      <div className={styles.group}>
+        <h2>WBS Group Projects</h2>
+
+        <div className={styles.projects}>
+          {webdev.groupProjects.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -16,6 +16,31 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .portfolio {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .project {
   margin-bottom: 10px;
 }

@@ -6,7 +6,7 @@ export default {
       <>
         Hi! Problem solving is my passion and programming my tool. <br />
         Out of interest I have developed for Desktop, Mobile and lately the Web.
-        Now I want to make it my profession and solve your problems!
+        Now I want to make it my profession and solve yours!
       </>
     ),
   },
@@ -79,7 +79,7 @@ export const footer = {
   icons: [
     new FooterIcon(
       "linkedin.png",
-      "https://www.linkedin.com/in/justin-horn-b9a18a1a3/"
+      "https://www.linkedin.com/in/justin-christian-horn/"
     ),
     new FooterIcon("github.png", "https://github.com/JustinHorn"),
     new FooterIcon("leetcode.png", "https://leetcode.com/justin_horn/"),
