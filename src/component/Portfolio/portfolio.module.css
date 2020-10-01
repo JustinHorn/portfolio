@@ -41,14 +41,6 @@
   }
 }
 
-.project {
-  margin-bottom: 10px;
-}
-
-.project h2 {
-  font-weight: bold;
-}
-
 .project iframe {
   background-color: white;
   height: 500px;
@@ -62,36 +54,7 @@
   }
 }
 
-.nav {
-  margin: 10px 0;
-}
-
-.nav button,
-.project button {
-  border: none;
-  border-radius: 10%;
-  color: var(--contrast);
-  background-color: var(--soft);
-  margin: 0 10px;
-  font-weight: bold;
-  padding: 0 3px;
-  text-transform: uppercase;
-  transition: all 0.5s ease;
-}
-
-.project button {
-  color: black;
-}
-
 .links {
   display: flex;
-  justify-content: center;
-}
-
-.icon {
-  background-size: cover, contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 32px;
+  justify-content: space-around;
 }

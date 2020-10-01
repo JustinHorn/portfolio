@@ -1,15 +1,13 @@
 .technologies {
   text-align: center;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "favourite"
-    "tools"
-    "experience";
+  grid-template-columns: 1fr;
+  row-gap: 15px;
 }
 
 .technologies h4 {
   font-weight: bold;
+  margin: 0;
 }
 
 @media screen and (max-width: 753px) {
@@ -20,15 +18,6 @@
   }
 }
 
-.favourite {
-  grid-area: favourite;
-}
-.tools {
-  grid-area: tools;
-}
-.experience {
-  grid-area: experience;
-}
 .icons {
   display: flex;
   flex-direction: row;

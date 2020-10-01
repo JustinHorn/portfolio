@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <p className={styles.p}>ju-horn@web.de</p>
+      <div className={styles.p}>ju-horn@web.de</div>
     </footer>
   );
 };

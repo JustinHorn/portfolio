@@ -9,16 +9,15 @@ import { technologies } from "data";
 const Technologies = () => {
   const { icons } = technologies;
   return (
-    <div>
-      <h3>Technologies</h3>
-      <div className={styles.technologies}>
-        {Object.keys(icons).map((key, index) => (
-          <div key={index} className={styles[key]}>
-            <h4>{key[0].toUpperCase() + key.slice(1)}</h4>
-            <TechIcons names={icons[key]} />
-          </div>
-        ))}
-      </div>
+    <div className={styles.technologies}>
+      <h2>Technologies</h2>
+
+      {Object.keys(icons).map((key, index) => (
+        <>
+          <h4>{key[0].toUpperCase() + key.slice(1)}</h4>
+          <TechIcons names={icons[key]} />
+        </>
+      ))}
     </div>
   );
 };

@@ -1,16 +1,21 @@
 .App {
   font-family: "Roboto", sans-serif;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  --soft: #e8ded2;
-  --header-aside: black;
-  --header-p: #5eaaa8;
-  --portfolio: #5eaaa8;
-  --medium: #a3d2ca;
-  --contrast: #5eaaa8;
-  --hard: #056676;
+
   font-size: 2.5ch;
   min-height: 100vh;
+  box-shadow: 0 0 21px #00000011, 0 0 63px #00000011;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+
+  text-align: center;
+  background-color: var(--soft);
+  row-gap: 5px;
+}
+
+.App > * {
+  width: 100%;
+  padding: 20px;
 }
 
 @media screen and (max-width: 250px) {
@@ -25,42 +30,40 @@
   }
 }
 
-main {
-  margin: 0 auto;
-  background-color: #a3d2ca;
-  min-height: 100vh;
-  max-width: 90%;
-  box-shadow: 0 0 21px #00000011, 0 0 63px #00000011;
-}
-
 @media screen and (max-width: 1024px) {
   main {
     max-width: 100%;
   }
 }
 
-.body {
-  padding: 10px 0;
+.medium {
+  background-color: var(--medium);
 }
 
-.portfolio {
-  background-color: var(--portfolio);
+.soft {
+  background-color: var(--soft);
 }
 
-.otherSkills {
-  display: flex;
-
-  justify-content: center;
+.contrast {
+  background-color: var(--contrast);
 }
 
-.otherSkills > p {
-  text-align: justify;
-  max-width: 70ch;
-
+.p-10 {
   padding: 10px;
 }
 
-.otherSkills button {
+h2 {
+  font-weight: bold;
+}
+
+.otherSkills {
+  text-align: justify;
+  max-width: 70ch;
+  margin: 0 auto;
+  background-color: var(--medium);
+}
+
+.button {
   border: none;
   border-radius: 10%;
   color: black;
@@ -69,4 +72,18 @@ main {
   font-weight: bold;
   padding: 0 3px;
   text-transform: uppercase;
+  min-width: 50px;
+}
+
+.button,
+.icon {
+  height: 50px;
+}
+
+.icon {
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 50px;
 }

@@ -6,7 +6,7 @@ const LinkIcon = ({ src, href, className }) => {
   return (
     <a href={href}>
       <div
-        className={className + " "}
+        className={className + " icon"}
         style={{ backgroundImage: "url(" + src + ")" }}
       ></div>
     </a>

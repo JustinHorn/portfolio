@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--soft);
+  background-color: var(--medium);
 }
 
 .imgTitle {
@@ -30,17 +30,10 @@ header {
   flex-direction: column;
   justify-content: center;
   color: var(--header-aside);
-  padding-top: 20px;
 }
 
 .aboutMe {
   max-width: 70ch;
-
   color: black;
-  display: flex;
-  align-items: center;
-}
-
-.aboutMe p {
   text-align: justify;
 }

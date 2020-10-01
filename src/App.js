@@ -12,34 +12,33 @@ import Portfolio from "component/Portfolio";
 const App = () => {
   return (
     <div className="App">
-      <main>
+      <div className="medium">
         <Header></Header>
+      </div>
 
-        <div className="body">
-          <Technologies />
-          <div className="portfolio">
-            <hr />
-
-            <Portfolio></Portfolio>
-            <br />
-          </div>
-        </div>
-        <div className="otherSkills">
-          <p>
-            Checkout my older Projects here
-            <a href="https://justinhorn.github.io/otherProjects">
-              <button>Other</button>
-            </a>
-            <br />
-            Through them I have learnt Java, Python, Kotlin and developed for
-            Windows, Android and Wear OS by Google.
-          </p>
-        </div>
-        <hr />
-        <Footer></Footer>
-      </main>
+      <div className="contrast">
+        <Portfolio></Portfolio>
+      </div>
+      <div className="medium">
+        <OtherSkills />
+      </div>
+      <div className="medium">
+        <Footer />
+      </div>
     </div>
   );
 };
+
+const OtherSkills = () => (
+  <div className="otherSkills">
+    Checkout my older Projects here
+    <a href="https://justinhorn.github.io/otherProjects">
+      <button className="button">Other</button>
+    </a>
+    <br />
+    Through them I have learnt Java, Python, Kotlin and developed for Windows,
+    Android and Wear OS by Google.
+  </div>
+);
 
 export default App;

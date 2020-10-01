@@ -11,12 +11,8 @@ const Header = () => {
         <div className={styles.img}></div>
         <div className={styles.aside}>
           <h3>Justin Horn</h3>
-          <p>Fullstack Developer</p>
+          <span>Fullstack Developer</span>
         </div>
-      </div>
-      <hr />
-      <div className={styles.aboutMe}>
-        <p>{data.header.aboutMe}</p>
       </div>
     </header>
   );
