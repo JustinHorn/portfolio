@@ -52,7 +52,11 @@ export const Project = (project) => {
       <iframe title={project.name} src={project.url} frameBorder="0" />
       <div className={styles.links}>
         <a href={project.url}>
-          <button className="button">Visit</button>
+          <LinkIcon
+            className={styles.icon}
+            src="/img/icons/web.svg"
+            href={project.url}
+          />
         </a>
         <a href={project.github} className="rotate">
           <LinkIcon

@@ -20,9 +20,9 @@ export default {
         "https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
       ),
       new Project(
-        "Cookie Clicker",
-        "https://cookieclicker-justin.herokuapp.com/",
-        "https://github.com/JustinHorn/CookieClicker"
+        "Joy of Code",
+        "https://joyofcode.herokuapp.com/",
+        "https://github.com/JustinHorn/joyofcode"
       ),
       new Project(
         "DayPlanner",

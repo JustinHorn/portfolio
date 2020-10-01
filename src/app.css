@@ -9,8 +9,6 @@
   grid-template-rows: repeat(5, auto);
 
   text-align: center;
-  background-color: var(--soft);
-  row-gap: 5px;
 }
 
 .App > * {
