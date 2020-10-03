@@ -37,7 +37,7 @@
   overflow-y: hidden;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .project iframe {
     min-width: 100%;
     overflow-x: hidden;

@@ -2,13 +2,7 @@ import React from "react";
 
 export default {
   header: {
-    aboutMe: (
-      <>
-        Hi! Problem solving is my passion and programming my tool. <br />
-        Out of interest I have developed for Desktop, Mobile and lately the Web.
-        Now I want to make it my profession and solve yours!
-      </>
-    ),
+    aboutMe: "",
   },
   webdev: {
     technologies,

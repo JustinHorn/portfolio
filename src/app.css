@@ -16,13 +16,19 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 500px) {
+  .App {
+    font-size: 1ch;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .App {
     font-size: 1.5ch;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .App {
     font-size: 2ch;
   }
@@ -50,7 +56,11 @@
   padding: 10px;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
 }
 
@@ -86,4 +96,38 @@ h2 {
 .smallIcon {
   width: 50px;
   height: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.basic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 550px) {
+  .basic-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .basic-grid > * {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gap-10 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
 }

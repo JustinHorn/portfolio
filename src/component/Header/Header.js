@@ -2,16 +2,19 @@ import React from "react";
 
 import styles from "./header.module.css";
 
+import data from "data";
+
 const Header = () => {
   return (
     <header>
       <div className={styles.imgTitle}>
-        <div className={styles.img}></div>
+        <div className={styles.img} />
         <div className={styles.aside}>
-          <h1>Justin Horn</h1>
+          <h2>Justin Horn</h2>
           <span>Fullstack Developer</span>
         </div>
       </div>
+      <div className="aboutMe">{data.header.aboutMe}</div>
     </header>
   );
 };
