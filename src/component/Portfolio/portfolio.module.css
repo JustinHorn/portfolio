@@ -34,6 +34,7 @@
   background-color: white;
   height: 500px;
   min-width: 500px;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 500px) {
@@ -46,4 +47,5 @@
 .links {
   display: flex;
   justify-content: center;
+  align-items: center;
 }

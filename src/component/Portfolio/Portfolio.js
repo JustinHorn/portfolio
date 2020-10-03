@@ -49,22 +49,25 @@ export const Project = (project) => {
   return (
     <div className={styles.project}>
       <h4> {project.name}</h4>
-      <iframe title={project.name} src={project.url} frameBorder="0" />
+      <iframe
+        title={project.name}
+        scrolling="no"
+        src={project.url}
+        frameBorder="0"
+      />
       <div className={styles.links}>
-        <a href={project.url}>
-          <LinkIcon
-            className={styles.icon}
-            src="/img/icons/web.svg"
-            href={project.url}
-          />
-        </a>
-        <a href={project.github} className="rotate">
-          <LinkIcon
-            className={styles.icon}
-            src="/img/icons/github.png"
-            href={project.github}
-          />
-        </a>
+        <LinkIcon
+          title="Deployed Version"
+          className={"smallIcon rotate"}
+          src="/img/icons/web.png"
+          href={project.url}
+        />
+        <LinkIcon
+          title="Github Repository"
+          className={" rotate"}
+          src="/img/icons/github.png"
+          href={project.github}
+        />
       </div>
     </div>
   );
