@@ -6,7 +6,6 @@ const Tech = () => {
   const desktopDevelopment = ["Java", "Python"];
   return (
     <div className="gap-10">
-      <h2>Tech</h2>
       <div className="basic-grid">
         <div className="flex">
           <DevCat

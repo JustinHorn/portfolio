@@ -4,7 +4,7 @@ import styles from "./portfolio.module.css";
 
 import data from "data";
 
-import { LinkIcon } from "component/Icon";
+import Project from "component/Project";
 
 const settings = {
   dots: true,
@@ -44,31 +44,3 @@ const Group = ({ headline, projects }) => {
 };
 
 export default Portfolio;
-
-export const Project = (project) => {
-  return (
-    <div className={styles.project}>
-      <h4> {project.name}</h4>
-      <iframe
-        title={project.name}
-        scrolling="no"
-        src={project.url}
-        frameBorder="0"
-      />
-      <div className={styles.links}>
-        <LinkIcon
-          title="Deployed Version"
-          className={"smallIcon rotate"}
-          src="/img/icons/web.png"
-          href={project.url}
-        />
-        <LinkIcon
-          title="Github Repository"
-          className={" rotate"}
-          src="/img/icons/github.png"
-          href={project.github}
-        />
-      </div>
-    </div>
-  );
-};

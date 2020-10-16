@@ -29,23 +29,3 @@
     justify-content: center;
   }
 }
-
-.project iframe {
-  background-color: white;
-  height: 500px;
-  min-width: 500px;
-  overflow-y: hidden;
-}
-
-@media screen and (max-width: 600px) {
-  .project iframe {
-    min-width: 100%;
-    overflow-x: hidden;
-  }
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
