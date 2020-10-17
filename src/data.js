@@ -11,35 +11,47 @@ export default {
       new Project(
         "Ultimate Tic Tac Toe",
         "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
-        "https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
+        "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
+        "uTTT.png",
+        ["reactjs"]
       ),
       new Project(
         "Joy of Code",
         "https://joyofcode.herokuapp.com/",
-        "https://github.com/JustinHorn/joyofcode"
+        "https://github.com/JustinHorn/joyofcode",
+        "joyOfCode.png",
+        ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"]
       ),
       new Project(
         "DayPlanner",
         "https://dayplanner.online/",
-        "https://github.com/JustinHorn/DayPlanner"
+        "https://github.com/JustinHorn/DayPlanner",
+        "dayplanner.png",
+        ["python", "bootstrap", "nodejs", "mongodb"]
       ),
     ],
     groupProjects: [
       new Project(
         "Cook Book",
         "https://justinhorn.github.io/group-one-cookbook/",
-        "https://github.com/JustinHorn/group-one-cookbook"
+        "https://github.com/JustinHorn/group-one-cookbook",
+        "cookBook.png",
+        ["html5", "css3", "javascript"]
       ),
 
       new Project(
-        "Meme Creator",
+        "memeGenerator",
         "https://meme-creator-seven.vercel.app/",
-        "https://github.com/JustinHorn/memeCreator"
+        "https://github.com/JustinHorn/memeCreator",
+        "memeGenerator.png",
+        ["css3", "reactjs", "firebase"]
       ),
       new Project(
         "Rickys Quest",
         "https://rickysquest.netlify.app/",
-        "https://github.com/Ey-Jay/rickysquest"
+        "https://github.com/Ey-Jay/rickysquest",
+        "rAm.PNG",
+        ["html5", "css3", "reactjs", "firebase"]
       ),
     ],
   },
@@ -47,10 +59,12 @@ export default {
   footer,
 };
 
-function Project(name, url, github) {
+function Project(name, url, github, img, tech = []) {
   this.name = name;
   this.url = url;
   this.github = github;
+  this.img = img;
+  this.tech = tech;
 }
 
 export const technologies = {

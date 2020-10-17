@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LinkIcon } from "component/Icon";
+import LinkIcon from "component/Icon/LinkIcon";
 import { footer } from "data";
 
 import styles from "./footer.module.css";

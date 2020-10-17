@@ -1,0 +1,26 @@
+.tag {
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 2ch;
+  margin-right: 2px;
+
+  background-color: white;
+
+  border: 1px solid grey;
+  list-style: none;
+}
+
+.tag button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  margin: auto;
+  transition: 0.3s all ease;
+}
+
+.tag:hover button {
+  opacity: 1;
+}

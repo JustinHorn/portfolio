@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="medium">
-        <h1>Hi, welcome to my Portfolio!</h1>
+        <h1>Hi, welcome to my Website!</h1>
         <hr />
         <Header></Header>
         <hr />

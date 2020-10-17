@@ -1,4 +1,15 @@
-import PublicIcon, { LinkIcon } from "./Icon";
+import React from "react";
 
-export default PublicIcon;
-export { LinkIcon };
+function Icon({ location, className, backgroundSize }) {
+  return (
+    <div
+      className={" icon " + className}
+      style={{
+        backgroundImage: "url(" + location + ")",
+        backgroundSize: backgroundSize || "contain",
+      }}
+    ></div>
+  );
+}
+
+export default Icon;

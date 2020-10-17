@@ -2,19 +2,19 @@ import React, { useState } from "react";
 
 import styles from "./project.module.css";
 
-import { LinkIcon } from "component/Icon";
+import LinkIcon from "component/Icon/LinkIcon";
+
+import TechStack from "component/TechStack";
 
 const Project = (project) => {
   const [op, setOp] = useState(false);
   return (
     <div className={styles.project}>
-      <iframe
-        className={styles.projectFrame + " " + (op && styles.opac)}
-        title={project.name}
-        scrolling="no"
-        src={project.url}
-        frameBorder="0"
-      />
+      <div
+        className={styles.projectFrame + " " + (op ? styles.opac : "")}
+        style={{ backgroundImage: `url('/img/websites/${project.img}')` }}
+      ></div>
+
       <div
         className={styles.projectDescription}
         onMouseEnter={() => setOp(true)}
@@ -23,6 +23,7 @@ const Project = (project) => {
         <h4>
           <a href={project.url}> {project.name} </a>
         </h4>
+        <TechStack icons={project.tech}></TechStack>
 
         <div className={styles.links}>
           <LinkIcon
