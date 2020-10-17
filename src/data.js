@@ -50,7 +50,7 @@ export default {
         "Rickys Quest",
         "https://rickysquest.netlify.app/",
         "https://github.com/Ey-Jay/rickysquest",
-        "rickandmorty.PNG",
+        "rickandmorty.png",
         ["html5", "css3", "reactjs", "firebase"]
       ),
     ],
