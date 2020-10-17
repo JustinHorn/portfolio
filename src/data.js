@@ -19,7 +19,7 @@ export default {
         "Joy of Code",
         "https://joyofcode.herokuapp.com/",
         "https://github.com/JustinHorn/joyofcode",
-        "joyOfCode.png",
+        "joyofcode.png",
         ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"]
       ),
       new Project(
@@ -50,7 +50,7 @@ export default {
         "Rickys Quest",
         "https://rickysquest.netlify.app/",
         "https://github.com/Ey-Jay/rickysquest",
-        "rAm.PNG",
+        "rickandmorty.PNG",
         ["html5", "css3", "reactjs", "firebase"]
       ),
     ],
