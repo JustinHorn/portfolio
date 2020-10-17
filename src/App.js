@@ -19,24 +19,24 @@ import {
 const App = () => {
   const location = useLocation();
   return (
-    <div className="App">
-      <div className="medium">
-        <h1>Hi, welcome to my Website!</h1>
-        <hr />
-        <Header></Header>
-        <hr />
-        <nav>
-          <NavLink activeClassName="activeLink" to="/portfolio">
-            Portfolio
-          </NavLink>
+    <div className="medium">
+      <div className="App">
+        <div className="medium">
+          <h1>Hi, welcome to my Website!</h1>
+          <hr />
+          <Header></Header>
+          <hr />
+          <nav>
+            <NavLink activeClassName="activeLink" to="/portfolio">
+              Portfolio
+            </NavLink>
 
-          <NavLink activeClassName="activeLink" to="/tech">
-            Tech
-          </NavLink>
-        </nav>
-      </div>
+            <NavLink activeClassName="activeLink" to="/tech">
+              Tech
+            </NavLink>
+          </nav>
+        </div>
 
-      <div className="contrast ">
         <Switch>
           <Route path="/portfolio">
             <PortfolioPage />
@@ -48,9 +48,9 @@ const App = () => {
             <Redirect to="/portfolio" />
           </Route>
         </Switch>
-      </div>
-      <div className="medium">
-        <Footer />
+        <div className="medium">
+          <Footer />
+        </div>
       </div>
     </div>
   );

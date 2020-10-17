@@ -1,5 +1,10 @@
 .project {
   position: relative;
+  padding: 5px;
+}
+
+.project h5 {
+  text-align: right;
 }
 
 .projectFrame,
