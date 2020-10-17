@@ -14,10 +14,6 @@
   overflow-y: hidden;
 }
 
-.projectFrame:hover {
-  opacity: 0.5;
-}
-
 .projectFrame:hover + .projectDescription {
   opacity: 1;
 }
@@ -26,8 +22,10 @@
   opacity: 1;
 }
 
+.opac,
+.projectFrame:hover,
 .projectDescription:hover + .projectFrame {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .projectDescription {
@@ -41,8 +39,20 @@
   transform: translate(-50%, -50%);
 }
 
+.projectDescription h4 {
+  color: black;
+  display: inline-block;
+  width: fit-content;
+}
+
+.projectDescription h4 a {
+  color: black;
+  display: inline-block;
+  width: fit-content;
+}
+
 @media screen and (max-width: 600px) {
-  .project iframe {
+  .projectFrame {
     min-width: 100%;
     overflow-x: hidden;
   }

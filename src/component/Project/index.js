@@ -5,25 +5,26 @@ import styles from "./project.module.css";
 import { LinkIcon } from "component/Icon";
 
 const Project = (project) => {
+  const [op, setOp] = useState(false);
   return (
     <div className={styles.project}>
       <iframe
-        className={styles.projectFrame}
+        className={styles.projectFrame + " " + (op && styles.opac)}
         title={project.name}
         scrolling="no"
         src={project.url}
         frameBorder="0"
-      ></iframe>
-      <div className={styles.projectDescription}>
-        <h4> {project.name}</h4>
+      />
+      <div
+        className={styles.projectDescription}
+        onMouseEnter={() => setOp(true)}
+        onMouseLeave={() => setOp(false)}
+      >
+        <h4>
+          <a href={project.url}> {project.name} </a>
+        </h4>
 
         <div className={styles.links}>
-          <LinkIcon
-            title="Deployed Version"
-            className={"smallIcon rotate"}
-            src="/img/icons/web.png"
-            href={project.url}
-          />
           <LinkIcon
             title="Github Repository"
             className={" rotate"}
