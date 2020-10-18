@@ -27,7 +27,7 @@ const App = () => {
     <div className="contrast full-height">
       <div className="App">
         <div className="medium">
-          <nav className="space-between">
+          <nav className="mainNav space-between">
             <div className="links">
               <NavLink exact activeClassName="activeLink" to="/">
                 Welcome
