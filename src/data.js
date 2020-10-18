@@ -64,6 +64,7 @@ export default {
         ["html5", "css3", "reactjs", "firebase"]
       ),
     ],
+    android: [],
   },
 
   footer,

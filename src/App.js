@@ -19,7 +19,7 @@ import {
 const App = () => {
   const location = useLocation();
   return (
-    <div className="medium">
+    <div className="medium full-height">
       <div className="App">
         <div className="medium">
           <h1>Hi, welcome to my Website!</h1>

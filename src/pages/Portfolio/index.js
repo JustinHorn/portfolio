@@ -18,8 +18,7 @@ import {
 const PortfolioPage = () => {
   return (
     <div className={styles.page}>
-      <hr className={styles.pageHr} />
-
+      <hr className={styles.pageHR} />
       <Router basename="portfolio">
         <nav className={styles.subNav + " medium"}>
           <NavLink activeClassName="activeLink" to="/web">

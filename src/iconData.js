@@ -33,6 +33,7 @@ const iconList = [
   new IconClass("php", "svg", "130%"),
   new IconClass("clojure", "svg"),
   new IconClass("deno", "png"),
+  new IconClass("kotlin", "svg"),
 ];
 
 export default iconList;

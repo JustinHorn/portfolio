@@ -27,7 +27,7 @@ const Tech = () => {
       </div>
 
       <div className="flex">
-        <DevCat title={"App"} items={appDev}></DevCat>
+        <DevCat title={"Android"} items={appDev}></DevCat>
 
         <DevCat title={"Windows"} items={desktopDevelopment}></DevCat>
       </div>

@@ -2,13 +2,15 @@
   font-family: "Roboto", sans-serif;
 
   font-size: 2.5ch;
-  min-height: 100vh;
-  box-shadow: 0 0 21px #00000011, 0 0 63px #00000011;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
 
   text-align: center;
+}
+
+.full-height {
+  min-height: 100vh;
 }
 
 .App > * {
