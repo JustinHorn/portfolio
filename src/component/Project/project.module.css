@@ -18,27 +18,37 @@
 }
 
 .web {
-  width: 500px;
+  max-width: 500px;
 }
 
 .android {
-  width: 300px;
+  max-width: 300px;
 }
 
 .web .projectFrame {
-  height: 375px;
+  max-height: 375px;
+  max-width: 100%;
 }
 
 .android .projectFrame {
-  height: 520px;
+  max-height: 520px;
+  max-width: 100%;
 }
 
 .windows {
-  width: 500px;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .web,
+  .android,
+  .windows {
+    max-width: 100%;
+  }
 }
 
 .windows .projectFrame {
-  width: 100%;
+  max-width: 100%;
 }
 
 .projectFrame:hover + .projectDescription {

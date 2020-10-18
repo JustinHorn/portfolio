@@ -2,9 +2,12 @@ header {
   padding: 10px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .imgTitle {
+  padding: 5px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +34,7 @@ header {
 }
 
 .aboutMe {
+  min-width: 30ch;
   max-width: 40ch;
   color: black;
   text-align: left;

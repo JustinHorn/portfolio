@@ -18,27 +18,114 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 500px) {
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1.12em;
+}
+h5 {
+  font-size: 0.83em;
+}
+h6 {
+  font-size: 0.75em;
+}
+
+.icon {
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 60px;
+
+  width: 60px;
+}
+
+.smallIcon {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  align-items: center;
+}
+
+nav .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .social a {
+  padding: 0 5px;
+}
+
+nav .social .icon {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .App {
-    font-size: 1ch;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.17em;
+  }
+  h4 {
+    font-size: 1.12em;
+  }
+  h5 {
+    font-size: 0.83em;
+  }
+  h6 {
+    font-size: 0.75em;
+  }
+
+  nav .social .icon {
+    height: 30px;
+    width: 30px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .App {
     font-size: 1.5ch;
+    font-size: 80%;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
   .App {
-    font-size: 2ch;
+    font-size: 1ch;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  main {
-    max-width: 100%;
+@media screen and (max-width: 370px) {
+  .App nav {
+    font-size: 2.4ch;
+  }
+  nav .social .icon {
+    height: 30px;
+    width: 30px;
   }
 }
 
@@ -88,21 +175,6 @@ h5 {
   position: relative;
 }
 
-.icon {
-  background-size: cover, contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  height: 60px;
-
-  width: 60px;
-}
-
-.smallIcon {
-  width: 30px;
-  height: 30px;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -145,20 +217,6 @@ nav {
 
 .space-between {
   justify-content: space-between;
-}
-
-nav .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav .social a {
-  padding: 0 5px;
-}
-
-nav .social .icon {
-  height: 40px;
-  width: 40px;
 }
 
 nav a {
