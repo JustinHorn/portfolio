@@ -8,7 +8,7 @@ export default {
     technologies,
 
     projects: [
-      new Project(
+      new WebProject(
         "Ultimate Tic Tac Toe",
         "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
         "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
@@ -16,7 +16,7 @@ export default {
         "May 2020",
         ["reactjs"]
       ),
-      new Project(
+      new WebProject(
         "Joy of Code",
         "https://joyofcode.herokuapp.com/",
         "https://github.com/JustinHorn/joyofcode",
@@ -24,7 +24,7 @@ export default {
         "October 2020",
         ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"]
       ),
-      new Project(
+      new WebProject(
         "DayPlanner",
         "https://dayplanner.online/",
         "https://github.com/JustinHorn/DayPlanner",
@@ -35,7 +35,7 @@ export default {
       ),
     ],
     groupProjects: [
-      new Project(
+      new WebProject(
         "Cook Book",
         "https://justinhorn.github.io/group-one-cookbook/",
         "https://github.com/JustinHorn/group-one-cookbook",
@@ -45,7 +45,7 @@ export default {
         ["html5", "css3", "javascript"]
       ),
 
-      new Project(
+      new WebProject(
         "Meme Generator",
         "https://meme-creator-seven.vercel.app/",
         "https://github.com/JustinHorn/memeCreator",
@@ -54,7 +54,7 @@ export default {
 
         ["css3", "reactjs", "firebase"]
       ),
-      new Project(
+      new WebProject(
         "Rickys Quest",
         "https://rickysquest.netlify.app/",
         "https://github.com/Ey-Jay/rickysquest",
@@ -66,7 +66,7 @@ export default {
     ],
   },
   android: [
-    new Project(
+    new AnroidProject(
       "Jugger Tetris",
       false,
       "https://github.com/JustinHorn/JuggerTetris",
@@ -76,7 +76,7 @@ export default {
       ["kotlin"],
       "Tetris App with block Icons of Jugger Teams."
     ),
-    new Project(
+    new AnroidProject(
       "Time Logger",
       false,
       "https://github.com/JustinHorn/TimeLogger",
@@ -107,6 +107,60 @@ function Project(
   this.date = date;
   this.tech = tech;
   this.description = description;
+}
+
+function WebProject(
+  name,
+  url,
+  github,
+  img,
+  date = "",
+  tech = [],
+  description = ""
+) {
+  Project.call(this, name, url, github, "web/" + img, date, tech, description);
+}
+
+function AnroidProject(
+  name,
+  url,
+  github,
+  img,
+  date = "",
+  tech = [],
+  description = ""
+) {
+  Project.call(
+    this,
+    name,
+    url,
+    github,
+    "android/" + img,
+    date,
+    tech,
+    description
+  );
+}
+
+function WindowsProject(
+  name,
+  url,
+  github,
+  img,
+  date = "",
+  tech = [],
+  description = ""
+) {
+  Project.call(
+    this,
+    name,
+    url,
+    github,
+    "windows/" + img,
+    date,
+    tech,
+    description
+  );
 }
 
 export const technologies = {
