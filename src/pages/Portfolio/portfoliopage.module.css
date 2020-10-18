@@ -4,15 +4,25 @@
 
 .pageHR {
   margin: 0 20px;
+  background-color: var(--medium);
 }
 
 .subNav {
   padding: 10px 60px;
+  background-color: var(--contrast);
+  justify-content: center;
+}
+
+.subNav .activeLink {
+  text-decoration: underline;
 }
 
 .subNav a {
-  padding: 0 1vw;
+  padding: 0 0.5vw;
+  margin: 0 0.5vw;
   font-size: 1.2ch;
+  background-color: var(--soft);
+  border-radius: 5%;
 }
 
 .portfolio {

@@ -23,7 +23,7 @@ const { icons } = footer;
 const App = () => {
   const location = useLocation();
   return (
-    <div className="medium full-height">
+    <div className="contrast full-height">
       <div className="App">
         <div className="medium">
           <nav className="space-between">

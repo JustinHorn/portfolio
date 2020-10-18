@@ -18,16 +18,15 @@ import {
 const PortfolioPage = () => {
   return (
     <div className={styles.page}>
-      <hr className={styles.pageHR} />
       <Router basename="portfolio">
         <nav className={styles.subNav + " medium"}>
-          <NavLink activeClassName="activeLink" to="/web">
+          <NavLink activeClassName={styles.activeLink} to="/web">
             Web
           </NavLink>
-          <NavLink activeClassName="activeLink" to="/android">
+          <NavLink activeClassName={styles.activeLink} to="/android">
             Android
           </NavLink>
-          <NavLink activeClassName="activeLink" to="/windows">
+          <NavLink activeClassName={styles.activeLink} to="/windows">
             Windows
           </NavLink>
         </nav>
