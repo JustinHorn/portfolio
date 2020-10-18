@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./app.css";
 
 import HomePage from "pages/Homepage";
-import Footer from "component/Footer";
 
 import TechPage from "pages/Tech";
 import PortfolioPage from "pages/Portfolio";
+
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import {
   Switch,
@@ -46,21 +47,28 @@ const App = () => {
             </div>
           </nav>
         </div>
-
-        <Switch>
-          <Route path="/portfolio">
-            <PortfolioPage />
-          </Route>
-          <Route path="/tech">
-            <TechPage />
-          </Route>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="*">
-            <Redirect to="/" />
-          </Route>
-        </Switch>
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            timeout={{ enter: 300, exit: 300 }}
+            classNames={"fade"}
+          >
+            <Switch>
+              <Route path="/portfolio">
+                <PortfolioPage />
+              </Route>
+              <Route path="/tech">
+                <TechPage />
+              </Route>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route path="*">
+                <Redirect to="/" />
+              </Route>
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
     </div>
   );

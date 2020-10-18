@@ -15,7 +15,10 @@ import {
   useLocation,
 } from "react-router-dom";
 
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 const PortfolioPage = () => {
+  const location = useLocation();
   return (
     <div className={styles.page}>
       <Router basename="portfolio">
@@ -31,20 +34,28 @@ const PortfolioPage = () => {
           </NavLink>
         </nav>
         <div className={styles.portfolio + " contrast"}>
-          <Switch>
-            <Route path="/web">
-              <Web />
-            </Route>
-            <Route path="/android">
-              <Android />
-            </Route>
-            <Route path="/windows">
-              <Windows />
-            </Route>
-            <Route path="*">
-              <Redirect to="/web"></Redirect>
-            </Route>
-          </Switch>
+          <TransitionGroup>
+            <CSSTransition
+              key={location.key}
+              timeout={{ enter: 300, exit: 300 }}
+              classNames={"fade"}
+            >
+              <Switch>
+                <Route path="/web">
+                  <Web />
+                </Route>
+                <Route path="/android">
+                  <Android />
+                </Route>
+                <Route path="/windows">
+                  <Windows />
+                </Route>
+                <Route path="*">
+                  <Redirect to="/web"></Redirect>
+                </Route>
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
         </div>
       </Router>
     </div>
