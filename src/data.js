@@ -232,6 +232,7 @@ export const footer = {
       "https://www.linkedin.com/in/justin-christian-horn/"
     ),
     new FooterIcon("github.png", "https://github.com/JustinHorn"),
+    new FooterIcon("email.jpg", "mailto:justinhorn0000@gmail.com"),
   ],
 };
 

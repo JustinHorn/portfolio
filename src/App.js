@@ -15,23 +15,35 @@ import {
   useLocation,
 } from "react-router-dom";
 
+import { footer } from "data";
+import LinkIcon from "component/Icon/LinkIcon";
+
+const { icons } = footer;
+
 const App = () => {
   const location = useLocation();
   return (
     <div className="medium full-height">
       <div className="App">
         <div className="medium">
-          <nav>
-            <NavLink exact activeClassName="activeLink" to="/">
-              Welcome
-            </NavLink>
-            <NavLink activeClassName="activeLink" to="/portfolio">
-              Portfolio
-            </NavLink>
+          <nav className="space-between">
+            <div className="links">
+              <NavLink exact activeClassName="activeLink" to="/">
+                Welcome
+              </NavLink>
+              <NavLink activeClassName="activeLink" to="/portfolio">
+                Portfolio
+              </NavLink>
 
-            <NavLink activeClassName="activeLink" to="/tech">
-              Tech
-            </NavLink>
+              <NavLink activeClassName="activeLink" to="/tech">
+                Tech
+              </NavLink>
+            </div>
+            <div className="social">
+              {icons.map((icon, index) => (
+                <LinkIcon key={index} {...icon} />
+              ))}
+            </div>
           </nav>
         </div>
 
@@ -49,9 +61,6 @@ const App = () => {
             <Redirect to="/" />
           </Route>
         </Switch>
-        <div className="medium">
-          <Footer />
-        </div>
       </div>
     </div>
   );

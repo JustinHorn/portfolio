@@ -11,9 +11,7 @@ const Footer = () => {
     <footer>
       <div className={styles.social}>
         {icons.map((icon, index) => (
-          <div className={"rotate"}>
-            <LinkIcon key={index} className={styles.icon} {...icon} />
-          </div>
+          <LinkIcon key={index} className={styles.icon} {...icon} />
         ))}
       </div>
       <div className={styles.p}>ju-horn@web.de</div>

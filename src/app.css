@@ -138,8 +138,27 @@ ul {
 }
 
 nav {
+  display: flex;
   width: 100%;
   text-align: left;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+nav .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .social a {
+  padding: 0 5px;
+}
+
+nav .social .icon {
+  height: 40px;
+  width: 40px;
 }
 
 nav a {
