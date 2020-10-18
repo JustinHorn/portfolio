@@ -1,15 +1,13 @@
 header {
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--medium);
+  justify-content: center;
 }
 
 .imgTitle {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -33,7 +31,7 @@ header {
 }
 
 .aboutMe {
-  max-width: 70ch;
+  max-width: 40ch;
   color: black;
-  text-align: justify;
+  text-align: left;
 }

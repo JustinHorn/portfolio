@@ -2,7 +2,16 @@ import React from "react";
 
 export default {
   header: {
-    aboutMe: "",
+    aboutMe: (
+      <div>
+        I am Justin, 20y developer from Brunswick. <br /> <br /> My habits for
+        live are learning, building connections and giving back. Since there is
+        no such thing as "the one passion", only discipline, dedication and
+        smart work can get you forward.
+        <br /> <br /> In my free time I play Jugger, game sth. or hang around
+        with friends.
+      </div>
+    ),
   },
   webdev: {
     technologies,
@@ -25,7 +34,7 @@ export default {
         ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"]
       ),
       new WebProject(
-        "DayPlanner",
+        "DayPlanner Website",
         "https://dayplanner.online/",
         "https://github.com/JustinHorn/DayPlanner",
         "dayplanner.png",
@@ -110,9 +119,10 @@ export default {
       "Ultimate Tic Tac Toe with a Monte Carlo Algorithm."
     ),
     new WindowsProject(
-      "Dayplanner",
+      "Dayplanner Program",
+      "http://justinhorn.github.io/DayPlanner",
+
       "https://github.com/JustinHorn/DayPlanner",
-      "https://dayplanner.online/",
       "dayplanner.png",
       "January 2020",
 
@@ -222,7 +232,6 @@ export const footer = {
       "https://www.linkedin.com/in/justin-christian-horn/"
     ),
     new FooterIcon("github.png", "https://github.com/JustinHorn"),
-    new FooterIcon("leetcode.png", "https://leetcode.com/justin_horn/"),
   ],
 };
 

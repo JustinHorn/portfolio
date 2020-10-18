@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./app.css";
 
-import Header from "component/Header";
-
+import HomePage from "pages/Homepage";
 import Footer from "component/Footer";
 
 import TechPage from "pages/Tech";
@@ -22,11 +21,10 @@ const App = () => {
     <div className="medium full-height">
       <div className="App">
         <div className="medium">
-          <h1>Hi, welcome to my Website!</h1>
-          <hr />
-          <Header></Header>
-          <hr />
           <nav>
+            <NavLink exact activeClassName="activeLink" to="/">
+              Welcome
+            </NavLink>
             <NavLink activeClassName="activeLink" to="/portfolio">
               Portfolio
             </NavLink>
@@ -44,8 +42,11 @@ const App = () => {
           <Route path="/tech">
             <TechPage />
           </Route>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
           <Route path="*">
-            <Redirect to="/portfolio" />
+            <Redirect to="/" />
           </Route>
         </Switch>
         <div className="medium">

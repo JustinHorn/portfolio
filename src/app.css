@@ -93,9 +93,9 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
 
-  height: 70px;
+  height: 60px;
 
-  width: 70px;
+  width: 60px;
 }
 
 .smallIcon {
@@ -139,6 +139,7 @@ ul {
 
 nav {
   width: 100%;
+  text-align: left;
 }
 
 nav a {

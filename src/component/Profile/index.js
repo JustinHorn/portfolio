@@ -4,7 +4,7 @@ import styles from "./header.module.css";
 
 import data from "data";
 
-const Header = () => {
+const Profile = () => {
   return (
     <header>
       <div className={styles.imgTitle}>
@@ -14,9 +14,9 @@ const Header = () => {
           <span>Fullstack Developer</span>
         </div>
       </div>
-      <div className="aboutMe">{data.header.aboutMe}</div>
+      <div className={styles.aboutMe}>{data.header.aboutMe}</div>
     </header>
   );
 };
 
-export default Header;
+export default Profile;
