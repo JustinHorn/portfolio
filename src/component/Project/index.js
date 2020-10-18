@@ -9,17 +9,29 @@ import TechStack from "component/TechStack";
 const Project = ({ project, imgClass }) => {
   const [op, setOp] = useState(false);
 
-  const imgStyle =
-    imgClass === "androidImg" ? styles.androidImg : styles.webImg;
+  let style = "";
+
+  switch (project.type) {
+    case "web":
+      style = styles.web;
+      break;
+    case "android":
+      style = styles.android;
+      break;
+    case "windows":
+      style = styles.windows;
+      break;
+    default:
+      style = styles.web;
+  }
+
   return (
-    <div className={styles.project}>
-      <div>
-        <div
-          className={
-            styles.projectFrame + " " + imgStyle + " " + (op ? styles.opac : "")
-          }
-          style={{ backgroundImage: `url('/img/projects/${project.img}')` }}
-        ></div>
+    <div className={styles.project + " " + style}>
+      <div className="relative">
+        <img
+          className={styles.projectFrame + " " + (op ? styles.opac : "")}
+          src={`/img/projects/${project.img}`}
+        />
         <div
           className={styles.projectDescription}
           onMouseEnter={() => setOp(true)}
@@ -42,9 +54,7 @@ const Project = ({ project, imgClass }) => {
       </div>
 
       <h5>{project.date}</h5>
-      <div className={imgStyle + " " + styles.description}>
-        {project.description + " "}
-      </div>
+      <div className={styles.description}>{project.description + " "}</div>
     </div>
   );
 };

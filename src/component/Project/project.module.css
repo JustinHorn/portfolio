@@ -1,6 +1,5 @@
 .project {
-  position: relative;
-  padding: 5px;
+  margin: 20px;
 }
 
 .project h5 {
@@ -16,21 +15,30 @@
   background-color: white;
 
   overflow-y: hidden;
-
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.webImg {
-  background-size: cover;
-  height: 375px;
+.web {
   width: 500px;
 }
 
-.androidImg {
-  background-size: cover;
+.android {
   width: 300px;
+}
+
+.web .projectFrame {
+  height: 375px;
+}
+
+.android .projectFrame {
   height: 520px;
+}
+
+.windows {
+  width: 500px;
+}
+
+.windows .projectFrame {
+  width: 100%;
 }
 
 .projectFrame:hover + .projectDescription {

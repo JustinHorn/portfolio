@@ -39,7 +39,9 @@ const PortfolioPage = () => {
             <Route path="/android">
               <Android />
             </Route>
-            <Route path="/windows">windows</Route>
+            <Route path="/windows">
+              <Windows />
+            </Route>
             <Route path="*">
               <Redirect to="/web"></Redirect>
             </Route>
@@ -67,7 +69,17 @@ const Android = () => {
 
   return (
     <div className={"flex-center"}>
-      <Group headline={""} projects={android} imgClass={"androidImg"} />
+      <Group headline={""} projects={android} />
+    </div>
+  );
+};
+
+const Windows = () => {
+  const { windows } = data;
+
+  return (
+    <div className={"flex-center"}>
+      <Group headline={""} projects={windows} />
     </div>
   );
 };

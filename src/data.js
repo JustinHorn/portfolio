@@ -31,7 +31,7 @@ export default {
         "dayplanner.png",
         "March 2020",
 
-        ["python", "bootstrap", "nodejs", "mongodb"]
+        ["bootstrap", "nodejs", "mongodb"]
       ),
     ],
     groupProjects: [
@@ -88,6 +88,39 @@ export default {
     ),
   ],
 
+  windows: [
+    new WindowsProject(
+      "Neural Network for Tic Tac Toe",
+      false,
+      "https://github.com/JustinHorn/TicTacToe",
+      "tictactoe.png",
+      "June 2019",
+
+      ["java"],
+      "Tic Tac Toe with several AI opponents. A bruteforce and some Feedforward neural network Algorithms."
+    ),
+    new WindowsProject(
+      "Ultimate Tic Tact Toe",
+      false,
+      "https://github.com/JustinHorn/MonteCarloUltimateTicTacToe",
+      "uTTT.png",
+      "July 2019",
+
+      ["java"],
+      "Ultimate Tic Tac Toe with a Monte Carlo Algorithm."
+    ),
+    new WindowsProject(
+      "Dayplanner",
+      "https://github.com/JustinHorn/DayPlanner",
+      "https://dayplanner.online/",
+      "dayplanner.png",
+      "January 2020",
+
+      ["python"],
+      "A Texteditor style 'DayPlanner' utelizing patterns to save and reuse daily routines. Get it's .exe over the github readme."
+    ),
+  ],
+
   footer,
 };
 
@@ -119,6 +152,7 @@ function WebProject(
   description = ""
 ) {
   Project.call(this, name, url, github, "web/" + img, date, tech, description);
+  this.type = "web";
 }
 
 function AnroidProject(
@@ -140,6 +174,7 @@ function AnroidProject(
     tech,
     description
   );
+  this.type = "android";
 }
 
 function WindowsProject(
@@ -161,6 +196,7 @@ function WindowsProject(
     tech,
     description
   );
+  this.type = "windows";
 }
 
 export const technologies = {

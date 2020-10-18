@@ -84,6 +84,10 @@ h5 {
   min-width: 50px;
 }
 
+.relative {
+  position: relative;
+}
+
 .icon {
   background-size: cover, contain;
   background-repeat: no-repeat;
