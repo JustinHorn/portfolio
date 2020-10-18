@@ -14,13 +14,23 @@
 
 .projectFrame {
   background-color: white;
-  height: 375px;
-  width: 500px;
+
   overflow-y: hidden;
 
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+}
+
+.webImg {
+  background-size: cover;
+  height: 375px;
+  width: 500px;
+}
+
+.androidImg {
+  background-size: cover;
+  width: 300px;
+  height: 520px;
 }
 
 .projectFrame:hover + .projectDescription {
@@ -60,4 +70,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.description {
+  height: fit-content;
+  text-align: left;
+  font-size: 1.5ch;
 }

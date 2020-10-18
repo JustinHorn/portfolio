@@ -64,19 +64,49 @@ export default {
         ["html5", "css3", "reactjs", "firebase"]
       ),
     ],
-    android: [],
   },
+  android: [
+    new Project(
+      "Jugger Tetris",
+      false,
+      "https://github.com/JustinHorn/JuggerTetris",
+      "juggertetris.jpeg",
+      "April 2020",
+
+      ["kotlin"],
+      "Tetris App with block Icons of Jugger Teams."
+    ),
+    new Project(
+      "Time Logger",
+      false,
+      "https://github.com/JustinHorn/TimeLogger",
+      "timelogger.jpeg",
+      "April 2020",
+
+      ["kotlin"],
+      "A time tracking app for Android and Wear OS using speech recognition."
+    ),
+  ],
 
   footer,
 };
 
-function Project(name, url, github, img, date = "", tech = []) {
+function Project(
+  name,
+  url,
+  github,
+  img,
+  date = "",
+  tech = [],
+  description = ""
+) {
   this.name = name;
   this.url = url;
   this.github = github;
   this.img = img;
   this.date = date;
   this.tech = tech;
+  this.description = description;
 }
 
 export const technologies = {

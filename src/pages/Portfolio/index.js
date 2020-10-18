@@ -37,9 +37,7 @@ const PortfolioPage = () => {
               <Web />
             </Route>
             <Route path="/android">
-              <div>
-                <img src="" alt="" />
-              </div>
+              <Android />
             </Route>
             <Route path="/windows">windows</Route>
             <Route path="*">
@@ -64,14 +62,24 @@ const Web = () => {
   );
 };
 
-const Group = ({ headline, projects }) => {
+const Android = () => {
+  const { android } = data;
+
+  return (
+    <div className={"flex-center"}>
+      <Group headline={""} projects={android} imgClass={"androidImg"} />
+    </div>
+  );
+};
+
+const Group = ({ headline, projects, imgClass }) => {
   return (
     <div className={"p-10"}>
       <h2>{headline}</h2>
 
       <div className={styles.projects}>
         {projects.map((project, index) => (
-          <Project key={index} {...project} />
+          <Project key={index} project={project} imgClass={imgClass} />
         ))}
       </div>
     </div>

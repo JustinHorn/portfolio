@@ -6,14 +6,19 @@ import LinkIcon from "component/Icon/LinkIcon";
 
 import TechStack from "component/TechStack";
 
-const Project = (project) => {
+const Project = ({ project, imgClass }) => {
   const [op, setOp] = useState(false);
+
+  const imgStyle =
+    imgClass === "androidImg" ? styles.androidImg : styles.webImg;
   return (
     <div className={styles.project}>
       <div>
         <div
-          className={styles.projectFrame + " " + (op ? styles.opac : "")}
-          style={{ backgroundImage: `url('/img/websites/${project.img}')` }}
+          className={
+            styles.projectFrame + " " + imgStyle + " " + (op ? styles.opac : "")
+          }
+          style={{ backgroundImage: `url('/img/projects/${project.img}')` }}
         ></div>
         <div
           className={styles.projectDescription}
@@ -35,7 +40,11 @@ const Project = (project) => {
           </div>
         </div>
       </div>
+
       <h5>{project.date}</h5>
+      <div className={imgStyle + " " + styles.description}>
+        {project.description + " "}
+      </div>
     </div>
   );
 };
