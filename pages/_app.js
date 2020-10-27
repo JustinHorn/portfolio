@@ -1,6 +1,6 @@
 import "styles/globals.css";
 
-import Link from "next/Link";
+import Link from "next/link";
 
 import LinkIcon from "component/Icon/LinkIcon";
 import { footer } from "data";
