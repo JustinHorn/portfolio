@@ -1,17 +1,13 @@
-import Profile from "component/Profile";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 
-import { footer } from "data";
+const index = () => {
+  const router = useRouter();
 
-import styles from "styles/home.module.css";
+  useEffect(() => {
+    router.push("/welcome");
+  }, []);
+  return <div className="contrast"></div>;
+};
 
-export default function Home() {
-  const { icons } = footer;
-
-  return (
-    <div className={"contrast " + styles.page}>
-      <h1 className={styles.headline}>Hi, welcome to my Portfolio!</h1>
-      <hr />
-      <Profile />
-    </div>
-  );
-}
+export default index;

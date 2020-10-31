@@ -12,7 +12,14 @@ const Tech = () => {
         <div className="flex">
           <DevCat
             title={"Frontend"}
-            items={["HTML5", "CSS3", "JavaScript", "React.js", "Apollo"]}
+            items={[
+              "HTML5",
+              "CSS3",
+              "JavaScript",
+              "React.js",
+              "Apollo",
+              "Next.js",
+            ]}
           />
           <DevCat
             title={"Backend"}
