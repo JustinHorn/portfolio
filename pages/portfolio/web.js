@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "styles/portfoliopage.module.css";
-import data from "data";
 import Group from "component/Group";
+
+import data from "data";
 
 const Web = () => {
   const { webdev } = data;
-
   return (
     <div className={styles.web}>
       <Group headline={"Individual Projects"} projects={webdev.projects} />

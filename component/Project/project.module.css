@@ -14,7 +14,7 @@
   padding-bottom: 0;
 }
 
-.projectFrame,
+.triggerHover,
 .projectDescription {
   transition: 1s all ease;
 }
@@ -35,16 +35,16 @@
 
 .web .projectFrame {
   max-height: 375px;
-  max-width: 100%;
 }
 
 .android .projectFrame {
   max-height: 510px;
-  max-width: 100%;
 }
 
-.windows {
-  max-width: 500px;
+.web .projectFrame,
+.android .projectFrame,
+.windows .projectFrame {
+  max-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -55,11 +55,11 @@
   }
 }
 
-.windows .projectFrame {
+.windows .triggerHover {
   max-width: 100%;
 }
 
-.projectFrame:hover + .projectDescription {
+.triggerHover:hover + .projectDescription {
   opacity: 1;
 }
 
@@ -68,8 +68,8 @@
 }
 
 .opac,
-.projectFrame:hover,
-.projectDescription:hover + .projectFrame {
+.triggerHover:hover,
+.projectDescription:hover + .triggerHover {
   opacity: 0.2;
 }
 

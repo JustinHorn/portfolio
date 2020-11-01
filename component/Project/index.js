@@ -32,10 +32,14 @@ const Project = ({ project, imgClass }) => {
       <h5> {project.date}</h5>
 
       <div className={"relative "}>
-        <img
-          className={styles.projectFrame + " " + (op ? styles.opac : "")}
-          src={`/img/projects/${project.img}`}
-        />
+        <div className={styles.triggerHover + " " + (op ? styles.opac : "")}>
+          <Image
+            className={styles.projectFrame}
+            src={`/img/projects/${project.img}`}
+            unoptimized
+            unsized
+          />
+        </div>
         <div
           className={styles.projectDescription}
           onMouseEnter={() => setOp(true)}

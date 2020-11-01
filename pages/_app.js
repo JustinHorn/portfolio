@@ -4,7 +4,7 @@ import React from "react";
 import PortfolioView from "views/portfolio";
 import DefaultView from "views/default";
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps, router, data }) {
   if (router.pathname.startsWith("/portfolio")) {
     return (
       <DefaultView>
