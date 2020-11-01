@@ -6,6 +6,8 @@ import LinkIcon from "component/Icon/LinkIcon";
 
 import TechStack from "component/TechStack";
 
+import Image from "next/image";
+
 const Project = ({ project, imgClass }) => {
   const [op, setOp] = useState(false);
 
@@ -42,7 +44,7 @@ const Project = ({ project, imgClass }) => {
           <h4>
             <a href={project.url}> {project.name} </a>
           </h4>
-          <TechStack icons={project.tech}></TechStack>
+          <TechStack icons={project.tech} />
 
           <div className={styles.links}>
             <LinkIcon

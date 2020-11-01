@@ -53,7 +53,7 @@ export default {
         "Ultimate Tic Tac Toe",
         "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
         "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
-        "uTTT.png",
+        "uTTT.webp",
         "May 2020",
         ["reactjs"],
         "A game with classical AIs."
@@ -62,7 +62,7 @@ export default {
         "Joy of Code",
         "https://joyofcode.herokuapp.com/",
         "https://github.com/JustinHorn/joyofcode",
-        "joyofcode.png",
+        "joyofcode.webp",
         "October 2020",
         ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"],
         "A platform to share coding projects."
@@ -71,7 +71,7 @@ export default {
         "DayPlanner Website",
         "https://dayplanner.online/",
         "https://github.com/JustinHorn/DayPlanner",
-        "dayplanner.png",
+        "dayplanner.webp",
         "March 2020",
 
         ["bootstrap", "nodejs", "mongodb"],
@@ -83,7 +83,7 @@ export default {
         "Cook Book",
         "https://justinhorn.github.io/group-one-cookbook/",
         "https://github.com/JustinHorn/group-one-cookbook",
-        "cookBook.png",
+        "cookBook.webp",
         "June 2020",
 
         ["html5", "css3", "javascript"],
@@ -94,7 +94,7 @@ export default {
         "Meme Generator",
         "https://meme-creator-seven.vercel.app/",
         "https://github.com/JustinHorn/memeCreator",
-        "memeGenerator.png",
+        "memeGenerator.webp",
         "August 2020",
 
         ["css3", "reactjs", "firebase"],
@@ -104,7 +104,7 @@ export default {
         "Rickys Quest",
         "https://rickysquest.netlify.app/",
         "https://github.com/Ey-Jay/rickysquest",
-        "rickandmorty.png",
+        "rickandmorty.webp",
         "September 2020",
 
         ["html5", "css3", "reactjs", "firebase"],
@@ -117,7 +117,7 @@ export default {
       "Jugger Tetris",
       false,
       "https://github.com/JustinHorn/JuggerTetris",
-      "juggertetris.jpeg",
+      "juggertetris.webp",
       "April 2020",
 
       ["kotlin"],
@@ -127,7 +127,7 @@ export default {
       "Time Logger",
       false,
       "https://github.com/JustinHorn/TimeLogger",
-      "timelogger.jpeg",
+      "timelogger.webp",
       "April 2020",
 
       ["kotlin"],
@@ -140,7 +140,7 @@ export default {
       "Neural Network for Tic Tac Toe",
       false,
       "https://github.com/JustinHorn/TicTacToe",
-      "tictactoe.png",
+      "tictactoe.webp",
       "June 2019",
 
       ["java"],
@@ -150,7 +150,7 @@ export default {
       "Ultimate Tic Tact Toe",
       false,
       "https://github.com/JustinHorn/MonteCarloUltimateTicTacToe",
-      "uTTT.png",
+      "uTTT.webp",
       "July 2019",
 
       ["java"],
@@ -161,7 +161,7 @@ export default {
       "http://justinhorn.github.io/DayPlanner",
 
       "https://github.com/JustinHorn/DayPlanner",
-      "dayplanner.png",
+      "dayplanner.webp",
       "January 2020",
 
       ["python"],
