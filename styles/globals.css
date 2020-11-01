@@ -19,11 +19,6 @@ header {
   flex-wrap: wrap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -278,6 +273,9 @@ nav {
 nav a {
   padding: 0 2vw;
   color: black;
+
+  color: inherit;
+  text-decoration: none;
 }
 
 .activeLink {

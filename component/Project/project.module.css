@@ -6,7 +6,7 @@
   margin: 0;
   padding-top: 0;
   margin-bottom: 0.5ch;
-  text-align: right;
+  text-align: left;
 }
 
 .projectContent {
@@ -39,7 +39,7 @@
 }
 
 .android .projectFrame {
-  max-height: 520px;
+  max-height: 510px;
   max-width: 100%;
 }
 

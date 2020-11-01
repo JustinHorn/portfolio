@@ -27,6 +27,8 @@ const Project = ({ project, imgClass }) => {
 
   return (
     <div className={styles.project + " " + style}>
+      <h5> {project.date}</h5>
+
       <div className={"relative "}>
         <img
           className={styles.projectFrame + " " + (op ? styles.opac : "")}
@@ -53,7 +55,6 @@ const Project = ({ project, imgClass }) => {
         </div>
       </div>
 
-      <h5>{project.date}</h5>
       <div className={styles.description}>{project.description}</div>
     </div>
   );

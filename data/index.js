@@ -55,7 +55,8 @@ export default {
         "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
         "uTTT.png",
         "May 2020",
-        ["reactjs"]
+        ["reactjs"],
+        "A game with classical AIs."
       ),
       new WebProject(
         "Joy of Code",
@@ -63,7 +64,8 @@ export default {
         "https://github.com/JustinHorn/joyofcode",
         "joyofcode.png",
         "October 2020",
-        ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"]
+        ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"],
+        "A platform to share coding projects."
       ),
       new WebProject(
         "DayPlanner Website",
@@ -72,7 +74,8 @@ export default {
         "dayplanner.png",
         "March 2020",
 
-        ["bootstrap", "nodejs", "mongodb"]
+        ["bootstrap", "nodejs", "mongodb"],
+        "A website to distribute my 'DayPlanner.exe'"
       ),
     ],
     groupProjects: [
@@ -83,7 +86,8 @@ export default {
         "cookBook.png",
         "June 2020",
 
-        ["html5", "css3", "javascript"]
+        ["html5", "css3", "javascript"],
+        "A vanilla JavaScript, HTML5 && CSS3 cookbook."
       ),
 
       new WebProject(
@@ -93,7 +97,8 @@ export default {
         "memeGenerator.png",
         "August 2020",
 
-        ["css3", "reactjs", "firebase"]
+        ["css3", "reactjs", "firebase"],
+        "A Meme Generator with firebase authentication."
       ),
       new WebProject(
         "Rickys Quest",
@@ -102,7 +107,8 @@ export default {
         "rickandmorty.png",
         "September 2020",
 
-        ["html5", "css3", "reactjs", "firebase"]
+        ["html5", "css3", "reactjs", "firebase"],
+        "A quiz game were you unlock characters."
       ),
     ],
   },

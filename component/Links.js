@@ -8,7 +8,7 @@ const Links = ({ links, prefix = "" }) => {
   links = links.map((l) => new LinkType(l));
 
   return links.map((l) => (
-    <span className={router.pathname.includes(l.path) && "activeLink"}>
+    <span className={router.pathname.includes(l.path) ? "activeLink" : ""}>
       <Link href={prefix + l.path}>{l.name}</Link>
     </span>
   ));
