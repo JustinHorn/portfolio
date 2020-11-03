@@ -1,23 +1,26 @@
 import "styles/globals.css";
-import React from "react";
+import React, { useReducer } from "react";
 
 import PortfolioView from "views/portfolio";
 import DefaultView from "views/default";
 
-function MyApp({ Component, pageProps, router, data }) {
-  if (router.pathname.startsWith("/portfolio")) {
-    return (
-      <DefaultView>
-        <PortfolioView>
-          <Component {...pageProps} />
-        </PortfolioView>
-      </DefaultView>
-    );
-  }
+import { Flipper, Flipped } from "react-flip-toolkit";
 
+function MyApp({ Component, pageProps, router }) {
+  let c = <Component {...pageProps} />;
+
+  c = (
+    <Flipped flipId="page">
+      <div>{c}</div>
+    </Flipped>
+  );
+
+  if (router.pathname.startsWith("/portfolio")) {
+    c = <PortfolioView>{c}</PortfolioView>;
+  }
   return (
     <DefaultView>
-      <Component {...pageProps} />
+      <Flipper flipKey={router.asPath}>{c} </Flipper>
     </DefaultView>
   );
 }
