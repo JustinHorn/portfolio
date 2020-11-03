@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import NavBar from "component/Navbar";
+import Navbar from "component/Navbar";
 
 const DefaultView = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const DefaultView = ({ children }) => {
         <title>Justin Horn</title>
         <link rel="shortcut icon" href="/code.svg" />
       </Head>
-      <NavBar />
+      <Navbar />
       {children}
     </>
   );

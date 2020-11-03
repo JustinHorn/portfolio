@@ -1,24 +1,12 @@
 import "styles/globals.css";
-import React, { useEffect, useReducer, useRef, useState } from "react";
+import React from "react";
 
 import PortfolioView from "views/portfolio";
 import DefaultView from "views/default";
 
 import MoveOutMoveInTransition from "component/MoveOutMoveInTransition";
 
-import { navbar, portfolionav } from "data";
-
-const portfolioNavLinks = portfolionav.links.map(
-  (l) => portfolionav.prefix + l
-);
-
-const getSecondSlash = (string) => {
-  let secondSlash = string.indexOf("/", 1);
-  secondSlash === -1 && (secondSlash = string.length);
-  return secondSlash;
-};
-
-let links = navbar.links.map((l) => l.slice(1, getSecondSlash(l)));
+import { navbarData, portfolioNavbarData } from "data";
 
 function MyApp({ Component, pageProps, router }) {
   let c = <Component {...pageProps} />;
@@ -29,7 +17,10 @@ function MyApp({ Component, pageProps, router }) {
     c = (
       <div key="PortfolioView">
         <PortfolioView>
-          <MoveOutMoveInTransition navbarlinks={portfolioNavLinks}>
+          <MoveOutMoveInTransition
+            lvl={1}
+            pathNameOrder={portfolioNavbarData.links}
+          >
             {c}
           </MoveOutMoveInTransition>
         </PortfolioView>
@@ -39,18 +30,11 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <DefaultView>
-      <MoveOutMoveInTransition navbarlinks={links}>{c}</MoveOutMoveInTransition>
+      <MoveOutMoveInTransition lvl={0} pathNameOrder={navbarData.links}>
+        {c}
+      </MoveOutMoveInTransition>
     </DefaultView>
   );
 }
-
-const usePrevious = (next) => {
-  const prev = useRef({});
-  useEffect(() => {
-    prev.current = next;
-  }, [next]);
-
-  return prev;
-};
 
 export default MyApp;

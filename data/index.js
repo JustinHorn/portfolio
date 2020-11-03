@@ -247,11 +247,11 @@ function WindowsProject(
   this.type = "windows";
 }
 
-export const navbar = {
+export const navbarData = {
   prefix: "",
-  links: ["/welcome", "/portfolio/web", "/tech"],
+  links: ["/welcome", "/portfolio", "/tech"],
 };
-export const portfolionav = {
+export const portfolioNavbarData = {
   prefix: "/portfolio",
   links: ["/web", "/android", "/windows"],
 };

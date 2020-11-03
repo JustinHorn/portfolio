@@ -1,16 +1,16 @@
 import React from "react";
 import Links from "component/Links";
-import { footer, navbar } from "data";
+import { footer, navbarData } from "data";
 import LinkIcon from "component/Icon/LinkIcon";
 
-const NavBar = () => {
+const Navbar = () => {
   const { icons } = footer;
 
   return (
     <div className="medium">
       <nav className="mainNav space-between">
         <div className="links">
-          <Links {...navbar} />
+          <Links {...navbarData} />
         </div>
 
         <div className="social">
@@ -23,4 +23,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

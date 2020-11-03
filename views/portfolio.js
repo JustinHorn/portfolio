@@ -2,14 +2,14 @@ import styles from "styles/portfoliopage.module.css";
 
 import Links from "component/Links";
 
-import { portfolionav } from "data";
+import { portfolioNavbarData } from "data";
 
 const PortfolioView = ({ children }) => {
   return (
     <>
       <div className="contrast">
         <nav className={styles.subNav + " medium"}>
-          <Links {...portfolionav} />
+          <Links {...portfolioNavbarData} />
         </nav>
       </div>
       <div className={styles.portfolio + " contrast"}>{children}</div>
