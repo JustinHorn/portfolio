@@ -1,6 +1,6 @@
 import React from "react";
 import Links from "component/Links";
-import { footer } from "data";
+import { footer, navbar } from "data";
 import LinkIcon from "component/Icon/LinkIcon";
 
 const NavBar = () => {
@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="medium">
       <nav className="mainNav space-between">
         <div className="links">
-          <Links links={["/welcome", "/portfolio/web", "/tech"]} />
+          <Links {...navbar} />
         </div>
 
         <div className="social">

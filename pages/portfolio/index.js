@@ -8,7 +8,7 @@ const PortfolioPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push("/portfolio/web");
+    router.replace("/portfolio/web", { shallow: true });
   }, []);
   return <Web />;
 };

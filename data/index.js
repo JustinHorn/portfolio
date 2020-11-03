@@ -246,3 +246,12 @@ function WindowsProject(
   );
   this.type = "windows";
 }
+
+export const navbar = {
+  prefix: "",
+  links: ["/welcome", "/portfolio/web", "/tech"],
+};
+export const portfolionav = {
+  prefix: "/portfolio",
+  links: ["/web", "/android", "/windows"],
+};

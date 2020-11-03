@@ -17,11 +17,15 @@ const Links = ({ links, prefix = "" }) => {
 function LinkType(path, name) {
   this.path = path;
 
-  let secondSlash = path.indexOf("/", 1);
-  secondSlash === -1 && (secondSlash = path.length);
   this.name =
     (name && name) ||
-    path.slice(1, 2).toUpperCase() + path.slice(2, secondSlash);
+    path.slice(1, 2).toUpperCase() + path.slice(2, getSecondSlash(path));
 }
+
+const getSecondSlash = (string) => {
+  let secondSlash = string.indexOf("/", 1);
+  secondSlash === -1 && (secondSlash = string.length);
+  return secondSlash;
+};
 
 export default Links;
