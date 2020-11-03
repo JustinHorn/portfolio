@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="medium">
       <nav className="mainNav space-between">
         <div className="links">
-          <Links links={["/welcome", "/portfolio", "/tech"]} />
+          <Links links={["/welcome", "/portfolio/web", "/tech"]} />
         </div>
 
         <div className="social">

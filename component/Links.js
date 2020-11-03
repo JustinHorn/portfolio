@@ -16,7 +16,12 @@ const Links = ({ links, prefix = "" }) => {
 
 function LinkType(path, name) {
   this.path = path;
-  this.name = (name && name) || path.slice(1, 2).toUpperCase() + path.slice(2);
+
+  let secondSlash = path.indexOf("/", 1);
+  secondSlash === -1 && (secondSlash = path.length);
+  this.name =
+    (name && name) ||
+    path.slice(1, 2).toUpperCase() + path.slice(2, secondSlash);
 }
 
 export default Links;

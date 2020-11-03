@@ -4,23 +4,25 @@ import React, { useReducer } from "react";
 import PortfolioView from "views/portfolio";
 import DefaultView from "views/default";
 
-import { Flipper, Flipped } from "react-flip-toolkit";
+import MoveOutMoveInTransition from "component/MoveOutMoveInTransition";
 
 function MyApp({ Component, pageProps, router }) {
   let c = <Component {...pageProps} />;
 
-  c = (
-    <Flipped flipId="page">
-      <div>{c}</div>
-    </Flipped>
-  );
+  c = <div key={router.asPath}>{c}</div>;
 
   if (router.pathname.startsWith("/portfolio")) {
-    c = <PortfolioView>{c}</PortfolioView>;
+    c = (
+      <div key="PortfolioView">
+        <PortfolioView>
+          <MoveOutMoveInTransition>{c}</MoveOutMoveInTransition>
+        </PortfolioView>
+      </div>
+    );
   }
   return (
     <DefaultView>
-      <Flipper flipKey={router.asPath}>{c} </Flipper>
+      <MoveOutMoveInTransition>{c}</MoveOutMoveInTransition>
     </DefaultView>
   );
 }
