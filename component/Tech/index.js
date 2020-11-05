@@ -23,7 +23,7 @@ const Tech = () => {
           />
           <DevCat
             title={"Backend"}
-            items={["Node.js", "Express", "Rest", "GraphQL", "Prisma"]}
+            items={["Node.js", "Express", "REST", "GraphQL", "Prisma"]}
           />
         </div>
         <div className="flex">

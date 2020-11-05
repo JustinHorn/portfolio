@@ -53,9 +53,9 @@ const Project = ({ project, imgClass }) => {
           <div className={styles.links}>
             <LinkIcon
               title="Github Repository"
-              className={" rotate"}
+              className={" rotate "}
               src="/img/icons/github.png"
-              href={project.github}
+              href={project.github || ""}
             />
           </div>
         </div>
