@@ -10,6 +10,8 @@ body {
   --medium: #a3d2ca;
   --contrast: #5eaaa8;
   --hard: #056676;
+
+  --tech-tag-border: grey;
 }
 
 header {

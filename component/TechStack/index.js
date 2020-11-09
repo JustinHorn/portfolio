@@ -4,7 +4,7 @@ import Tag from "component/Tags/Tech";
 
 import iconList from "data/icons";
 
-const TechStack = ({ icons = [] }) => {
+const TechStack = ({ icons = [], className }) => {
   if (!icons.length) {
     icons = ["nothing"];
   }
@@ -12,7 +12,7 @@ const TechStack = ({ icons = [] }) => {
   icons = icons.map((name) => iconList.find((i) => i.name === name));
 
   return (
-    <ul className="flex-center" style={{ paddingLeft: "0px" }}>
+    <ul className={className} style={{ paddingLeft: "0px" }}>
       {icons
         .map((icon) => ({ iconVal: icon }))
         .map((icon, index) => (

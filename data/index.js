@@ -249,9 +249,51 @@ function WindowsProject(
 
 export const navbarData = {
   prefix: "",
-  links: ["/welcome", "/portfolio", "/tech"],
+  links: ["/welcome", "/portfolio", "/tech", "/timeline"],
 };
 export const portfolioNavbarData = {
   prefix: "/portfolio",
   links: ["/web", "/android", "/windows"],
 };
+
+export const timeline = [
+  {
+    heading: "Full Stack Developer Training",
+    date: "November 2020",
+    p:
+      "I practiced 15 weeks at WBS Coding School with 12 other colleges by building projects.",
+    tech: [
+      "java",
+      "python",
+      "nodejs",
+      "kotlin",
+      "reactjs",
+      "sql",
+      "mongodb",
+      "apollo",
+      "graphql",
+      "prisma",
+      "css3",
+    ],
+  },
+  {
+    heading: "Indie Hacker",
+    date: "Juni 2020",
+    p: "I build software products and tried to sell them.",
+    tech: ["java", "python", "nodejs", "kotlin", "bootstrap"],
+  },
+  {
+    heading: "Times of Orientation",
+    date: "January 2020",
+    p:
+      "Well I started studying IT even doe I knew I would dislike it. Swapped to more coding, swapped back to more studying and finally decided that since I want to be an entrepreneur - I might also just go without a degree ",
+    tech: ["java"],
+  },
+
+  {
+    heading: "Abitur",
+    date: " May 2018",
+    p: "I had IT as an exam course with an A-",
+    tech: ["java"],
+  },
+];

@@ -48,7 +48,7 @@ const Project = ({ project, imgClass }) => {
           <h4>
             <a href={project.url}> {project.name} </a>
           </h4>
-          <TechStack icons={project.tech} />
+          <TechStack className="flex-center" icons={project.tech} />
 
           <div className={styles.links}>
             <LinkIcon

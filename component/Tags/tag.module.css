@@ -4,9 +4,7 @@
   font-size: 2ch;
   margin-right: 2px;
 
-  background-color: white;
-
-  border: 1px solid grey;
+  border: 1px solid var(--tech-tag-border);
   list-style: none;
 }
 
