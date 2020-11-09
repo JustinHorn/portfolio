@@ -3,11 +3,11 @@ import data from "data";
 import Group from "component/Group";
 
 const Windows = () => {
-  const { windows } = data;
+  const { desktop } = data;
 
   return (
     <div className={"flex-center"}>
-      <Group headline={""} projects={windows} />
+      <Group headline={""} projects={desktop} />
     </div>
   );
 };

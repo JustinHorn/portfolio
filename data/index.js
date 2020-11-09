@@ -135,8 +135,8 @@ export default {
     ),
   ],
 
-  windows: [
-    new WindowsProject(
+  desktop: [
+    new DesktopProject(
       "Neural Network for Tic Tac Toe",
       false,
       "https://github.com/JustinHorn/TicTacToe",
@@ -146,7 +146,7 @@ export default {
       ["java"],
       "Tic Tac Toe with several AI opponents. A bruteforce and some Feedforward neural network Algorithms."
     ),
-    new WindowsProject(
+    new DesktopProject(
       "Ultimate Tic Tact Toe",
       false,
       "https://github.com/JustinHorn/MonteCarloUltimateTicTacToe",
@@ -156,7 +156,7 @@ export default {
       ["java"],
       "Ultimate Tic Tac Toe with a Monte Carlo Algorithm."
     ),
-    new WindowsProject(
+    new DesktopProject(
       "Dayplanner Program",
       "http://justinhorn.github.io/DayPlanner",
 
@@ -225,7 +225,7 @@ function AnroidProject(
   this.type = "android";
 }
 
-function WindowsProject(
+function DesktopProject(
   name,
   url,
   github,
@@ -239,21 +239,21 @@ function WindowsProject(
     name,
     url,
     github,
-    "windows/" + img,
+    "desktop/" + img,
     date,
     tech,
     description
   );
-  this.type = "windows";
+  this.type = "desktop";
 }
 
 export const navbarData = {
   prefix: "",
-  links: ["/welcome", "/portfolio", "/tech", "/timeline"],
+  links: ["/welcome", "/portfolio", "/tech"],
 };
 export const portfolioNavbarData = {
   prefix: "/portfolio",
-  links: ["/web", "/android", "/windows"],
+  links: ["/web", "/android", "/desktop"],
 };
 
 export const timeline = [
