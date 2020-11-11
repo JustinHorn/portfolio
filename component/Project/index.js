@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 import styles from "./project.module.css";
 
-import LinkIcon from "component/Icon/LinkIcon";
-
 import TechStack from "component/TechStack";
 
 import Image from "next/image";
@@ -29,8 +27,7 @@ const Project = ({ project, imgClass }) => {
 
   return (
     <div className={styles.project + " " + style}>
-      <h5> {project.date}</h5>
-
+      <h5>{project.name}</h5>
       <div className={"relative "}>
         <div className={styles.triggerHover + " " + (op ? styles.opac : "")}>
           <Image
@@ -45,18 +42,11 @@ const Project = ({ project, imgClass }) => {
           onMouseEnter={() => setOp(true)}
           onMouseLeave={() => setOp(false)}
         >
-          <h4>
-            <a href={project.url}> {project.name} </a>
-          </h4>
           <TechStack className="flex-center" icons={project.tech} />
 
           <div className={styles.links}>
-            <LinkIcon
-              title="Github Repository"
-              className={" rotate "}
-              src="/img/icons/github.png"
-              href={project.github || ""}
-            />
+            <a href={project.url}>DEMO</a>
+            <a href={project.github}>CODE</a>
           </div>
         </div>
       </div>

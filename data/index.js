@@ -55,7 +55,7 @@ export default {
         "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
         "uTTT.webp",
         "May 2020",
-        ["reactjs"],
+        ["reactjs", "material-ui"],
         "A game with classical AIs."
       ),
       new WebProject(

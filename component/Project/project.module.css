@@ -1,5 +1,10 @@
 .project {
   margin: 10px 20px;
+  text-align: left;
+}
+
+.project img {
+  text-align: left;
 }
 
 .project h5 {
@@ -93,9 +98,24 @@
 }
 
 .links {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.links a {
+  padding: 1vh 1vw;
+  margin: 0 1vw;
+  font-size: 1.2ch;
+  background-color: var(--soft);
+  border-radius: 10%;
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
 
 .description {

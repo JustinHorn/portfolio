@@ -34,6 +34,7 @@ const iconList = [
   new IconClass("clojure", "svg"),
   new IconClass("deno", "png"),
   new IconClass("kotlin", "svg"),
+  new IconClass("material-ui", "svg"),
 ];
 
 export default iconList;
