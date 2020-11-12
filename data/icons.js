@@ -35,6 +35,7 @@ const iconList = [
   new IconClass("deno", "png"),
   new IconClass("kotlin", "svg"),
   new IconClass("material-ui", "svg"),
+  new IconClass("nextjs", "svg", "100%"),
 ];
 
 export default iconList;

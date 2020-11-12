@@ -7,10 +7,8 @@ import data from "data";
 const Web = () => {
   const { webdev } = data;
   return (
-    <div className={styles.web}>
-      <Group headline={""} projects={webdev.projects} />
-
-      <Group headline={""} projects={webdev.groupProjects} />
+    <div className={""}>
+      <Group headline={""} projects={webdev.projects} groupClass={styles.web} />
     </div>
   );
 };

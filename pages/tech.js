@@ -12,10 +12,10 @@ const TechPage = () => {
           <h5>Frontend</h5>
           <ul>
             <li>HTML5</li>
+            <li>CSS3</li>
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Apollo</li>
-            <li>CSS3</li>
           </ul>
         </div>
         <div className={styles.block}>
@@ -73,11 +73,7 @@ const TechPage = () => {
           </ul>
         </div>
       </section>
-      <footer>
-        <small>*within section*</small>
-
-        <small>*sorted descending by experience*</small>
-      </footer>
+      <footer></footer>
     </main>
   );
 };

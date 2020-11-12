@@ -50,13 +50,14 @@ export default {
 
     projects: [
       new WebProject(
-        "Ultimate Tic Tac Toe",
-        "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
-        "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
-        "uTTT.webp",
-        "May 2020",
-        ["reactjs", "material-ui"],
-        "A game with classical AIs."
+        "Weather",
+        "https://weather-justin.vercel.app/",
+        "https://github.com/JustinHorn/weatherapp/",
+        "weather.png",
+        "November 2020",
+
+        ["nextjs"],
+        "A Next.js jamstack app that asks for your location and then tells you the weather."
       ),
       new WebProject(
         "Joy of Code",
@@ -68,26 +69,24 @@ export default {
         "A platform to share coding projects."
       ),
       new WebProject(
-        "DayPlanner Website",
-        "https://dayplanner.online/",
-        "https://github.com/JustinHorn/DayPlanner",
-        "dayplanner.webp",
-        "March 2020",
-
-        ["bootstrap", "nodejs", "mongodb"],
-        "A website to distribute my 'DayPlanner.exe'"
+        "Ultimate Tic Tac Toe",
+        "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
+        "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
+        "uTTT.webp",
+        "May 2020",
+        ["reactjs", "material-ui"],
+        "A game with classical AIs."
       ),
-    ],
-    groupProjects: [
-      new WebProject(
-        "Cook Book",
-        "https://justinhorn.github.io/group-one-cookbook/",
-        "https://github.com/JustinHorn/group-one-cookbook",
-        "cookBook.webp",
-        "June 2020",
 
-        ["html5", "css3", "javascript"],
-        "A vanilla JavaScript, HTML5 && CSS3 cookbook."
+      new WebProject(
+        "Rickys Quest",
+        "https://rickysquest.netlify.app/",
+        "https://github.com/Ey-Jay/rickysquest",
+        "rickandmorty.webp",
+        "September 2020",
+
+        ["html5", "css3", "reactjs", "firebase"],
+        "A quiz game were you unlock characters."
       ),
 
       new WebProject(
@@ -100,15 +99,36 @@ export default {
         ["css3", "reactjs", "firebase"],
         "A Meme Generator with firebase authentication."
       ),
-      new WebProject(
-        "Rickys Quest",
-        "https://rickysquest.netlify.app/",
-        "https://github.com/Ey-Jay/rickysquest",
-        "rickandmorty.webp",
-        "September 2020",
 
-        ["html5", "css3", "reactjs", "firebase"],
-        "A quiz game were you unlock characters."
+      new WebProject(
+        "Cook Book",
+        "https://justinhorn.github.io/group-one-cookbook/",
+        "https://github.com/JustinHorn/group-one-cookbook",
+        "cookBook.webp",
+        "June 2020",
+
+        ["html5", "css3", "javascript"],
+        "A vanilla JavaScript, HTML5 && CSS3 cookbook."
+      ),
+      new WebProject(
+        "DayPlanner Website",
+        "https://dayplanner.online/",
+        "https://github.com/JustinHorn/DayPlanner",
+        "dayplanner.webp",
+        "March 2020",
+
+        ["bootstrap", "nodejs", "mongodb"],
+        "A website to distribute my 'DayPlanner.exe'"
+      ),
+      new WebProject(
+        "Cookie Clicker",
+        "https://cookieclicker-justin.herokuapp.com/",
+        "https://github.com/JustinHorn/CookieClicker",
+        "cookieClicker.png",
+        "July 2020",
+
+        ["html5", "reactjs", "nodejs", "mongodb"],
+        "A cookie clicker developed with the TDD paradigm."
       ),
     ],
   },

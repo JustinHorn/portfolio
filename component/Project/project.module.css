@@ -1,6 +1,7 @@
 .project {
   margin: 10px 20px;
   text-align: left;
+  width: fit-content;
 }
 
 .project img {
