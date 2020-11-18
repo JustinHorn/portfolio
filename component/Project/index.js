@@ -45,8 +45,8 @@ const Project = ({ project, imgClass }) => {
           <TechStack className="flex-center" icons={project.tech} />
 
           <div className={styles.links}>
-            <a href={project.url}>DEMO</a>
-            <a href={project.github}>CODE</a>
+            {project.url && <a href={project.url}>DEMO</a>}
+            {project.github && <a href={project.github}>CODE</a>}
           </div>
         </div>
       </div>
