@@ -50,20 +50,10 @@ export default {
 
     projects: [
       new WebProject(
-        "Weather",
-        "https://weather-justin.vercel.app/",
-        "https://github.com/JustinHorn/weatherapp/",
-        "weather.png",
-        "November 2020",
-
-        ["nextjs"],
-        "A Next.js jamstack app that asks for your location and then tells you the weather."
-      ),
-      new WebProject(
         "Joy of Code",
         "https://joyofcode.herokuapp.com/",
         "https://github.com/JustinHorn/joyofcode",
-        "joyofcode.webp",
+        "joyofcode.png",
         "October 2020",
         ["reactjs", "apollo", "graphql", "nodejs", "prisma", "sql"],
         "A platform to share coding projects."
@@ -72,7 +62,7 @@ export default {
         "Ultimate Tic Tac Toe",
         "https://justinhorn.github.io/ultimate-tic-tac-toe-react",
         "https://github.com/JustinHorn/ultimate-tic-tac-toe-react",
-        "uTTT.webp",
+        "uTTT.png",
         "May 2020",
         ["reactjs", "material-ui"],
         "A game with classical AIs."
@@ -82,18 +72,28 @@ export default {
         "Rickys Quest",
         "https://rickysquest.netlify.app/",
         "https://github.com/Ey-Jay/rickysquest",
-        "rickandmorty.webp",
+        "rickandmorty.png",
         "September 2020",
 
         ["html5", "css3", "reactjs", "firebase"],
         "A quiz game were you unlock characters."
+      ),
+      new WebProject(
+        "Weather",
+        "https://weather-justin.vercel.app/",
+        "https://github.com/JustinHorn/weatherapp/",
+        "weather.png",
+        "November 2020",
+
+        ["nextjs"],
+        "A Next.js jamstack app that asks for your location and then tells you the weather."
       ),
 
       new WebProject(
         "Meme Generator",
         "https://meme-creator-seven.vercel.app/",
         "https://github.com/JustinHorn/memeCreator",
-        "memeGenerator.webp",
+        "memeGenerator.png",
         "August 2020",
 
         ["css3", "reactjs", "firebase"],
@@ -104,7 +104,7 @@ export default {
         "Cook Book",
         "https://justinhorn.github.io/group-one-cookbook/",
         "https://github.com/JustinHorn/group-one-cookbook",
-        "cookBook.webp",
+        "cookBook.png",
         "June 2020",
 
         ["html5", "css3", "javascript"],
@@ -114,7 +114,7 @@ export default {
         "DayPlanner Website",
         "https://dayplanner.online/",
         "https://github.com/JustinHorn/DayPlanner",
-        "dayplanner.webp",
+        "dayplanner.png",
         "March 2020",
 
         ["bootstrap", "nodejs", "mongodb"],
@@ -137,7 +137,7 @@ export default {
       "Jugger Tetris",
       false,
       "https://github.com/JustinHorn/JuggerTetris",
-      "juggertetris.webp",
+      "juggertetris.jpeg",
       "April 2020",
 
       ["kotlin"],
@@ -147,7 +147,7 @@ export default {
       "Time Logger",
       false,
       "https://github.com/JustinHorn/TimeLogger",
-      "timelogger.webp",
+      "timelogger.jpeg",
       "April 2020",
 
       ["kotlin"],
@@ -160,7 +160,7 @@ export default {
       "Neural Network for Tic Tac Toe",
       false,
       "https://github.com/JustinHorn/TicTacToe",
-      "tictactoe.webp",
+      "tictactoe.png",
       "June 2019",
 
       ["java"],
@@ -170,7 +170,7 @@ export default {
       "Ultimate Tic Tact Toe",
       false,
       "https://github.com/JustinHorn/MonteCarloUltimateTicTacToe",
-      "uTTT.webp",
+      "uTTT.png",
       "July 2019",
 
       ["java"],
@@ -181,7 +181,7 @@ export default {
       "http://justinhorn.github.io/DayPlanner",
 
       "https://github.com/JustinHorn/DayPlanner",
-      "dayplanner.webp",
+      "dayplanner.png",
       "January 2020",
 
       ["python"],

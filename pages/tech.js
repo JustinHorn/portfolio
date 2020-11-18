@@ -13,6 +13,8 @@ const TechPage = () => {
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
+            <li>Bootstrap</li>
+
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Apollo</li>
@@ -80,12 +82,12 @@ const TechPage = () => {
 
 export default TechPage;
 
-`Frontend
+`
+Frontend
 HTML5
 CSS3
 JavaScript
 React.js
-
 Apollo
 Next.js
 Backend
@@ -108,4 +110,5 @@ Kotlin
 Android Studio
 Windows
 Java
-Python`;
+Python
+`;
