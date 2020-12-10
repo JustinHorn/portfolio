@@ -67,4 +67,8 @@
   .web {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .android {
+    flex-wrap: wrap;
+  }
 }
