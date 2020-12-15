@@ -134,6 +134,16 @@ export default {
   },
   android: [
     new AnroidProject(
+      'Movie Suggester',
+      false,
+      'https://github.com/JustinHorn/MovieSuggestionApp',
+      'movie_suggester.jpg',
+      'December 2020',
+
+      ['flutter'],
+      'Randomly suggests you movies from a sample.'
+    ),
+    new AnroidProject(
       'Reminder',
       false,
       'https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp',
