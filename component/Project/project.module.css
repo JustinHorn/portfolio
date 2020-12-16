@@ -28,7 +28,7 @@
 .projectFrame {
   background-color: white;
   margin: 0;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .web {

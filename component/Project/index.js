@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import styles from "./project.module.css";
+import styles from './project.module.css';
 
-import TechStack from "component/TechStack";
+import TechStack from 'component/TechStack';
 
-import Image from "next/image";
+import Image from 'next/image';
 
 const Project = ({ project, imgClass }) => {
   const [op, setOp] = useState(false);
 
-  let style = "";
+  let style = '';
 
   switch (project.type) {
-    case "web":
+    case 'web':
       style = styles.web;
       break;
-    case "android":
+    case 'android':
       style = styles.android;
       break;
-    case "windows":
+    case 'windows':
       style = styles.windows;
       break;
     default:
@@ -26,14 +26,14 @@ const Project = ({ project, imgClass }) => {
   }
 
   return (
-    <div className={styles.project + " " + style}>
+    <div className={styles.project + ' ' + style}>
       <h5>{project.name}</h5>
-      <div className={"relative "}>
-        <div className={styles.triggerHover + " " + (op ? styles.opac : "")}>
-          <Image
+      <div className={'relative '}>
+        <div className={styles.triggerHover + ' ' + (op ? styles.opac : '')}>
+          <img
+            priority={true}
             className={styles.projectFrame}
             src={`/img/projects/${project.img}`}
-            unoptimized
             unsized
           />
         </div>
