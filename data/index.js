@@ -8,6 +8,10 @@ function FooterIcon(src, href) {
 export const footer = {
   icons: [
     new FooterIcon(
+      'stackoverflow.png',
+      'https://stackoverflow.com/users/12753573/justin?tab=profile'
+    ),
+    new FooterIcon(
       'linkedin.png',
       'https://www.linkedin.com/in/justin-christian-horn/'
     ),
@@ -133,7 +137,7 @@ export default {
     ],
   },
   android: [
-    new AnroidProject(
+    new AndroidProject(
       'Movie Suggester',
       false,
       'https://github.com/JustinHorn/MovieSuggestionApp',
@@ -143,7 +147,7 @@ export default {
       ['flutter'],
       'Randomly suggests you movies from a sample.'
     ),
-    new AnroidProject(
+    new AndroidProject(
       'Reminder',
       false,
       'https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp',
@@ -153,7 +157,7 @@ export default {
       ['flutter'],
       'A reminder app that lets you schedule notifications periodically.'
     ),
-    new AnroidProject(
+    new AndroidProject(
       'Jugger Tetris',
       false,
       'https://github.com/JustinHorn/JuggerTetris',
@@ -163,7 +167,7 @@ export default {
       ['kotlin'],
       'Tetris App with block Icons of Jugger Teams.'
     ),
-    new AnroidProject(
+    new AndroidProject(
       'Time Logger',
       false,
       'https://github.com/JustinHorn/TimeLogger',
@@ -243,7 +247,7 @@ function WebProject(
   this.type = 'web';
 }
 
-function AnroidProject(
+function AndroidProject(
   name,
   url,
   github,
