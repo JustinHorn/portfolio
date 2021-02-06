@@ -49,8 +49,9 @@
 }
 
 .android {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-around;
 }
 
 .desktop {
@@ -66,15 +67,5 @@
 @media screen and (max-width: 500px) {
   .web {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .android {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .android {
-    flex-wrap: wrap;
   }
 }

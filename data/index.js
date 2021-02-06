@@ -138,6 +138,26 @@ export default {
   },
   android: [
     new AndroidProject(
+      '2048 Chess',
+      false,
+      'https://github.com/JustinHorn/flutter_2048',
+      '2048chess.jpg',
+      'January 2021',
+
+      ['flutter'],
+      '2048 with in Value increasing chess pieces.'
+    ),
+    new AndroidProject(
+      'Rick & Morty Lexicon',
+      false,
+      'https://github.com/JustinHorn/FlutterRickAndMortyLexicon',
+      'rickandmorty.jpg',
+      'January 2021',
+
+      ['flutter'],
+      'Read bio data of R&M characters given by the official api.'
+    ),
+    new AndroidProject(
       'Movie Suggester',
       false,
       'https://github.com/JustinHorn/MovieSuggestionApp',
