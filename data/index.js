@@ -40,7 +40,7 @@ export default {
   header: {
     aboutMe: (
       <div>
-        I am Justin, 20yo developer from Brunswick. <br /> <br /> My passions
+        I am Justin, 21yo developer from Brunswick. <br /> <br /> My passions
         are learning, building connections and giving back. Since there is no
         such thing as a single true vocation, only discipline, dedication and
         smart work can get you forward.

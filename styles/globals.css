@@ -2,16 +2,20 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   --soft: #e8ded2;
   --header-aside: black;
   --header-p: #5eaaa8;
   --portfolio: #5eaaa8;
   --medium: #a3d2ca;
-  --contrast: #5eaaa8;
-  --hard: #056676;
+  --contrast: #83c5be;
+  --hard: #324947;
 
   --tech-tag-border: grey;
+}
+
+.hard {
+  background-color: var(--hard);
 }
 
 header {
@@ -26,17 +30,20 @@ header {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   font-size: 2.5ch;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
-  background-color: var(--contrast);
   overflow-y: scroll;
   overflow-x: hidden;
   text-align: center;
   min-height: 100vh;
+}
+
+.space-50 {
+  padding: 25px;
 }
 
 .full-height {
@@ -184,6 +191,10 @@ nav .social .icon {
 
 .medium {
   background-color: var(--medium);
+}
+
+.white {
+  background-color: white;
 }
 
 .soft {

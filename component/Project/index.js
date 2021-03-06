@@ -27,14 +27,12 @@ const Project = ({ project, imgClass }) => {
 
   return (
     <div className={styles.project + ' ' + style}>
-      <h5>{project.name}</h5>
+      <h5 className="hard">{project.name}</h5>
       <div className={'relative '}>
         <div className={styles.triggerHover + ' ' + (op ? styles.opac : '')}>
           <img
-            priority={true}
             className={styles.projectFrame}
             src={`/img/projects/${project.img}`}
-            unsized
           />
         </div>
         <div

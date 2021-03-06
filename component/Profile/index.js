@@ -1,11 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./header.module.css";
+import styles from './header.module.css';
 
-import data from "data";
+import data from 'data';
 
 const Profile = () => {
-  const img = "/img/me.jpg";
   return (
     <header>
       <div className={styles.imgTitle}>

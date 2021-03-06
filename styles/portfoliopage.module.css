@@ -4,13 +4,12 @@
 
 .pageHR {
   margin: 0 20px;
-  background-color: var(--medium);
 }
 
 .subNav {
   padding: 10px 60px;
-  background-color: var(--contrast);
   justify-content: center;
+  padding-top: 30px;
 }
 
 .subNav .activeLink {
@@ -21,7 +20,7 @@
   padding: 1vh 1vw;
   margin: 0 2vw;
   font-size: 1.2ch;
-  background-color: var(--soft);
+  background-color: var(--contrast);
   border-radius: 10%;
 }
 

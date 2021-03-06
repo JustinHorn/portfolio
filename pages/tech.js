@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Tech from "component/Tech";
+import Tech from 'component/Tech';
 
-import styles from "styles/techpage.module.css";
+import styles from 'styles/techpage.module.css';
 
 const TechPage = () => {
   return (
-    <main className={"contrast " + styles.page}>
+    <main className={' ' + styles.page}>
       <section>
         <div className={styles.block}>
           <h5>Frontend</h5>
