@@ -6,9 +6,15 @@ import { portfolioNavbarData } from 'data';
 
 import Profile from 'component/Profile';
 
+import Head from 'next/Head';
+
 const PortfolioView = ({ children }) => {
   return (
     <>
+      <Head>
+        <title>Justin Horn</title>
+        <link rel="shortcut icon" href="/code.svg" />
+      </Head>
       <Profile />
 
       <div className=" white">

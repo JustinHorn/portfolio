@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import Web from 'pages/web';
+
 const index = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/portfolio');
+    router.push('/web');
   }, []);
-  return <div className="contrast"></div>;
+  return <Web />;
 };
 
 export default index;

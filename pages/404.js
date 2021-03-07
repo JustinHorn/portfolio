@@ -5,7 +5,7 @@ const index = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/portfolio');
+    router.push('/web');
   }, []);
   return <div className="contrast"></div>;
 };

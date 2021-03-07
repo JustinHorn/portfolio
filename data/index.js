@@ -311,12 +311,8 @@ function DesktopProject(
   this.type = 'desktop';
 }
 
-export const navbarData = {
-  prefix: '',
-  links: ['/welcome', '/portfolio', '/tech'],
-};
 export const portfolioNavbarData = {
-  prefix: '/portfolio',
+  prefix: '',
   links: ['/web', '/android', '/desktop'],
 };
 

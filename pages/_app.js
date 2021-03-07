@@ -1,39 +1,54 @@
-import "styles/globals.css";
-import React from "react";
+import 'styles/globals.css';
+import React from 'react';
 
-import PortfolioView from "views/portfolio";
-import DefaultView from "views/default";
+import PortfolioView from 'views/portfolio';
 
-import MoveOutMoveInTransition from "component/MoveOutMoveInTransition";
+import MoveOutMoveInTransition from 'component/MoveOutMoveInTransition';
 
-import { navbarData, portfolioNavbarData } from "data";
+import { portfolioNavbarData } from 'data';
+
+import Head from 'next/Head';
+
+import styles from 'styles/portfoliopage.module.css';
+
+import Links from 'component/Links';
+
+import Profile from 'component/Profile';
+
+import Socials from 'component/Socials';
 
 function MyApp({ Component, pageProps, router }) {
-  let c = <Component {...pageProps} />;
-
-  c = <div key={router.asPath}>{c}</div>;
-
-  if (router.pathname.startsWith("/portfolio")) {
-    c = (
-      <div key="PortfolioView">
-        <PortfolioView>
-          <MoveOutMoveInTransition
-            lvl={1}
-            pathNameOrder={portfolioNavbarData.links}
-          >
-            {c}
-          </MoveOutMoveInTransition>
-        </PortfolioView>
-      </div>
-    );
-  }
+  let children = <Component {...pageProps} />;
 
   return (
-    <DefaultView>
-      <MoveOutMoveInTransition lvl={0} pathNameOrder={navbarData.links}>
-        {c}
-      </MoveOutMoveInTransition>
-    </DefaultView>
+    <div key="PortfolioView">
+      <Head>
+        <title>Justin Horn</title>
+        <link rel="shortcut icon" href="/code.svg" />
+      </Head>
+      <Profile />
+
+      <div className=" white">
+        <div className="space-50"></div>
+        <h2>PROJECTS</h2>
+        <p>
+          Check out my deployed app or visit my Github page to view current
+          projects.
+        </p>
+        <nav className={styles.subNav + ' white'}>
+          <Links {...portfolioNavbarData} />
+        </nav>
+      </div>
+      <div className={styles.portfolio + ' white'}>
+        <MoveOutMoveInTransition
+          lvl={0}
+          pathNameOrder={portfolioNavbarData.links}
+        >
+          {children}
+        </MoveOutMoveInTransition>
+      </div>
+      <Socials />
+    </div>
   );
 }
 
