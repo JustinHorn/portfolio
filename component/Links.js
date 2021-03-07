@@ -7,7 +7,6 @@ const Links = ({ links, prefix = '' }) => {
 
   links = links.map((l) => new LinkType(l));
 
-  console.log(router.pathname);
   return links.map((l) => (
     <span className={router.pathname.includes(l.path) ? 'activeLink' : ''}>
       <Link href={prefix + l.path} scroll={false}>

@@ -11,10 +11,13 @@ import styles from 'styles/portfoliopage.module.css';
 
 import Links from 'component/Links';
 
-import Socials from 'component/Socials';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { config, library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
-import Link from 'next/Link';
-
+config.autoAddCss = false;
+library.add(fas, fab);
 function MyApp({ Component, pageProps, router }) {
   let children = <Component {...pageProps} />;
 
@@ -25,11 +28,50 @@ function MyApp({ Component, pageProps, router }) {
         <link rel="shortcut icon" href="/code.svg" />
       </Head>
       <header>
-        <div className={'imgTitle'}>
-          <div className={'img'} />
-          <div className={'aside'}>
-            <h2>Justin Horn</h2>
-            <p>Full Stack Developer</p>
+        <div className={'img'} />
+        <div className={'aside'}>
+          <h2>Justin Horn</h2>
+          <p>Full Stack Developer</p>
+          <div className="socials">
+            <a
+              href={'https://github.com/JustinHorn'}
+              title={'Github'}
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={['fab', 'github']} />
+            </a>
+            <a
+              href={'https://www.linkedin.com/in/justin-christian-horn/'}
+              title={'Linkedin'}
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            </a>
+
+            <a
+              href={'mailto:hello@justinhorn.tech'}
+              title={'Email'}
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={['fas', 'envelope']} />
+            </a>
+
+            <a
+              href={'https://twitter.com/Horn00Justin'}
+              title={'Twitter'}
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={['fab', 'twitter']} />
+            </a>
+            <a
+              href={
+                'https://stackoverflow.com/users/12753573/justin?tab=profile'
+              }
+              title={'Stackoverflow'}
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={['fab', 'stack-overflow']} />
+            </a>
           </div>
         </div>
       </header>

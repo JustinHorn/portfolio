@@ -73,6 +73,22 @@ h6 {
   font-size: 0.75em;
 }
 
+.socials {
+  display: flex;
+  min-width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon {
+  color: var(--hard);
+  width: 40px;
+}
+
+.socials a:hover {
+  color: white;
+}
+
 .icon {
   background-size: cover, contain;
   background-repeat: no-repeat;
@@ -91,20 +107,6 @@ h6 {
 nav {
   align-items: center;
   padding: 15px 20px;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social a {
-  padding: 0 5px;
-}
-
-.social .icon {
-  height: 20px;
-  width: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -351,9 +353,6 @@ header {
   background-color: black;
   color: white;
   margin-bottom: 0;
-}
-
-header .imgTitle {
   padding: 20px;
   min-width: 200px;
   display: flex;
@@ -449,10 +448,12 @@ header h2 {
 }
 .waveAnimation .waveMiddle {
   animation: move_wave 15s linear infinite;
+  animation-direction: reverse;
 }
 
 .waveAnimation .waveTop {
   animation: move_wave 15s linear infinite;
+  animation-direction: reverse;
 }
 
 .waveBottom {
@@ -460,4 +461,5 @@ header h2 {
 }
 .waveAnimation .waveBottom {
   animation: move_wave 20s linear infinite;
+  animation-direction: reverse;
 }
