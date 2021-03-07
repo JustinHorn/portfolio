@@ -4,9 +4,13 @@ import Links from 'component/Links';
 
 import { portfolioNavbarData } from 'data';
 
+import Profile from 'component/Profile';
+
 const PortfolioView = ({ children }) => {
   return (
     <>
+      <Profile />
+
       <div className=" white">
         <div className="space-50"></div>
         <h2>PROJECTS</h2>

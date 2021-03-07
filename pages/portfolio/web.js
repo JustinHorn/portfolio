@@ -1,16 +1,7 @@
-import React from "react";
-import styles from "styles/portfoliopage.module.css";
-import Group from "component/Group";
-
-import data from "data";
+import PortfolioPage from 'component/PortfolioPage';
 
 const Web = () => {
-  const { webdev } = data;
-  return (
-    <div className={""}>
-      <Group headline={""} projects={webdev.projects} groupClass={styles.web} />
-    </div>
-  );
+  return <PortfolioPage name={'web'}></PortfolioPage>;
 };
 
 export default Web;

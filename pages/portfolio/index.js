@@ -1,16 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-import Web from "./web";
-import { createMemoryHistory } from "history";
-import { useRouter } from "next/router";
-
-const PortfolioPage = () => {
+const index = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/portfolio/web", { shallow: true });
+    router.push('/portfolio/web');
   }, []);
-  return <Web />;
+  return <div className="contrast"></div>;
 };
 
-export default PortfolioPage;
+export default index;

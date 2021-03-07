@@ -1,16 +1,7 @@
-import React from "react";
-import data from "data";
-import Group from "component/Group";
-import styles from "styles/portfoliopage.module.css";
+import PortfolioPage from 'component/PortfolioPage';
 
-const Windows = () => {
-  const { desktop } = data;
-
-  return (
-    <div className={""}>
-      <Group headline={""} projects={desktop} groupClass={styles.desktop} />
-    </div>
-  );
+const Desktop = () => {
+  return <PortfolioPage name={'desktop'}></PortfolioPage>;
 };
 
-export default Windows;
+export default Desktop;

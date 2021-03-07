@@ -1,14 +1,15 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
-const Links = ({ links, prefix = "" }) => {
+const Links = ({ links, prefix = '' }) => {
   const router = useRouter();
 
   links = links.map((l) => new LinkType(l));
 
+  console.log(router.pathname);
   return links.map((l) => (
-    <span className={router.pathname.includes(l.path) ? "activeLink" : ""}>
+    <span className={router.pathname.includes(l.path) ? 'activeLink' : ''}>
       <Link href={prefix + l.path}>{l.name}</Link>
     </span>
   ));
@@ -23,7 +24,7 @@ function LinkType(path, name) {
 }
 
 const getSecondSlash = (string) => {
-  let secondSlash = string.indexOf("/", 1);
+  let secondSlash = string.indexOf('/', 1);
   secondSlash === -1 && (secondSlash = string.length);
   return secondSlash;
 };

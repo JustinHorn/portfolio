@@ -1,16 +1,7 @@
-import React from 'react';
-import data from 'data';
-import Group from 'component/Group';
-import styles from 'styles/portfoliopage.module.css';
+import PortfolioPage from 'component/PortfolioPage';
 
 const Android = () => {
-  const { android } = data;
-
-  return (
-    <div className={''}>
-      <Group headline={''} projects={android} groupClass={styles.android} />
-    </div>
-  );
+  return <PortfolioPage name={'android'}></PortfolioPage>;
 };
 
 export default Android;
