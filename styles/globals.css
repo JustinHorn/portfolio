@@ -4,7 +4,6 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   --soft: #e8ded2;
-  --header-aside: black;
   --header-p: #5eaaa8;
   --portfolio: #5eaaa8;
   --medium: #a3d2ca;
@@ -348,8 +347,14 @@ nav a {
   transition: transform 300ms;
 }
 
+header {
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
+
 header .imgTitle {
-  padding: 5px;
+  padding: 20px;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -373,12 +378,86 @@ header .aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--header-aside);
 }
 
-header .aboutMe {
-  min-width: 30ch;
-  max-width: 40ch;
-  color: black;
-  text-align: left;
+header h2 {
+  margin-bottom: 5px;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin-top: 0;
+  background-color: black;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+.bgTop {
+  z-index: 15;
+  opacity: 1;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.85;
+}
+.bgBottom {
+  z-index: 5;
+  opacity: 0.7;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+  background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s linear infinite;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 15s linear infinite;
+}
+
+.waveAnimation .waveTop {
+  animation: move_wave 15s linear infinite;
+}
+
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 20s linear infinite;
 }

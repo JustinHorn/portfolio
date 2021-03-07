@@ -10,7 +10,9 @@ const Links = ({ links, prefix = '' }) => {
   console.log(router.pathname);
   return links.map((l) => (
     <span className={router.pathname.includes(l.path) ? 'activeLink' : ''}>
-      <Link href={prefix + l.path}>{l.name}</Link>
+      <Link href={prefix + l.path} scroll={false}>
+        {l.name}
+      </Link>
     </span>
   ));
 };
@@ -19,7 +21,7 @@ function LinkType(path, name) {
   this.path = path;
 
   this.name =
-    (name && name) ||
+    name ??
     path.slice(1, 2).toUpperCase() + path.slice(2, getSecondSlash(path));
 }
 

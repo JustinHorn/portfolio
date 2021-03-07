@@ -13,6 +13,8 @@ import Links from 'component/Links';
 
 import Socials from 'component/Socials';
 
+import Link from 'next/Link';
+
 function MyApp({ Component, pageProps, router }) {
   let children = <Component {...pageProps} />;
 
@@ -27,10 +29,21 @@ function MyApp({ Component, pageProps, router }) {
           <div className={'img'} />
           <div className={'aside'}>
             <h2>Justin Horn</h2>
+            <p>Full Stack Developer</p>
           </div>
         </div>
-        <div className={'aboutMe'}>{data.header.aboutMe}</div>
       </header>
+      <div className="waveWrapper waveAnimation">
+        <div className="waveWrapperInner bgTop">
+          <div className="wave waveTop"></div>
+        </div>
+        <div className="waveWrapperInner bgMiddle">
+          <div className="wave waveMiddle"></div>
+        </div>
+        <div className="waveWrapperInner bgBottom">
+          <div className="wave waveBottom"></div>
+        </div>
+      </div>
       <div className=" white">
         <div className="space-50"></div>
         <h2>PROJECTS</h2>
@@ -43,15 +56,9 @@ function MyApp({ Component, pageProps, router }) {
         </nav>
       </div>
       <div className={styles.portfolio + ' white'}>
-        <MoveOutMoveInTransition
-          lvl={0}
-          pathNameOrder={portfolioNavbarData.links}
-        >
+        <MoveOutMoveInTransition pathNameOrder={portfolioNavbarData.links}>
           {children}
         </MoveOutMoveInTransition>
-      </div>
-      <div className="center">
-        <Socials />
       </div>
     </div>
   );
