@@ -5,7 +5,7 @@ import MoveOutMoveInTransition from 'component/MoveOutMoveInTransition';
 
 import data, { portfolioNavbarData } from 'data';
 
-import Head from 'next/Head';
+import Head from 'next/head';
 
 import styles from 'styles/portfoliopage.module.css';
 
