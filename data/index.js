@@ -82,16 +82,6 @@ export default {
         ['html5', 'css3', 'reactjs', 'firebase'],
         'A quiz game were you unlock characters.'
       ),
-      new WebProject(
-        'Weather',
-        'https://weather-justin.vercel.app/',
-        'https://github.com/JustinHorn/weatherapp/',
-        'weather.png',
-        'November 2020',
-
-        ['nextjs'],
-        'A Next.js jamstack app that asks for your location and then tells you the weather.'
-      ),
 
       new WebProject(
         'Meme Generator',
@@ -113,16 +103,6 @@ export default {
 
         ['html5', 'css3', 'javascript'],
         'A vanilla JavaScript, HTML5 && CSS3 cookbook.'
-      ),
-      new WebProject(
-        'DayPlanner Website',
-        'https://dayplanner.online/',
-        'https://github.com/JustinHorn/DayPlanner',
-        'dayplanner.png',
-        'March 2020',
-
-        ['bootstrap', 'nodejs', 'mongodb'],
-        "A website to distribute my 'DayPlanner.exe'"
       ),
       new WebProject(
         'Cookie Clicker',
