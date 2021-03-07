@@ -1,19 +1,15 @@
 import 'styles/globals.css';
 import React from 'react';
 
-import PortfolioView from 'views/portfolio';
-
 import MoveOutMoveInTransition from 'component/MoveOutMoveInTransition';
 
-import { portfolioNavbarData } from 'data';
+import data, { portfolioNavbarData } from 'data';
 
 import Head from 'next/Head';
 
 import styles from 'styles/portfoliopage.module.css';
 
 import Links from 'component/Links';
-
-import Profile from 'component/Profile';
 
 import Socials from 'component/Socials';
 
@@ -26,8 +22,15 @@ function MyApp({ Component, pageProps, router }) {
         <title>Justin Horn</title>
         <link rel="shortcut icon" href="/code.svg" />
       </Head>
-      <Profile />
-
+      <header>
+        <div className={'imgTitle'}>
+          <div className={'img'} />
+          <div className={'aside'}>
+            <h2>Justin Horn</h2>
+          </div>
+        </div>
+        <div className={'aboutMe'}>{data.header.aboutMe}</div>
+      </header>
       <div className=" white">
         <div className="space-50"></div>
         <h2>PROJECTS</h2>
@@ -47,7 +50,9 @@ function MyApp({ Component, pageProps, router }) {
           {children}
         </MoveOutMoveInTransition>
       </div>
-      <Socials />
+      <div className="center">
+        <Socials />
+      </div>
     </div>
   );
 }
