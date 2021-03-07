@@ -1,12 +1,8 @@
 .project {
-  margin: 10px 20px;
+  margin: 10px 10px;
   text-align: left;
   width: fit-content;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-}
-
-.project img {
-  text-align: left;
 }
 
 .project h5 {
@@ -43,18 +39,14 @@
   max-width: 300px;
 }
 
-.web .projectFrame {
-  max-height: 375px;
-}
-
-.android .projectFrame {
-  max-height: 510px;
-}
-
 .web .projectFrame,
 .android .projectFrame,
 .windows .projectFrame {
   max-width: 100%;
+}
+
+.projectFrame {
+  max-width: 100px;
 }
 
 @media screen and (max-width: 600px) {

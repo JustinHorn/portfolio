@@ -11,7 +11,6 @@ const Profile = () => {
         <div className={styles.img} />
         <div className={styles.aside}>
           <h2>Justin Horn</h2>
-          <span>Fullstack Developer</span>
         </div>
       </div>
       <div className={styles.aboutMe}>{data.header.aboutMe}</div>

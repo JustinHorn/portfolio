@@ -17,11 +17,19 @@
 }
 
 .subNav a {
-  padding: 1vh 1vw;
-  margin: 0 2vw;
   font-size: 1.2ch;
-  background-color: var(--contrast);
-  border-radius: 10%;
+
+  color: white;
+  padding: 0.1rem 0;
+}
+
+.subNav span {
+  margin: 0 1rem;
+  text-align: center;
+  background-color: grey;
+  border-radius: 4%;
+  height: 33px;
+  width: 90px;
 }
 
 .portfolio {
@@ -43,8 +51,8 @@
 
 .web {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
 }
 
 .android {

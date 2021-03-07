@@ -7,8 +7,8 @@ const Navbar = () => {
   const { icons } = footer;
 
   return (
-    <div className="contrast">
-      <nav className="mainNav space-between">
+    <div className="hard">
+      <nav className="space-between">
         <div className="links">
           <Links {...navbarData} />
         </div>

@@ -16,6 +16,7 @@ body {
 
 .hard {
   background-color: var(--hard);
+  color: white;
 }
 
 header {
@@ -90,7 +91,7 @@ h6 {
 
 nav {
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 nav .social {
@@ -103,8 +104,8 @@ nav .social a {
 }
 
 nav .social .icon {
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -274,6 +275,7 @@ ul {
 }
 
 nav {
+  font-size: 20px;
   display: flex;
   width: 100%;
   text-align: left;
@@ -284,7 +286,7 @@ nav {
 }
 
 nav a {
-  padding: 0 2vw;
+  padding: 0 0.7rem;
   color: black;
 
   color: inherit;
