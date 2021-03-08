@@ -1,7 +1,7 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
 export const getSlashUnit = (p, index) => {
-  const unit = p.slice(1).split("/");
+  const unit = p.slice(1).split('/');
   return unit[index];
 };
 
@@ -16,16 +16,17 @@ export const usePrevious = (next) => {
 
 export const useGetDirection = (
   init,
-  router,
   pathNameOrder,
-  lvl,
+  path,
+
   previousPath
 ) => {
+  console.log(pathNameOrder);
   const direction = useRef(init);
 
-  if (previousPath && previousPath !== router.pathname) {
-    const prevPath = getSlashUnit(previousPath, lvl);
-    const nextPath = getSlashUnit(router.pathname, lvl);
+  if (previousPath && previousPath !== path) {
+    const prevPath = previousPath;
+    const nextPath = path;
 
     if (prevPath && nextPath) {
       const prevIndex = pathNameOrder.findIndex((p) => p.includes(prevPath));
@@ -33,9 +34,9 @@ export const useGetDirection = (
       const nextIndex = pathNameOrder.findIndex((p) => p.includes(nextPath));
 
       if (prevIndex > nextIndex) {
-        direction.current = "right-to-left";
+        direction.current = 'right-to-left';
       } else if (prevIndex < nextIndex) {
-        direction.current = "left-to-right";
+        direction.current = 'left-to-right';
       }
     }
   }

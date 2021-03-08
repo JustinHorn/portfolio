@@ -1,27 +1,26 @@
-import { useEffect, useReducer, useRef, useState } from "react";
+import { useEffect, useReducer, useRef, useState } from 'react';
 
-import { PageTransition } from "next-page-transitions";
+import { PageTransition } from 'next-page-transitions';
 
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
-import { getSlashUnit, usePrevious, useGetDirection } from "helper";
+import { getSlashUnit, usePrevious, useGetDirection } from 'helper';
 
-const MoveOutMoveInTransition = ({ children, pathNameOrder, lvl = 0 }) => {
-  const router = useRouter();
-  const previousPath = usePrevious(router.pathname);
+const MoveOutMoveInTransition = ({ children, path, pathNameOrder }) => {
+  const previousPath = usePrevious('web');
 
   const direction = useGetDirection(
-    "left-to-right",
-    router,
+    'left-to-right',
     pathNameOrder,
-    lvl,
+    path,
+
     previousPath.current
   );
 
   return (
     <PageTransition
       timeout={300}
-      classNames={direction.current + "-transition"}
+      classNames={direction.current + '-transition'}
     >
       {children}
     </PageTransition>

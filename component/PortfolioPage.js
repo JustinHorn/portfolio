@@ -6,12 +6,12 @@ import styles from 'styles/portfoliopage.module.css';
 import Group from 'component/Group';
 
 const PortfolioPage = ({ name }) => {
-  const { android, webdev, desktop } = data;
+  const { mobile, webdev, desktop } = data;
 
   let projects = webdev;
   switch (name) {
-    case 'android':
-      projects = android;
+    case 'mobile':
+      projects = mobile;
       break;
     case 'desktop':
       projects = desktop;

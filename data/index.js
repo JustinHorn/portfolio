@@ -116,7 +116,7 @@ export default {
       ),
     ],
   },
-  android: [
+  mobile: [
     new AndroidProject(
       '2048 Chess',
       false,
@@ -293,7 +293,7 @@ function DesktopProject(
 
 export const portfolioNavbarData = {
   prefix: '',
-  links: ['/web', '/android', '/desktop'],
+  links: ['/web', '/mobile', '/desktop'],
 };
 
 export const timeline = [

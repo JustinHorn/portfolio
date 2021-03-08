@@ -6,34 +6,8 @@
   margin: 0 20px;
 }
 
-.subNav {
-  padding: 10px 60px;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-.subNav .activeLink {
-  text-decoration: underline;
-}
-
-.subNav a {
-  font-size: 1.2ch;
-
-  color: white;
-  padding: 0.1rem 0;
-}
-
-.subNav span {
-  margin: 0 1rem;
-  text-align: center;
-  background-color: grey;
-  border-radius: 4%;
-  height: 33px;
-  width: 90px;
-}
-
 .portfolio {
-  min-height: 100px;
+  min-height: 80vh;
   padding: 20px 0;
 }
 
