@@ -26,8 +26,8 @@ const Project = ({ project, imgClass }) => {
   }
 
   return (
-    <div className={styles.project + ' ' + style}>
-      <h5 className="hard">{project.name}</h5>
+    <div className={styles.project + ' hard ' + style}>
+      <h5 className="">{project.name}</h5>
       <div className={'relative '}>
         <div className={styles.triggerHover + ' ' + (op ? styles.opac : '')}>
           <img
@@ -48,8 +48,9 @@ const Project = ({ project, imgClass }) => {
           </div>
         </div>
       </div>
-
-      <div className={styles.description}>{project.description}</div>
+      <div className={styles.centerDescription}>
+        <div className={styles.description}>{project.description}</div>
+      </div>
     </div>
   );
 };

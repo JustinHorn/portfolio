@@ -3,6 +3,8 @@
   text-align: left;
   width: fit-content;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  display: flex;
+  flex-direction: column;
 }
 
 .project h5 {
@@ -24,7 +26,7 @@
 }
 
 .projectFrame {
-  background-color: white;
+  background-color: var(--hard);
   margin: 0;
   width: 100%;
   height: 100%;
@@ -89,9 +91,18 @@
   text-decoration: underline;
 }
 
+.centerDescription {
+  flex-grow: 1;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
 .description {
   padding: 20px;
-  height: fit-content;
   text-align: center;
   font-size: 1.5ch;
+  background-color: white;
+  color: black;
+  text-align: center;
 }
