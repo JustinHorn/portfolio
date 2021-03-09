@@ -74,8 +74,8 @@ h6 {
 
 .socials {
   display: flex;
-  min-width: 200px;
-  justify-content: space-between;
+  width: 350px;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -216,18 +216,6 @@ h5 {
   margin: 0 auto;
 }
 
-.button {
-  border: none;
-  border-radius: 10%;
-  color: black;
-  background-color: var(--soft);
-  margin: 0 10px;
-  font-weight: bold;
-  padding: 0 3px;
-  text-transform: uppercase;
-  min-width: 50px;
-}
-
 .relative {
   position: relative;
 }
@@ -286,6 +274,8 @@ nav {
 }
 
 nav button {
+  font-family: 'Roboto', sans-serif;
+
   outline: none;
   margin: 0 1rem;
   font-size: 1.2ch;
@@ -293,14 +283,17 @@ nav button {
   text-align: center;
   border-radius: 4%;
   height: 33px;
-  width: 90px;
-  background-color: white;
-  color: black;
+  width: 110px;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--hard);
+  opacity: 0.5;
 }
 
 .activeLink {
-  color: white;
-  background-color: grey;
+  opacity: 1;
 }
 
 .p20 {
@@ -369,10 +362,12 @@ header .img {
 }
 
 header .aside {
-  min-width: 20ch;
-  display: flex;
+  min-width: 100%;
+  display: grid;
+  place-items: center;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
 }
 
 header h2 {

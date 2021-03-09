@@ -21,7 +21,7 @@ const PortfolioPage = ({ name }) => {
   }
 
   return (
-    <div className={''}>
+    <div className={styles.center}>
       <Group headline={''} projects={projects} groupClass={styles.grid} />
     </div>
   );

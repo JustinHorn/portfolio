@@ -24,11 +24,20 @@
   grid-template-columns: 50% 50%;
 }
 
-.web,
-.android,
-.desktop,
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .grid {
+    grid-template-columns: repeat(1, 350px);
+  }
 }
