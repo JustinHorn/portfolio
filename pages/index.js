@@ -91,10 +91,8 @@ function Main({ router }) {
       <div className=" white">
         <div className="space-50"></div>
         <h2>PROJECTS</h2>
-        <p>
-          Check out my deployed app or visit my Github page to view current
-          projects.
-        </p>
+        <p>Check out my applications or visit their repositories on Github.</p>
+
         <nav className={styles.subNav + ' white'}>
           <button
             onClick={(e) => setProjectType('web')}
