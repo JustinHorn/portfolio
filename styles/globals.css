@@ -1,5 +1,5 @@
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   --soft: #e8ded2;
   --header-p: #5eaaa8;
   --portfolio: #5eaaa8;
@@ -13,7 +13,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   font-size: 2.5ch;
   display: grid;
@@ -23,6 +23,7 @@ body {
   overflow-x: hidden;
   text-align: center;
   min-height: 100vh;
+  background-color: black;
 }
 
 .hard {
@@ -266,7 +267,7 @@ nav {
 }
 
 nav button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   outline: none;
   margin: 0 1rem;
@@ -346,7 +347,7 @@ header .img {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background: url('/img/me.jpg');
+  background: url("/img/me.jpg");
   background-size: 100%; /* <------ */
 
   background-repeat: no-repeat;
@@ -415,7 +416,7 @@ header h2 {
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
   transform-origin: center bottom;
-  background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+  background-image: url("http://front-end-noobs.com/jecko/img/wave-top.png");
 }
 .waveTop {
   background-size: 50% 100px;
