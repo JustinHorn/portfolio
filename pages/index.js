@@ -10,7 +10,8 @@ import styles from "styles/portfoliopage.module.css";
 
 config.autoAddCss = false;
 library.add(fas, fab);
-function Main({ router }) {
+
+function Main() {
   const [projectType, setProjectType] = useState("web");
 
   return (
