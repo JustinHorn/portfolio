@@ -1,0 +1,182 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+$contrast-happy: #f5ee3a;
+$contrast-happy-hover: #ffffa0;
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior-y: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 2.5ch;
+
+  overflow-y: visible;
+  text-align: center;
+  min-height: 100vh;
+  color: white;
+}
+
+button {
+  padding: 0.25rem;
+  background-color: $contrast-happy;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  color: #111111;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $contrast-happy-hover;
+    color: black;
+  }
+
+  &:active {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+  }
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-icon {
+  color: white;
+
+  margin: 10px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+$starFieldWidth: 2560;
+$starFieldHeight: 2560;
+$starStartOffset: 600px;
+
+$starOneScrollDuration: 100s;
+$starTwoScrollDuration: 125s;
+$starThreeScrollDuration: 175s;
+$numStarOneStars: 1700;
+$numStarTwoStars: 700;
+$numStarThreeStars: 200;
+$width: 100%;
+
+header {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
+}
+
+@function create-stars($n) {
+  $stars: "#{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
+
+  @for $i from 2 through $n {
+    $stars: "#{$stars} , #{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
+  }
+  @return unquote($stars);
+}
+@mixin star-template($numStars, $starSize, $scrollSpeed) {
+  z-index: 10;
+  width: $starSize;
+  height: $starSize;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: create-stars($numStars);
+  animation: animStar $scrollSpeed linear infinite;
+
+  &:after {
+    content: " ";
+    top: -$starStartOffset;
+    width: $starSize;
+    height: $starSize;
+    border-radius: 50%;
+    position: absolute;
+    background: transparent;
+    box-shadow: create-stars($numStars);
+  }
+}
+
+.stars {
+  @include star-template($numStarOneStars, 1px, $starOneScrollDuration);
+}
+.stars1 {
+  @include star-template($numStarTwoStars, 2px, $starTwoScrollDuration);
+}
+.stars2 {
+  @include star-template($numStarThreeStars, 3px, $starThreeScrollDuration);
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-#{$starFieldHeight}px)
+      translateX(-#{$starFieldWidth}px);
+  }
+}
+
+@keyframes animShootingStar {
+  from {
+    transform: translateY(0px) translateX(0px) rotate(-45deg);
+    opacity: 1;
+    height: 5px;
+  }
+
+  to {
+    transform: translateY(-#{$starFieldHeight}px)
+      translateX(-#{$starFieldWidth}px) rotate(-45deg);
+    opacity: 1;
+    height: 800px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 101%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -2px;
+  margin-left: -1px;
+}
+
+main {
+  padding: 1px;
+  background-color: black;
+  height: 100vh;
+}
+
+h2 {
+  margin: 32px;
+}
+
+h3 {
+  margin: 16px;
+}

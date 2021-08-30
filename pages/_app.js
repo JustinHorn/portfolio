@@ -3,7 +3,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect } from "react";
 
-import "styles/globals.css";
+import "styles/globals.scss";
 
 config.autoAddCss = false;
 library.add(fas, fab);

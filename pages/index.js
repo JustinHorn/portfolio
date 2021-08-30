@@ -2,119 +2,134 @@ import { config, library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MoveOutMoveInTransition from "component/MoveOutMoveInTransition";
-import PortfolioPage from "component/PortfolioPage";
-import Head from "next/head";
-import React, { useState } from "react";
-import styles from "styles/portfoliopage.module.css";
+import React, { useEffect, useRef, useState } from "react";
 
 config.autoAddCss = false;
 library.add(fas, fab);
 
+// const socials = (
+// <div className="socials">
+//   <a
+//     href={"https://github.com/JustinHorn"}
+//     title={"Github"}
+//     className="social-icon"
+//   >
+//     <FontAwesomeIcon icon={["fab", "github"]} />
+//   </a>
+//   <a
+//     href={"https://www.linkedin.com/in/justin-christian-horn/"}
+//     title={"Linkedin"}
+//     className="social-icon"
+//   >
+//     <FontAwesomeIcon icon={["fab", "linkedin"]} />
+//   </a>
+
+//   <a
+//     href={"mailto:hello@justinhorn.io"}
+//     title={"Email"}
+//     className="social-icon"
+//   >
+//     <FontAwesomeIcon icon={["fas", "envelope"]} />
+//   </a>
+
+//   <a
+//     href={"https://twitter.com/Horn00Justin"}
+//     title={"Twitter"}
+//     className="social-icon"
+//   >
+//     <FontAwesomeIcon icon={["fab", "twitter"]} />
+//   </a>
+//   <a
+//     href={"https://stackoverflow.com/users/12753573/justin?tab=profile"}
+//     title={"Stackoverflow"}
+//     className="social-icon"
+//   >
+//     <FontAwesomeIcon icon={["fab", "stack-overflow"]} />
+//   </a>
+// </div>
+// );
+
+// const header = (
+//   <header>
+//     <div className={"img"} />
+//     <div className={"aside"}>
+//       <h2>Justin Horn</h2>
+//       <p>Full Stack Developer</p>
+//     </div>
+//   </header>
+// );
+
 function Main() {
-  const [projectType, setProjectType] = useState("web");
+  const [height, setHeight] = useState(0);
+  const heightRef = useRef();
+
+  useEffect(() => {
+    const { height } = heightRef.current.getBoundingClientRect();
+
+    setHeight(height);
+  }, []);
 
   return (
     <div className="PortfolioView">
-      <div className="topPanel"></div>
+      <nav>
+        <div className="socials">
+          <a
+            href={"https://github.com/JustinHorn"}
+            title={"Github"}
+            className="social-icon"
+          >
+            <FontAwesomeIcon icon={["fab", "github"]} />
+          </a>
+          <a
+            href={"https://www.linkedin.com/in/justin-christian-horn/"}
+            title={"Linkedin"}
+            className="social-icon"
+          >
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          </a>
 
-      <Head>
-        <title>Justin Horn</title>
-        <link rel="shortcut icon" href="/code.svg" />
-      </Head>
-      <header>
-        <div className={"img"} />
-        <div className={"aside"}>
-          <h2>Justin Horn</h2>
-          <p>Full Stack Developer</p>
-          <div className="socials">
-            <a
-              href={"https://github.com/JustinHorn"}
-              title={"Github"}
-              className="social-icon"
-            >
-              <FontAwesomeIcon icon={["fab", "github"]} />
-            </a>
-            <a
-              href={"https://www.linkedin.com/in/justin-christian-horn/"}
-              title={"Linkedin"}
-              className="social-icon"
-            >
-              <FontAwesomeIcon icon={["fab", "linkedin"]} />
-            </a>
+          <a
+            href={"mailto:hello@justinhorn.io"}
+            title={"Email"}
+            className="social-icon"
+          >
+            <FontAwesomeIcon icon={["fas", "envelope"]} />
+          </a>
 
-            <a
-              href={"mailto:hello@justinhorn.io"}
-              title={"Email"}
-              className="social-icon"
-            >
-              <FontAwesomeIcon icon={["fas", "envelope"]} />
-            </a>
-
-            <a
-              href={"https://twitter.com/Horn00Justin"}
-              title={"Twitter"}
-              className="social-icon"
-            >
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
-            </a>
-            <a
-              href={
-                "https://stackoverflow.com/users/12753573/justin?tab=profile"
-              }
-              title={"Stackoverflow"}
-              className="social-icon"
-            >
-              <FontAwesomeIcon icon={["fab", "stack-overflow"]} />
-            </a>
-          </div>
+          <a
+            href={"https://twitter.com/Horn00Justin"}
+            title={"Twitter"}
+            className="social-icon"
+          >
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
+          </a>
+          <a
+            href={"https://stackoverflow.com/users/12753573/justin?tab=profile"}
+            title={"Stackoverflow"}
+            className="social-icon"
+          >
+            <FontAwesomeIcon icon={["fab", "stack-overflow"]} />
+          </a>
         </div>
+        <div className="navButtons">
+          <button>document</button>
+          <button>german/english</button>
+        </div>
+      </nav>
+      <header style={{ height: `calc(100vh + ${height / 2}px)` }}>
+        <div className="sky">
+          <div className="stars"></div>
+          <div className="stars1"></div>
+          <div className="stars2"></div>
+        </div>
+        <img ref={heightRef} className="overlay" src="/img/icons/overlap.svg" />
       </header>
-      <div className="waveWrapper waveAnimation">
-        <div className="waveWrapperInner bgTop">
-          <div className="wave waveTop"></div>
-        </div>
-        <div className="waveWrapperInner bgMiddle">
-          <div className="wave waveMiddle"></div>
-        </div>
-        <div className="waveWrapperInner bgBottom">
-          <div className="wave waveBottom"></div>
-        </div>
-      </div>
-      <div className=" white">
-        <div className="space-50"></div>
-        <h2>PROJECTS</h2>
-        <p>Check out my applications or visit their repositories on Github.</p>
-
-        <nav className={styles.subNav + " white"}>
-          <button
-            onClick={(e) => setProjectType("web")}
-            className={projectType.includes("web") ? "activeLink" : ""}
-          >
-            Web
-          </button>
-          <button
-            onClick={(e) => setProjectType("mobile")}
-            className={projectType.includes("mobile") ? "activeLink" : ""}
-          >
-            Mobile
-          </button>
-          <button
-            onClick={(e) => setProjectType("desktop")}
-            className={projectType.includes("desktop") ? "activeLink" : ""}
-          >
-            Desktop
-          </button>
-        </nav>
-      </div>
-      <div className={styles.portfolio + " white"}>
-        <MoveOutMoveInTransition
-          path={projectType}
-          pathNameOrder={["web", "mobile", "desktop"]}
-        >
-          <PortfolioPage name={projectType}></PortfolioPage>
-        </MoveOutMoveInTransition>
-      </div>
+      <main>
+        <h2>Technology</h2>
+        <h3>Frontend</h3>
+        <h3>Backend</h3>
+        <h3>Mobile</h3>
+      </main>
     </div>
   );
 }
