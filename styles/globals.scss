@@ -1,3 +1,5 @@
+@import "./header.scss";
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -69,37 +71,6 @@ nav {
   }
 }
 
-$starFieldWidth: 2560;
-$starFieldHeight: 2560;
-$starStartOffset: 600px;
-
-$starOneScrollDuration: 100s;
-$starTwoScrollDuration: 125s;
-$starThreeScrollDuration: 175s;
-$numStarOneStars: 1700;
-$numStarTwoStars: 700;
-$numStarThreeStars: 200;
-$width: 100%;
-
-header {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
-}
-.header-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: auto minmax(auto, 600px) auto;
-  grid-template-areas: ". a .";
-}
-
 .introduction {
   // display: grid;
   font-size: 1rem;
@@ -115,7 +86,7 @@ header {
   }
 
   .justin-headline {
-    margin: 1em;
+    margin: 0.5em;
   }
 }
 
@@ -152,8 +123,10 @@ header {
     span {
       display: flex;
       align-items: center;
+
       .star {
         color: $contrast-happy;
+        margin-left: 8px;
       }
     }
   }
@@ -167,70 +140,6 @@ header {
 .small-icon {
   width: 20px;
   height: 20px;
-}
-
-@function create-stars($n) {
-  $stars: "#{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
-
-  @for $i from 2 through $n {
-    $stars: "#{$stars} , #{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF";
-  }
-  @return unquote($stars);
-}
-@mixin star-template($numStars, $starSize, $scrollSpeed) {
-  z-index: 10;
-  width: $starSize;
-  height: $starSize;
-  border-radius: 50%;
-  background: transparent;
-  box-shadow: create-stars($numStars);
-  animation: animStar $scrollSpeed linear infinite;
-
-  &:after {
-    content: " ";
-    top: -$starStartOffset;
-    width: $starSize;
-    height: $starSize;
-    border-radius: 50%;
-    position: absolute;
-    background: transparent;
-    box-shadow: create-stars($numStars);
-  }
-}
-
-.stars {
-  @include star-template($numStarOneStars, 1px, $starOneScrollDuration);
-}
-.stars1 {
-  @include star-template($numStarTwoStars, 2px, $starTwoScrollDuration);
-}
-.stars2 {
-  @include star-template($numStarThreeStars, 3px, $starThreeScrollDuration);
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-#{$starFieldHeight}px)
-      translateX(-#{$starFieldWidth}px);
-  }
-}
-
-@keyframes animShootingStar {
-  from {
-    transform: translateY(0px) translateX(0px) rotate(-45deg);
-    opacity: 1;
-    height: 5px;
-  }
-
-  to {
-    transform: translateY(-#{$starFieldHeight}px)
-      translateX(-#{$starFieldWidth}px) rotate(-45deg);
-    opacity: 1;
-    height: 800px;
-  }
 }
 
 .overlay {
