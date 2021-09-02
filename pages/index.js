@@ -1,9 +1,10 @@
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
 import Header from "component/Header";
 import Nav from "component/Nav";
+import Head from "next/head";
+import React from "react";
 
 config.autoAddCss = false;
 library.add(fas, fab);
@@ -11,6 +12,9 @@ library.add(fas, fab);
 function Main() {
   return (
     <div className="PortfolioView">
+      <Head>
+        <title>Justin Horn</title>
+      </Head>
       <Nav />
       <Header />
       <main>

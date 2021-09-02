@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Justin Horn</title>
           <link rel="shortcut icon" href="/code.svg" />
           <script
             async
