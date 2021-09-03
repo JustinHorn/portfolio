@@ -59,14 +59,39 @@ main {
   }
 
   section {
+    max-width: 1000px;
+
     margin-bottom: 20vh;
     min-height: 50vh;
   }
 
   .praise {
-    max-width: 900px;
     p {
       margin: 1em;
+    }
+  }
+
+  .projects {
+    .tile {
+      padding: 2em;
+      width: 16em;
+      height: 16em;
+      border: 1px solid $soft-yellow;
+      filter: brightness(0) saturate(100%) invert(88%) sepia(51%) saturate(378%)
+        hue-rotate(337deg) brightness(107%) contrast(105%);
+
+      img {
+        width: 12em;
+        height: 12em;
+      }
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 0.5em;
+      row-gap: 2em;
     }
   }
 }
