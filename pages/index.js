@@ -17,9 +17,26 @@ function Main() {
       </Head>
       <Nav />
       <Header />
-      <main>
+      <main id="main">
         <h2>Technology</h2>
-        <h3>Frontend</h3>
+
+        <div className="skill">
+          <h3>Frontend</h3>
+          <div className="tiles">
+            <div className="tile">
+              <img className="icon" src="/img/icons/reactjs.svg" />
+              <span>REACT</span>
+            </div>
+            <div className="tile">
+              <img className="icon" src="/img/icons/reactjs.svg" />
+              <span>REACT</span>
+            </div>
+            <div className="tile">
+              <img className="icon" src="/img/icons/reactjs.svg" />
+              <span>REACT</span>
+            </div>
+          </div>
+        </div>
         <h3>Backend</h3>
         <h3>Mobile</h3>
       </main>

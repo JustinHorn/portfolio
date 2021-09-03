@@ -1,12 +1,10 @@
+@import "./color.scss";
 @import "./header.scss";
 @import "./main.scss";
 
 html {
   font-family: "Roboto", sans-serif;
 }
-
-$contrast-happy: #f5ee3a;
-$contrast-happy-hover: #ffffa0;
 
 html,
 body {
@@ -72,84 +70,12 @@ nav {
   }
 }
 
-.introduction {
-  font-size: 1rem;
-  grid-area: a;
-  place-self: center;
-  display: flex;
-  flex-direction: column;
-
-  .fullstack-headline {
-    margin: 1em;
-    text-decoration: underline;
-    text-decoration-color: $contrast-happy;
-  }
-
-  .justin-headline {
-    margin: 0.5em;
-  }
-}
-
-.imageAndScore {
-  margin: 0 auto;
-  display: flex;
-  width: fit-content;
-
-  .img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-image: url("/img/me.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 16px;
-  }
-
-  .scores {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .score {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .icon {
-      margin-right: 8px;
-    }
-
-    span {
-      display: flex;
-      align-items: center;
-
-      .star {
-        color: $contrast-happy;
-        margin-left: 8px;
-      }
-    }
-  }
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-}
-
-.small-icon {
-  width: 20px;
-  height: 20px;
-}
-
-h1 {
-  margin: 64px;
-}
-
 h2 {
   margin: 32px;
+  font-size: 2.5rem;
 }
 
 h3 {
+  font-size: 2rem;
   margin: 16px;
 }
