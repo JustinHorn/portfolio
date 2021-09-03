@@ -15,6 +15,7 @@ body {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -61,7 +62,7 @@ nav {
 }
 
 .social-icon {
-  color: white;
+  color: $contrast-happy;
 
   margin: 10px;
   svg {
@@ -71,11 +72,11 @@ nav {
 }
 
 h2 {
-  margin: 32px;
+  margin: 2rem;
   font-size: 2.5rem;
 }
 
 h3 {
   font-size: 2rem;
-  margin: 16px;
+  margin: 1rem;
 }

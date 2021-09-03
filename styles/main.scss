@@ -2,37 +2,71 @@
 
 main {
   font-size: 1rem;
-  padding: 1px;
   background-color: black;
-  height: 100vh;
+  padding-top: 20vh;
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: $soft-yellow;
+  display: grid;
+  place-items: center;
 
-  h2,
-  h3 {
-    text-decoration: underline;
-    text-decoration-color: $contrast-happy;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .tiles {
+  .technology {
+    .merge {
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      & > .skill-area {
+        margin: 0 4em;
+      }
     }
 
-    .tile {
-      width: 5em;
-      height: 5em;
-      margin: 0.5em;
-      border-radius: 0.25em;
-      background-color: $tile-background-color;
-      color: white;
+    .skill-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      .icon {
-        filter: brightness(0) saturate(100%) invert(71%) sepia(100%)
-          saturate(337%) hue-rotate(7deg) brightness(112%) contrast(92%);
+      .tiles {
+        display: flex;
       }
+
+      h3 {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+      }
+
+      .tile {
+        width: 6em;
+        height: 6em;
+        margin: 1em;
+        border-radius: 0.25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: $tile-background-color;
+        color: $soft-yellow;
+
+        .icon {
+          width: 4em;
+          height: 4em;
+          filter: brightness(0) saturate(100%) invert(88%) sepia(51%)
+            saturate(378%) hue-rotate(337deg) brightness(107%) contrast(105%);
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  }
+
+  section {
+    margin-bottom: 20vh;
+    min-height: 50vh;
+  }
+
+  .praise {
+    max-width: 900px;
+    p {
+      margin: 1em;
     }
   }
 }
