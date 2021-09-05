@@ -3,10 +3,10 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Header from "component/Header";
 import Nav from "component/Nav";
-import { Technology } from "component/Technology";
 import { Praise } from "component/Praise";
+import Projects from "component/Projects";
+import { Technology } from "component/Technology";
 import Head from "next/head";
-import React from "react";
 
 config.autoAddCss = false;
 library.add(fas, fab);
@@ -22,28 +22,7 @@ function Main() {
       <main id="main">
         <Technology />
         <Praise />
-        <section id="projects" className="projects">
-          <h2>Some Projects I made with</h2>
-
-          <div className="cards">
-            <div className="tile">
-              <img src="img/icons/JoyOfCode.svg" />
-              <h4>Joy Of Code</h4>
-            </div>
-            <div className="tile">
-              <img src="img/icons/ReactJS.svg" />
-              <h4>ReactJS</h4>
-            </div>
-            <div className="tile">
-              <img src="img/icons/NodeJS.svg" />
-              <h4>NodeJS</h4>
-            </div>
-            <div className="tile">
-              <img src="img/icons/Flutter.svg" />
-              <h4>Flutter</h4>
-            </div>
-          </div>
-        </section>
+        <Projects />
         <section id="about" className="about">
           <p>
             I gained my first coding experience at the age of twelve by coding a
