@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { ReactProject } from "./ReactProject";
+import MediaQuery from "react-responsive";
 
 const Projects = () => {
   const [show, setShow] = useState("nothing");
@@ -26,11 +28,11 @@ const Projects = () => {
           <img src="img/icons/ReactJS.svg" alt="ReactJS" />
           <h4>ReactJS</h4>
         </div>
-        <div className="tile">
+        <div className="tile" onClick={() => setShow("NodeJS")}>
           <img src="img/icons/NodeJS.svg" alt="NodeJS" />
           <h4>NodeJS</h4>
         </div>
-        <div className="tile">
+        <div className="tile" onClick={() => setShow("Flutter")}>
           <img src="img/icons/Flutter.svg" alt="Flutter" />
           <h4>Flutter</h4>
         </div>
@@ -45,6 +47,9 @@ const Projects = () => {
             ></div>
             <div className="monitor">
               <div className="monitor-nav">
+                <span />
+                <h2 className="headline">{show}</h2>
+
                 <img
                   className="close"
                   src="img/icons/X.svg"
@@ -53,90 +58,11 @@ const Projects = () => {
                 />
               </div>
 
-              {show === "React" && (
-                <div className="monitor-body react">
-                  <h3 className="headline">React</h3>
-                  <div className="projectA">
-                    <h4>Meme Generator</h4>
-                    <div className="fotos">
-                      <img
-                        src="img/projects/MemeGenerator/Generator.png"
-                        alt="showing freestyle"
-                        className="one"
-                      />
-                      <img
-                        src="img/projects/MemeGenerator/Home.png"
-                        alt="showing freestyle"
-                        className="two"
-                      />
-                      <img
-                        src="img/projects/MemeGenerator/Freestyle.png"
-                        alt="showing freestyle"
-                        className="there"
-                      />
-                    </div>
-                    <p>
-                      A meme generator created with a college from WBS. It has
-                      top/bottom-text and a freestyle version. In the freestyle
-                      version you use CSS attributes to modify to place the text
-                      anywhere.
-                    </p>
-                    <div className="tools">
-                      <div>CSS</div>
-                      <div>React</div>
-                      <div>Firebase</div>
-                    </div>
-                    <div className="links">
-                      <a href="https://meme-creator-seven.vercel.app/">
-                        Website
-                      </a>
-                      <a href="https://github.com/JustinHorn/memeCreator">
-                        Code
-                      </a>
-                    </div>
-                  </div>
-                  <div className="projectB">
-                    <h4>Ultimate Tic Tac Toe</h4>
-                    <div className="fotos">
-                      <img
-                        src="img/projects/UltimateTicTacToe/AIvsRandom.png"
-                        alt="showing freestyle"
-                        className="one"
-                      />
-                      <img
-                        src="img/projects/UltimateTicTacToe/RandomVsRandom.png"
-                        alt="showing freestyle"
-                        className="two"
-                      />
-                      <img
-                        src="img/projects/UltimateTicTacToe/HvsH.png"
-                        alt="showing freestyle"
-                        className="three"
-                      />
-                    </div>
-                    <p>
-                      A meme generator created with a college from WBS. It has
-                      top/bottom-text and a freestyle version. In the freestyle
-                      version you use CSS attributes to modify to place the text
-                      anywhere.
-                    </p>
-                    <div className="tools">
-                      <div>CSS</div>
-                      <div>React</div>
-                    </div>
-                    <div className="links">
-                      <a href="https://justinhorn.name/ultimate-tic-tac-toe-react/">
-                        Website
-                      </a>
-                      <a href="https://github.com/JustinHorn/ultimate-tic-tac-toe-react">
-                        Code
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="projectC"></div>
-                </div>
-              )}
+              <div className="monitor-body">
+                {show === "React" && <ReactBody />}
+                {show === "NodeJS" && <ReactBody />}
+                {show === "Flutter" && <ReactBody />}
+              </div>
             </div>
           </div>
         </>
@@ -146,3 +72,56 @@ const Projects = () => {
 };
 
 export default Projects;
+
+const ReactBody = () => (
+  <div className="react">
+    <ReactProject
+      name="Meme Generator"
+      imgFolder="MemeGenerator"
+      img={["Generator.png", "Home.png", "Freestyle.png"]}
+      imgAlt={[
+        "showing the top/bottom generator with skeptical kid meme saying 'so you have build another generator?'",
+        "showing the home screen",
+        "Showing freestyle editor where you can place the text everywhere",
+      ]}
+      tags={["CSS", "React", "Firebase Auth"]}
+      description="A meme generator created with a college from WBS. It has
+  top/bottom-text and a freestyle version."
+      website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
+      code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
+    />
+    <ReactProject
+      name="Ultimate Tic Tac Toe"
+      imgFolder="UltimateTicTacToe"
+      img={["AIvsRandom.png", "RandomVsRandom.png", "HvsH.png"]}
+      imgAlt={[
+        "the result of gamemode: AI vs Random - AI won",
+        "the result of gamemode: randomAI vs randomAI - O won",
+        "an empty board and gamemode: Humans vs Humans",
+      ]}
+      tags={["CSS", "React", "Webworker"]}
+      description=" A more complicated Version of the know Tic-Tac-Toe game
+  with two types of AI as worthy opponents."
+      website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
+      code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
+    />
+    <MediaQuery minWidth={630}>
+      <ReactProject
+        name="Rickys Quest"
+        imgFolder="RickysQuest"
+        img={["QuizQuestion.png", "Quizzes.png", "Follower.png"]}
+        imgAlt={[
+          "An example Quiz",
+          "List of Quizzes",
+          "Profile showing the characters",
+        ]}
+        tags={["CSS", "React", "Firebase", "Styled-Components"]}
+        description="A web-game I made with colleges where you solve quizzes to get Characters from
+  the Rick and Morty multiverses powered by the Rick and
+  Morty Api."
+        website="https://rickysquest.netlify.app/"
+        code="https://github.com/JustinHorn/rickysquest"
+      />
+    </MediaQuery>
+  </div>
+);
