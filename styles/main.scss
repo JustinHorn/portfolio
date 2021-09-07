@@ -73,10 +73,71 @@ main {
   }
 
   .projects {
+    .frontend {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      padding: 0.5em;
+      row-gap: 0.5em;
+      column-gap: 0.5em;
+      min-width: 500px;
+      width: 100%;
+      max-width: 800px;
+
+      img {
+        width: 100%;
+      }
+
+      .one {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+
+    .tools {
+      align-self: flex-start;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      div {
+        background-color: grey;
+        margin: 1em;
+        margin-left: 0;
+        padding: 0.5em;
+        border-radius: 1em;
+        cursor: default;
+        position: relative;
+
+        &:not(:last-child)::after {
+          content: "";
+          padding: 4px;
+          border-radius: 50%;
+          background-color: white;
+          position: absolute;
+          top: calc(50% - 4px);
+          left: calc(100% + calc(0.5em - 4px));
+        }
+      }
+    }
+
+    .backend {
+      display: grid;
+      place-items: center;
+      grid-template-rows: repeat(3, 1fr);
+      img {
+        width: 5em;
+        filter: brightness(0) saturate(100%) invert(88%) sepia(51%)
+          saturate(378%) hue-rotate(337deg) brightness(107%) contrast(105%);
+      }
+    }
+
     .cards {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
       column-gap: 0.5em;
       row-gap: 2em;
 
