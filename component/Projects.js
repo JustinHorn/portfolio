@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MediaQuery from "react-responsive";
 
+import { FlutterProject } from "./FlutterProject";
 import { ReactProject } from "./ReactProject";
 
 const Projects = () => {
@@ -70,10 +71,10 @@ const Projects = () => {
           <img src="img/icons/ReactJS.svg" alt="ReactJS" />
           <h4>ReactJS</h4>
         </div>
-        <div className="tile" onClick={() => setShow("NodeJS")}>
+        {/* <div className="tile" onClick={() => setShow("NodeJS")}>
           <img src="img/icons/NodeJS.svg" alt="NodeJS" />
           <h4>NodeJS</h4>
-        </div>
+        </div> */}
         <div className="tile" onClick={() => setShow("Flutter")}>
           <img src="img/icons/Flutter.svg" alt="Flutter" />
           <h4>Flutter</h4>
@@ -103,7 +104,7 @@ const Projects = () => {
               <div className="monitor-body">
                 {show === "React" && <ReactBody />}
                 {show === "NodeJS" && <ReactBody />}
-                {show === "Flutter" && <ReactBody />}
+                {show === "Flutter" && <FlutterBody />}
               </div>
             </div>
           </div>
@@ -163,6 +164,37 @@ const ReactBody = () => (
   Morty Api."
         website="https://rickysquest.netlify.app/"
         code="https://github.com/JustinHorn/rickysquest"
+      />
+    </MediaQuery>
+  </div>
+);
+
+const FlutterBody = () => (
+  <div className="flutter">
+    <FlutterProject
+      name="Chess 2048"
+      imgFolder="android"
+      img={["2048chess.jpg"]}
+      imgAlt={["2048 with chess figures"]}
+      description="A version of 2048 with chess figures as game pieces."
+      code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
+    />
+    <FlutterProject
+      name="Movie-Suggester"
+      imgFolder="android"
+      img={["movie_suggester.jpg"]}
+      imgAlt={["A suggested movie"]}
+      description="An app that randomly suggest you movies."
+      code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
+    />
+    <MediaQuery minWidth={630}>
+      <FlutterProject
+        name="Remindely"
+        imgFolder="android"
+        img={["reminder.jpg"]}
+        imgAlt={["An example Quiz"]}
+        description="An app that allows you to schedule reminders."
+        code="https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp"
       />
     </MediaQuery>
   </div>
