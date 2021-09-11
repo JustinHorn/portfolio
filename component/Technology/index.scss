@@ -1,0 +1,48 @@
+.technology {
+  .merge {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > .skill-area {
+      margin: 0 4em;
+    }
+  }
+
+  .skill-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h3 {
+      margin-top: 2em;
+      margin-bottom: 0em;
+    }
+
+    .tile {
+      width: 6em;
+      height: 6em;
+      margin: 1em;
+      border-radius: 0.25em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $soft-yellow;
+
+      .icon {
+        width: 4em;
+        height: 4em;
+        filter: brightness(0) saturate(100%) invert(88%) sepia(51%)
+          saturate(378%) hue-rotate(337deg) brightness(107%) contrast(105%);
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}

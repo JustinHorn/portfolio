@@ -1,6 +1,4 @@
-@import "./color.scss";
-
-.flutter {
+.react {
   color: $soft-yellow;
   width: 100%;
   height: 100%;
@@ -13,12 +11,12 @@
   column-gap: 4em;
 
   .project {
+    width: 100%;
     height: 100%;
     color: $soft-yellow;
 
     display: flex;
     flex-direction: column;
-    margin: auto;
 
     & > * {
       flex: 0 1 auto;
@@ -26,10 +24,21 @@
     }
 
     .fotos {
-      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      padding: 0.5em 0;
+      row-gap: 0.5em;
+      column-gap: 0.5em;
 
       img {
-        max-height: 50vh;
+        width: 100%;
+      }
+
+      .one {
+        grid-column: span 2;
+        grid-row: span 2;
       }
     }
 

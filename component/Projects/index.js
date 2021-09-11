@@ -104,7 +104,6 @@ const Projects = () => {
 
               <div className="monitor-body">
                 {show === "React" && <ReactBody />}
-                {show === "NodeJS" && <ReactBody />}
                 {show === "Flutter" && <FlutterBody />}
               </div>
             </div>

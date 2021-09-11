@@ -1,6 +1,6 @@
 @import "./color.scss";
-@import "./header.scss";
 @import "./main.scss";
+@import "/component/";
 
 html {
   font-family: "Roboto", sans-serif;
@@ -44,37 +44,6 @@ button {
 
   &:active {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
-  }
-}
-
-nav {
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  width: 100vw;
-  justify-content: flex-end;
-  opacity: 0;
-  background-color: black;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-icon {
-  color: $contrast-happy;
-
-  margin: 10px;
-  svg {
-    width: 40px;
-    height: 40px;
   }
 }
 

@@ -1,0 +1,148 @@
+@import "./flutterproject.scss";
+@import "./reactprojects.scss";
+
+.projects {
+  .frontend {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0.5em;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    width: 100%;
+    max-width: 800px;
+
+    img {
+      width: 100%;
+    }
+
+    .one {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+
+  .tools {
+    align-self: flex-start;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em;
+
+    div {
+      background-color: grey;
+      margin: 0.5em;
+      margin-left: 0;
+      padding: 0.5em;
+      border-radius: 1em;
+      cursor: default;
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: "";
+        padding: 0.125em;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 0.125em);
+        left: calc(100% + 0.125em);
+      }
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .tile {
+      padding: 2em;
+      width: 16em;
+      height: 16em;
+      border: 1px solid $soft-yellow;
+      filter: brightness(0) saturate(100%) invert(88%) sepia(51%) saturate(378%)
+        hue-rotate(337deg) brightness(107%) contrast(105%);
+      cursor: zoom-in;
+
+      place-self: center;
+      margin: 1em;
+
+      img {
+        width: 12em;
+        height: 12em;
+      }
+    }
+  }
+
+  .monitor-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    .background {
+      position: absolute;
+      background-color: grey;
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 1400px) {
+      .monitor {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .monitor {
+      z-index: 10;
+      margin: 5% auto;
+      height: 90%;
+      max-width: 1600px;
+      color: $soft-yellow;
+      background-color: black;
+      border: 5px solid $contrast-happy;
+      border-radius: 4px;
+
+      display: flex;
+      flex-direction: column;
+
+      .monitor-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
+        padding-right: 1em;
+
+        .close {
+          filter: invert(89%) sepia(26%) saturate(529%) hue-rotate(9deg)
+            brightness(105%) contrast(107%);
+          width: 1em;
+          height: 1em;
+          cursor: pointer;
+        }
+      }
+
+      .monitor-body {
+        flex: 1 1 0;
+        padding: 1em;
+      }
+    }
+
+    @media screen and (max-width: 1600px) {
+      .monitor {
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
