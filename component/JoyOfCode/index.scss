@@ -1,0 +1,75 @@
+.joy-of-code {
+  width: 100%;
+  max-width: unset;
+
+  padding: 10em 0;
+
+  background-image: radial-gradient(
+    circle at center,
+    black 0,
+    white 10%,
+    grey 20%,
+    black
+  );
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .joc-pictures {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0.5em;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    width: 100%;
+    max-width: 800px;
+
+    img {
+      width: 100%;
+      height: initial;
+    }
+
+    div {
+      height: 0;
+      padding-bottom: 62.5%;
+    }
+
+    .one {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+
+  .tools {
+    align-self: flex-start;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em;
+
+    div {
+      background-color: grey;
+      margin: 0.5em;
+      margin-left: 0;
+      padding: 0.5em;
+      border-radius: 1em;
+      cursor: default;
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: "";
+        padding: 0.125em;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: calc(50% - 0.125em);
+        left: calc(100% + 0.125em);
+      }
+    }
+  }
+}

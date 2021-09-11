@@ -19,51 +19,6 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2>Joy Of Code</h2>
-
-      <div className="frontend">
-        <img
-          className="page one"
-          src="img/projects/JoyOfCode/Homepage.png"
-          alt="JoyOfCode -homepage"
-        />
-        <img
-          className="page"
-          src="img/projects/JoyOfCode/Projectpage.png"
-          alt="JoyOfCode - projectpage"
-        />
-        <img
-          className="page"
-          src="img/projects/JoyOfCode/Userpage.png"
-          alt="JoyOfCode - userpage"
-        />
-      </div>
-      <p>
-        Joy Of Code is a platform I created as final project for the WBS Coding
-        school. My friends and me used it to collect and share our
-        Web-Development projects. The pictures shown on the cards were made by
-        the platform.
-      </p>
-      <div className="tools">
-        <div>React</div>
-        <div>Apollo</div>
-        <div>GraphQL</div>
-        <div>Express</div>
-        <div>Prisma</div>
-        <div>HerokuSQL</div>
-        <div>AWS S3</div>
-      </div>
-
-      <div>
-        <a href="https://joyofcode.herokuapp.com/?lined=false">
-          <button>Visit</button>
-        </a>
-
-        <a href="https://github.com/JustinHorn/joyofcode">
-          <button>View Code</button>
-        </a>
-      </div>
-
       <h2>Some Projects I made with</h2>
 
       <div className="cards">

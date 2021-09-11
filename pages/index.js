@@ -2,6 +2,7 @@ import { config, library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Header from "component/Header";
+import { JoyOfCode } from "component/JoyOfCode";
 import Nav from "component/Nav";
 import { Praise } from "component/Praise";
 import Projects from "component/Projects";
@@ -22,6 +23,7 @@ function Main() {
       <main id="main">
         <Technology />
         <Praise />
+        <JoyOfCode />
         <Projects />
         <section id="about" className="about">
           <p>
