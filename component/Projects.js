@@ -179,20 +179,22 @@ const FlutterBody = () => (
       description="A version of 2048 with chess figures as game pieces."
       code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
     />
-    <FlutterProject
-      name="Movie-Suggester"
-      imgFolder="android"
-      img={["movie_suggester.jpg"]}
-      imgAlt={["A suggested movie"]}
-      description="An app that randomly suggest you movies."
-      code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
-    />
-    <MediaQuery minWidth={630}>
+    <MediaQuery minWidth={680}>
+      <FlutterProject
+        name="Movie-Suggester"
+        imgFolder="android"
+        img={["movie_suggester.jpg"]}
+        imgAlt={["A suggested movie"]}
+        description="An app that randomly suggest you movies."
+        code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
+      />
+    </MediaQuery>
+    <MediaQuery minWidth={1030}>
       <FlutterProject
         name="Remindely"
         imgFolder="android"
         img={["reminder.jpg"]}
-        imgAlt={["An example Quiz"]}
+        imgAlt={["Cards of some reminders."]}
         description="An app that allows you to schedule reminders."
         code="https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp"
       />
