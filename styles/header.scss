@@ -14,7 +14,6 @@ header {
   display: block;
   position: relative;
   overflow: hidden;
-  z-index: -1;
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
@@ -57,13 +56,8 @@ header {
   flex-direction: column;
 
   .fullstack-headline {
-    margin: 1em;
     text-decoration: underline;
     text-decoration-color: $contrast-happy;
-  }
-
-  .justin-headline {
-    margin: 0.5em;
   }
 }
 

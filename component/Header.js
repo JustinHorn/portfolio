@@ -19,7 +19,13 @@ const Header = () => {
             <div className="img" />
             <div className="scores">
               <div className="score github">
-                <FontAwesomeIcon className="icon" icon={["fab", "github"]} />
+                <a
+                  href={"https://github.com/JustinHorn"}
+                  title={"Github"}
+                  className="social-icon"
+                >
+                  <FontAwesomeIcon className="icon" icon={["fab", "github"]} />
+                </a>
                 <span>
                   7{" "}
                   <FontAwesomeIcon
@@ -29,10 +35,18 @@ const Header = () => {
                 </span>
               </div>
               <div className="score stack-overflow">
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={["fab", "stack-overflow"]}
-                />
+                <a
+                  href={
+                    "https://stackoverflow.com/users/12753573/justin?tab=profile"
+                  }
+                  title={"Stackoverflow"}
+                  className="social-icon"
+                >
+                  <FontAwesomeIcon
+                    className="icon"
+                    icon={["fab", "stack-overflow"]}
+                  />
+                </a>
                 <span>100 - 10</span>
               </div>
             </div>
@@ -44,6 +58,29 @@ const Header = () => {
               I just love cracking a tough challenge. My work is my life and
               doing a good job fills me with pride and joy.{" "}
             </p>
+            <div className="socials">
+              <a
+                href={"https://www.linkedin.com/in/justin-christian-horn/"}
+                title={"Linkedin"}
+                className="social-icon"
+              >
+                <FontAwesomeIcon icon={["fab", "linkedin"]} />
+              </a>
+              <a
+                href={"mailto:hello@justinhorn.io"}
+                title={"Email"}
+                className="social-icon"
+              >
+                <FontAwesomeIcon icon={["fas", "envelope"]} />
+              </a>
+              <a
+                href={"https://twitter.com/Horn00Justin"}
+                title={"Twitter"}
+                className="social-icon"
+              >
+                <FontAwesomeIcon icon={["fab", "twitter"]} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

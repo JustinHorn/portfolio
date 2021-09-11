@@ -75,6 +75,7 @@ const Projects = () => {
           <img src="img/icons/NodeJS.svg" alt="NodeJS" />
           <h4>NodeJS</h4>
         </div> */}
+
         <div className="tile" onClick={() => setShow("Flutter")}>
           <img src="img/icons/Flutter.svg" alt="Flutter" />
           <h4>Flutter</h4>

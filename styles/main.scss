@@ -30,11 +30,13 @@ main {
 
       .tiles {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       h3 {
-        margin-top: 2rem;
-        margin-bottom: 0rem;
+        margin-top: 2em;
+        margin-bottom: 0em;
       }
 
       .tile {
@@ -82,7 +84,6 @@ main {
       padding: 0.5em;
       row-gap: 0.5em;
       column-gap: 0.5em;
-      min-width: 500px;
       width: 100%;
       max-width: 800px;
 
@@ -102,10 +103,11 @@ main {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin: 1em;
 
       div {
         background-color: grey;
-        margin: 1em;
+        margin: 0.5em;
         margin-left: 0;
         padding: 0.5em;
         border-radius: 1em;
@@ -114,35 +116,20 @@ main {
 
         &:not(:last-child)::after {
           content: "";
-          padding: 4px;
+          padding: 0.125em;
           border-radius: 50%;
           background-color: white;
           position: absolute;
-          top: calc(50% - 4px);
-          left: calc(100% + calc(0.5em - 4px));
+          top: calc(50% - 0.125em);
+          left: calc(100% + 0.125em);
         }
       }
     }
 
-    .backend {
-      display: grid;
-      place-items: center;
-      grid-template-rows: repeat(3, 1fr);
-      img {
-        width: 5em;
-        filter: brightness(0) saturate(100%) invert(88%) sepia(51%)
-          saturate(378%) hue-rotate(337deg) brightness(107%) contrast(105%);
-      }
-    }
-
     .cards {
-      // display: grid;
-      // grid-template-columns: 1fr 1fr;
-      // grid-template-rows: 1fr;
-      // column-gap: 0.5em;
-      // row-gap: 2em;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
 
       .tile {
         padding: 2em;
@@ -200,7 +187,7 @@ main {
         color: $soft-yellow;
         background-color: black;
         border: 5px solid $contrast-happy;
-        border-radius: 5px;
+        border-radius: 4px;
 
         display: flex;
         flex-direction: column;
@@ -208,7 +195,8 @@ main {
         .monitor-nav {
           display: flex;
           justify-content: space-between;
-          padding: 1em;
+          padding-top: 1em;
+          padding-right: 1em;
 
           .close {
             filter: invert(89%) sepia(26%) saturate(529%) hue-rotate(9deg)
@@ -222,6 +210,13 @@ main {
         .monitor-body {
           flex: 1 1 0;
           padding: 1em;
+        }
+      }
+
+      @media screen and (max-width: 1600px) {
+        .monitor {
+          border-left: 0;
+          border-right: 0;
         }
       }
     }
