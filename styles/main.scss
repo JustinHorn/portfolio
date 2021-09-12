@@ -17,4 +17,12 @@ main {
   .about {
     background-color: rgb(76, 76, 76);
   }
+
+  background-image: radial-gradient(
+    circle at center,
+    black 0,
+    white 10%,
+    grey 20%,
+    black 70%
+  );
 }

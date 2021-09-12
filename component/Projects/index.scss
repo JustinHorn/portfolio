@@ -29,17 +29,20 @@
   .monitor-overlay {
     position: fixed;
     width: 100%;
-    height: 100%;
+    max-width: 100vw;
+    height: 100vh;
     z-index: 9;
     top: 0;
     left: 0;
+    display: grid;
+    place-items: center;
 
     .background {
       position: absolute;
-      background-color: grey;
+      background-color: black;
       width: 100%;
       height: 100%;
-      opacity: 0.9;
+      opacity: 0.5;
       top: 0;
       left: 0;
       z-index: -1;
@@ -50,14 +53,12 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
       }
     }
 
     .monitor {
       z-index: 10;
-      margin: 5% auto;
-      height: 90%;
+      margin: auto 0;
       max-width: 1600px;
       color: $soft-yellow;
       background-color: #7f7f7f;

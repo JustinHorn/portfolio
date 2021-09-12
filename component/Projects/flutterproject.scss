@@ -8,8 +8,6 @@
   grid-auto-flow: column;
   grid-template-rows: 1fr;
 
-  column-gap: 4em;
-
   .project {
     height: 100%;
     color: $soft-yellow;
@@ -51,5 +49,17 @@
       color: $soft-yellow;
       margin-right: 0.25em;
     }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .flutter {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .flutter {
+    font-size: 0.6rem;
   }
 }
