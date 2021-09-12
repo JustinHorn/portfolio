@@ -21,7 +21,7 @@ export const Praise = () => {
           fundamentals, but also can translate high-level concepts into robust,
           functional code. [...]"
         </i>
-        <h4>Federica Recatiani</h4>
+        <h4>Federica Recanatini</h4>
         <h5>Senior Developer and Tutor at the WBS Coding School </h5>
       </div>
       {/* <p>
