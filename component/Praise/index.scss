@@ -1,6 +1,9 @@
 .praise {
-  background-color: rgb(76, 76, 76);
-  p {
-    margin: 1em;
+  font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
+  div {
+    margin: 2em 0;
+    & > * {
+      margin: 0.25em;
+    }
   }
 }

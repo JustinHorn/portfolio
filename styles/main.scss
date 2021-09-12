@@ -2,7 +2,7 @@
 
 main {
   background: black;
-  padding-top: 10vh;
+  padding-top: 2.5rem;
   box-sizing: border-box;
   min-height: 100vh;
   color: $soft-yellow;
@@ -11,18 +11,6 @@ main {
 
   section {
     max-width: 1000px;
-    margin-bottom: 20vh;
+    margin-bottom: 5rem;
   }
-
-  .about {
-    background-color: rgb(76, 76, 76);
-  }
-
-  background-image: radial-gradient(
-    circle at center,
-    black 0,
-    white 10%,
-    grey 20%,
-    black 70%
-  );
 }

@@ -8,11 +8,25 @@ import { Praise } from "component/Praise";
 import Projects from "component/Projects";
 import { Technology } from "component/Technology";
 import Head from "next/head";
+import { useRef, useEffect, useState } from "react";
 
 config.autoAddCss = false;
 library.add(fas, fab);
 
 function Main() {
+  const innerRef = useRef();
+  const mainRef = useRef();
+
+  const [height, setHeight] = useState("");
+
+  useEffect(() => {
+    const { top: topHeadline, height: headlineHeight } =
+      innerRef.current.getBoundingClientRect();
+    const topMain = mainRef.current.getBoundingClientRect().top;
+
+    setHeight(topHeadline - topMain + Math.floor(headlineHeight / 2) + "px");
+  }, []);
+
   return (
     <div className="PortfolioView">
       <Head>
@@ -20,10 +34,22 @@ function Main() {
       </Head>
       <Nav />
       <Header />
-      <main id="main">
+      <main
+        id="main"
+        ref={mainRef}
+        style={{
+          backgroundImage: `radial-gradient(
+    circle at 50% ${height},
+    black 0,
+    white 10%,
+    grey 20%,
+    black 70%
+  )`,
+        }}
+      >
         <Technology />
         <Praise />
-        <JoyOfCode />
+        <JoyOfCode headlineRef={innerRef} />
         <Projects />
         <section id="about" className="about">
           <p>

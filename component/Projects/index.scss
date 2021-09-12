@@ -74,18 +74,22 @@
         padding-top: 1em;
         padding-right: 1em;
 
+        .headline {
+          margin: 0.5em 0;
+        }
+
         .close {
           filter: invert(89%) sepia(26%) saturate(529%) hue-rotate(9deg)
             brightness(105%) contrast(107%);
-          width: 1em;
-          height: 1em;
+          width: 2em;
+          height: 2em;
           cursor: pointer;
         }
       }
 
       .monitor-body {
         flex: 1 1 0;
-        padding: 1em;
+        margin: 1em;
       }
     }
 

@@ -2,10 +2,13 @@
   width: 100%;
   max-width: unset;
 
-  padding: 10em 0;
-
   .container {
     max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .project-body {
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -14,7 +17,6 @@
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    padding: 0.5em;
     row-gap: 0.5em;
     column-gap: 0.5em;
     width: 100%;
