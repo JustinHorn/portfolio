@@ -6,6 +6,9 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+  h2 {
+    font-size: clamp(2rem, calc(1vw + 1rem), 3rem);
+  }
 
   .project-body {
     max-width: 800px;
@@ -38,6 +41,12 @@
     }
   }
 
+  p {
+    font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
+
+    text-align: justify;
+  }
+
   .tools {
     align-self: flex-start;
 
@@ -47,6 +56,8 @@
     margin: 1em;
 
     div {
+      font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
+
       background-color: grey;
       margin: 0.5em;
       margin-left: 0;

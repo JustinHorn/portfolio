@@ -23,6 +23,10 @@ header {
     height: 40px;
   }
 
+  .justin-headline {
+    text-align: left;
+  }
+
   .small-icon {
     width: 20px;
     height: 20px;
@@ -46,76 +50,12 @@ header {
   display: grid;
   grid-template-columns: auto minmax(auto, 600px) auto;
   grid-template-areas: ". a .";
-}
 
-.introduction {
-  font-size: 1rem;
-  grid-area: a;
-  place-self: center;
-  display: flex;
-  flex-direction: column;
-
-  .fullstack-headline {
-    text-decoration: underline;
-    text-decoration-color: $contrast-happy;
-  }
-
-  .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .social-icon {
-    color: $contrast-happy;
-
-    margin: 10px;
-    svg {
-      width: 40px;
-      height: 40px;
-    }
-  }
-}
-
-.imageAndScore {
-  margin: 0 auto;
-  display: flex;
-  width: fit-content;
-
-  .img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-image: url("/img/me.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 16px;
-  }
-
-  .scores {
+  .center {
+    grid-area: a;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .score {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .icon {
-      margin-right: 8px;
-    }
-
-    span {
-      display: flex;
-      align-items: center;
-
-      .star {
-        color: $contrast-happy;
-        margin-left: 8px;
-      }
-    }
+    justify-content: center;
   }
 }
 

@@ -7,10 +7,41 @@ main {
   min-height: 100vh;
   color: $soft-yellow;
   display: grid;
+  grid-template-columns: 1fr;
   place-items: center;
 
   section {
     max-width: 1000px;
     margin-bottom: 5rem;
+  }
+
+  .about {
+    font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  .introduction {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .imageAndScore {
+      margin: 0 auto;
+      display: flex;
+      width: fit-content;
+
+      .img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-image: url("/img/me.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 16px;
+      }
+    }
   }
 }

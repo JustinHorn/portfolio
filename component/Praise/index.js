@@ -1,11 +1,6 @@
 export const Praise = () => {
   return (
     <section id="praise" className="praise">
-      {/* <p>
-        I received the following praise from a previous college and from my
-        tutor at the WBS Coding School:
-      </p> */}
-
       <div>
         <i>
           "Justin has an amazing skill to deconstruct a tough coding challenge

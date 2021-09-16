@@ -8,7 +8,10 @@ import { Praise } from "component/Praise";
 import Projects from "component/Projects";
 import { Technology } from "component/Technology";
 import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useRef, useEffect, useState } from "react";
+import Socials from "component/Socials";
 
 config.autoAddCss = false;
 library.add(fas, fab);
@@ -19,13 +22,13 @@ function Main() {
 
   const [height, setHeight] = useState("");
 
-  useEffect(() => {
-    const { top: topHeadline, height: headlineHeight } =
-      innerRef.current.getBoundingClientRect();
-    const topMain = mainRef.current.getBoundingClientRect().top;
+  // useEffect(() => {
+  //   const { top: topHeadline, height: headlineHeight } =
+  //     innerRef.current.getBoundingClientRect();
+  //   const topMain = mainRef.current.getBoundingClientRect().top;
 
-    setHeight(topHeadline - topMain + Math.floor(headlineHeight / 2) + "px");
-  }, []);
+  //   setHeight(topHeadline - topMain + Math.floor(headlineHeight / 2) + "px");
+  // }, []);
 
   return (
     <div className="PortfolioView">
@@ -34,24 +37,25 @@ function Main() {
       </Head>
       <Nav />
       <Header />
-      <main
-        id="main"
-        ref={mainRef}
-        style={{
-          backgroundImage: `radial-gradient(
-    circle at 50% ${height},
-    black 0,
-    white 10%,
-    grey 20%,
-    black 70%
-  )`,
-        }}
-      >
+      <main id="main" ref={mainRef}>
+        <section className="introduction">
+          <div className="imageAndScore">
+            <div className="img" />
+          </div>
+          <div className="text">
+            <p>
+              I just love cracking a tough challenge. My work is my life and
+              doing a good job fills me with pride and joy.{" "}
+            </p>
+          </div>
+        </section>
+
         <Technology />
-        <Praise />
-        <JoyOfCode headlineRef={innerRef} />
+        {/* <Praise /> */}
+        {/* <JoyOfCode headlineRef={innerRef} /> */}
         <Projects />
-        <section id="about" className="about">
+        <Socials />
+        {/* <section id="about" className="about">
           <p>
             I gained my first coding experience at the age of twelve by coding a
             small shooter in scratch. Over years I switched back and forth
@@ -62,7 +66,7 @@ function Main() {
             alone and with friends. Through this projects I got a ton of
             experience and become the skilled and versatile developer that I am.
           </p>
-        </section>
+        </section> */}
       </main>
     </div>
   );
