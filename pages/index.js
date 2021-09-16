@@ -39,22 +39,34 @@ function Main() {
       <Header />
       <main id="main" ref={mainRef}>
         <section className="introduction">
-          <div className="imageAndScore">
-            <div className="img" />
-          </div>
           <div className="text">
+            <h3>About me:</h3>
             <p>
-              I just love cracking a tough challenge. My work is my life and
-              doing a good job fills me with pride and joy.{" "}
+              I am a young ambitous developer eager for the next challenge. I
+              identify with my work and straive to achieve the best.
             </p>
+            <p>
+              Other interests of mine include spaceflight, Chess and
+              anthropology.
+            </p>
+          </div>
+          <div className="container">
+            <div className="img" alt="me" />
           </div>
         </section>
 
-        <Technology />
-        {/* <Praise /> */}
+        <section className="employment">
+          <h2>Whom I have worked for</h2>
+        </section>
         {/* <JoyOfCode headlineRef={innerRef} /> */}
         <Projects />
-        <Socials />
+        <Technology />
+        {/* <Praise /> */}
+
+        <section className="contact">
+          <h2>Contact me</h2>
+          <Socials />
+        </section>
         {/* <section id="about" className="about">
           <p>
             I gained my first coding experience at the age of twelve by coding a

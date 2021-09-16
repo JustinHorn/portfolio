@@ -26,22 +26,43 @@ main {
   .introduction {
     font-size: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
 
-    .imageAndScore {
-      margin: 0 auto;
-      display: flex;
-      width: fit-content;
+    .container {
+      border-radius: 50%;
+      width: 15rem;
+      height: 15rem;
+      overflow: hidden;
+      border: 1px solid $contrast-happy;
 
       .img {
-        width: 150px;
-        height: 150px;
-        border-radius: 100%;
+        width: 15rem;
+        height: 15rem;
+        transition: transform 0.1s ease-in-out;
+        &:hover {
+          transform: rotate(-180deg);
+        }
         background-image: url("/img/me.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        margin-right: 16px;
       }
+    }
+
+    .text {
+      h3 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+
+      width: 30rem;
+      grid-area: text;
+      text-align: left;
+      margin-right: 5rem;
     }
   }
 }

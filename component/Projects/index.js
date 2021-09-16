@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2>Some Projects I made with</h2>
+      <h2>Some Projects I created:</h2>
 
       <div className="cards">
         <div className="tile" onClick={() => setShow("React")}>
