@@ -1,7 +1,7 @@
 const Employment = () => {
   return (
     <section className="employment">
-      <h2>Employers and Education:</h2>
+      <h2>Whom I have worked for:</h2>
       <div className="employer">
         <img
           src="img/company/Cadenas.png"

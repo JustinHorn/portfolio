@@ -1,6 +1,7 @@
 export const Technology = () => {
   return (
     <section id="technology" className="technology">
+      <h2>Technologies I use:</h2>
       <div className="skill-area">
         <h3>For what you see:</h3>
         <div className="tiles">
