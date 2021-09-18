@@ -4,18 +4,31 @@
   }
   .employer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 2rem;
 
     .logo {
       max-width: 10rem;
+      margin: auto;
       height: auto;
       margin-right: 1rem;
     }
-    h3 {
-      font-size: 2rem;
-    }
+
     .description {
+      & > * {
+        margin-top: 0;
+      }
+
+      h3 {
+        margin-top: 0;
+
+        font-size: 1.5rem;
+      }
+
+      span {
+        margin: 0.5rem 0;
+      }
+
       max-width: 30rem;
       display: flex;
       flex-direction: column;

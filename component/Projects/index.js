@@ -106,24 +106,22 @@ const ReactBody = () => (
       website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
       code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
     />
-    <MediaQuery minWidth={630}>
-      <ReactProject
-        name="Rickys Quest"
-        imgFolder="RickysQuest"
-        img={["QuizQuestion.png", "Quizzes.png", "Follower.png"]}
-        imgAlt={[
-          "An example Quiz",
-          "List of Quizzes",
-          "Profile showing the characters",
-        ]}
-        tags={["CSS", "React", "Firebase", "Styled-Components"]}
-        description="A web-game I made with colleges where you solve quizzes to get Characters from
+    <ReactProject
+      name="Rickys Quest"
+      imgFolder="RickysQuest"
+      img={["QuizQuestion.png", "Quizzes.png", "Follower.png"]}
+      imgAlt={[
+        "An example Quiz",
+        "List of Quizzes",
+        "Profile showing the characters",
+      ]}
+      tags={["CSS", "React", "Firebase", "Styled-Components"]}
+      description="A web-game I made with colleges where you solve quizzes to get Characters from
   the Rick and Morty multiverses powered by the Rick and
   Morty Api."
-        website="https://rickysquest.netlify.app/"
-        code="https://github.com/JustinHorn/rickysquest"
-      />
-    </MediaQuery>
+      website="https://rickysquest.netlify.app/"
+      code="https://github.com/JustinHorn/rickysquest"
+    />
   </div>
 );
 

@@ -58,6 +58,8 @@
     }
 
     .monitor {
+      max-height: 100vh;
+      overflow-y: auto;
       z-index: 10;
       margin: auto 0;
       max-width: 1600px;

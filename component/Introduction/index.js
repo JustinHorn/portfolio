@@ -13,7 +13,8 @@ const Introduction = () => {
           week web development bootcamp, worked at a startup and am currently
           working on the 3DfindIT app at my current medium sized Employeer
           CADENAS. <br /> <br /> In my freetime I like to learn new tricks and
-          skills, I am interested in Entrepreneurship and working out.
+          skills, I am interested in Entrepreneurship and work out on a regular
+          basis.
         </p>
       </div>
       <div className="container">

@@ -2,7 +2,9 @@
   font-size: 1rem;
   display: flex;
   justify-content: center;
-  height: 20rem;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
 
   .container {
     border-radius: 50%;
@@ -34,9 +36,12 @@
       margin: 1rem 0;
     }
 
-    width: 30rem;
+    width: min(30rem, 100%);
     grid-area: text;
     text-align: left;
-    margin-right: 5rem;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 5rem;
+    }
   }
 }
