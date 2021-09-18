@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Employment from "component/Employment";
 import Header from "component/Header";
 import Introduction from "component/Introduction";
-import { JoyOfCode } from "component/JoyOfCode";
+import { JoyOfCode } from "component/Projects/JoyOfCode";
 import Nav from "component/Nav";
 import { Praise } from "component/Praise";
 import Projects from "component/Projects";

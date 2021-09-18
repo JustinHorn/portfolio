@@ -1,13 +1,11 @@
 .joy-of-code {
   width: 100%;
+
   max-width: unset;
 
   .container {
     max-width: 1000px;
     margin: 0 auto;
-  }
-  h2 {
-    font-size: clamp(2rem, calc(1vw + 1rem), 3rem);
   }
 
   .project-body {
@@ -18,8 +16,8 @@
   .joc-pictures {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 0.5em;
     column-gap: 0.5em;
     width: 100%;
@@ -42,8 +40,6 @@
   }
 
   p {
-    font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
-
     text-align: justify;
   }
 
@@ -56,8 +52,6 @@
     margin: 1em;
 
     div {
-      font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
-
       background-color: grey;
       margin: 0.5em;
       margin-left: 0;

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import MediaQuery from "react-responsive";
 
 import { FlutterProject } from "./FlutterProject";
+import { JoyOfCode } from "./JoyOfCode";
 import { ReactProject } from "./ReactProject";
 
 const Projects = () => {
@@ -26,10 +27,10 @@ const Projects = () => {
           <img src="img/icons/ReactJS.svg" alt="ReactJS" />
           <h4>ReactJS</h4>
         </div>
-        {/* <div className="tile" onClick={() => setShow("NodeJS")}>
-          <img src="img/icons/NodeJS.svg" alt="NodeJS" />
-          <h4>NodeJS</h4>
-        </div> */}
+        <div className="tile" onClick={() => setShow("Joy of Code")}>
+          <img src="/code.svg" alt="Joy of Code" />
+          <h4>Joy of Code</h4>
+        </div>
 
         <div className="tile" onClick={() => setShow("Flutter")}>
           <img src="img/icons/Flutter.svg" alt="Flutter" />
@@ -59,6 +60,8 @@ const Projects = () => {
 
               <div className="monitor-body">
                 {show === "React" && <ReactBody />}
+                {show === "Joy of Code" && <JoyOfCode />}
+
                 {show === "Flutter" && <FlutterBody />}
               </div>
             </div>

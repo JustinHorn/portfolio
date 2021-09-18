@@ -2,8 +2,6 @@ export const JoyOfCode = (props) => {
   return (
     <section id="joy-of-code" className="joy-of-code">
       <div className="container">
-        <h2>Joy Of Code</h2>
-
         <div className="project-body">
           <div ref={props.headlineRef} className="joc-pictures">
             <div className="one">
