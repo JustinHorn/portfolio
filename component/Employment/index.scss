@@ -1,0 +1,25 @@
+.employment {
+  * {
+    margin-left: 0;
+  }
+  .employer {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+
+    .logo {
+      max-width: 10rem;
+      height: auto;
+      margin-right: 1rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    .description {
+      max-width: 30rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  }
+}
