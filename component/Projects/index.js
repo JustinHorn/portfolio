@@ -86,8 +86,10 @@ const ReactBody = () => (
         "Showing freestyle editor where you can place the text everywhere",
       ]}
       tags={["CSS", "React", "Firebase Auth"]}
-      description="A meme generator created with a college from WBS. It has
-  top/bottom-text and a freestyle version."
+      description={`At the WBS Coding school we were told to build a meme generator to improve our react skills. 
+      So Bruno and me grouped up and developed the shown web-app together. At first we focused on creating the top/bottom editor. 
+      When that one was soon to be finished I moved to create a freestyle version as well, while Bruno continued to improve the overall design. 
+      As a caveat I added a firebase authentication requirement for the freestyle version.`}
       website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
       code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
     />
@@ -101,8 +103,9 @@ const ReactBody = () => (
         "an empty board and gamemode: Humans vs Humans",
       ]}
       tags={["CSS", "React", "Webworker"]}
-      description=" A more complicated Version of the know Tic-Tac-Toe game
-  with two types of AI as worthy opponents."
+      description={`Actually one of my first react projects. The web-app version my Java ultimate Tic Tac Toe project.
+      I forked a git repo to have some code basics and added a random and a Monte Carlo AI. 
+      In order to not have the web-app freeze when the AI calculates its moves - I had to implement web-worker as well.`}
       website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
       code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
     />
@@ -116,9 +119,9 @@ const ReactBody = () => (
         "Profile showing the characters",
       ]}
       tags={["CSS", "React", "Firebase", "Styled-Components"]}
-      description="A web-game I made with colleges where you solve quizzes to get Characters from
-  the Rick and Morty multiverses powered by the Rick and
-  Morty Api."
+      description={`At the WBS Coding School, Joss, Erick and me belonged to the top 3 of students of our batch, so we were giving the special task of building an app outside of the regular activity.
+      Since we all love Rick and Morty we went on to build sth. with their official Api. The result was a Quiz-Game were you solve quizzes to collect Characters from the Rick and Morty multiverses.
+      `}
       website="https://rickysquest.netlify.app/"
       code="https://github.com/JustinHorn/rickysquest"
     />

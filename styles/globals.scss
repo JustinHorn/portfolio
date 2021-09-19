@@ -28,7 +28,7 @@ body {
 }
 
 button {
-  padding: 0.25rem;
+  padding: 0.5rem 1rem;
   background-color: $contrast-happy;
   border-radius: 0.25rem;
   border: 1px solid black;
@@ -36,6 +36,8 @@ button {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   color: #111111;
   cursor: pointer;
+
+  margin: 0.5rem;
 
   &:hover {
     background-color: $contrast-happy-hover;

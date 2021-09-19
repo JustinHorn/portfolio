@@ -28,11 +28,6 @@ export const ReactProject = (props) => {
         </div>
       </div>
       <p>{props.description}</p>
-      <div className="tools">
-        {props.tags.map((t) => (
-          <div>{t}</div>
-        ))}
-      </div>
       <div className="links">
         <a href={props.website}>Website</a>
         <a href={props.code}>Code</a>

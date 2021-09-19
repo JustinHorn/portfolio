@@ -48,6 +48,10 @@
     text-align: justify;
   }
 
+  .presentation {
+    margin: 1rem;
+  }
+
   .tools {
     align-self: flex-start;
 
@@ -57,7 +61,7 @@
     margin: 1em;
 
     div {
-      background-color: grey;
+      background-color: black;
       margin: 0.5em;
       margin-left: 0;
       padding: 0.5em;
