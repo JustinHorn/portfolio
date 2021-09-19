@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect, useRef } from "react";
 import MediaQuery from "react-responsive";
 
 import { FlutterProject } from "./FlutterProject";
@@ -135,7 +135,7 @@ const FlutterBody = () => (
       imgFolder="android"
       img={["2048chess.jpg"]}
       imgAlt={["2048 with chess figures"]}
-      description="A version of 2048 with chess figures as game pieces."
+      description="A version of 2048 with chess figures as game pieces. Through this project I learned to make simple animations with Flutter. "
       code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
     />
     <FlutterProject
@@ -143,7 +143,7 @@ const FlutterBody = () => (
       imgFolder="android"
       img={["movie_suggester.jpg"]}
       imgAlt={["A suggested movie"]}
-      description="An app that randomly suggest you movies."
+      description="An app that randomly suggest you movies. I scraped a list of recommended films from the internet."
       code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
     />
     <FlutterProject
@@ -151,7 +151,7 @@ const FlutterBody = () => (
       imgFolder="android"
       img={["reminder.jpg"]}
       imgAlt={["Cards of some reminders."]}
-      description="An app that allows you to schedule reminders."
+      description="An app that allows you to schedule reminders. My first Flutter App, that I created for the application process of Epap GmbH."
       code="https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp"
     />
   </div>

@@ -5,6 +5,7 @@ import Employment from "component/Employment";
 import Header from "component/Header";
 import Introduction from "component/Introduction";
 import Nav from "component/Nav";
+import Praise from "component/Praise";
 import Projects from "component/Projects";
 import Socials from "component/Socials";
 import { Technology } from "component/Technology";
@@ -29,6 +30,7 @@ function Main() {
         <Employment />
         <Projects />
         <Technology />
+        <Praise />
 
         <section className="contact">
           <h2>Contact me:</h2>

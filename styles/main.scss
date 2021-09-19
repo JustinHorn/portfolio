@@ -14,12 +14,4 @@ main {
     max-width: 1000px;
     margin-bottom: 5rem;
   }
-
-  .about {
-    font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
-
-    p {
-      text-align: justify;
-    }
-  }
 }

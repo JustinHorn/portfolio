@@ -1,28 +1,84 @@
-export const Praise = () => {
+import { useEffect, useMemo, useState } from "react";
+
+const Praise = () => {
+  const [alignmentStateIndex, setAlignmentStateIndex] = useState(0);
+
+  const alignment = useMemo(
+    () =>
+      [
+        ["center", "right", "right"],
+        ["left", "center", "right"],
+        ["left", "left", "center"],
+        ["left", "center", "right"],
+      ][alignmentStateIndex],
+    [alignmentStateIndex]
+  );
+
+  useEffect(() => {
+    const next = () => {
+      setAlignmentStateIndex(
+        alignmentStateIndex === 3 ? 0 : alignmentStateIndex + 1
+      );
+    };
+    const timeout = setTimeout(
+      next,
+      alignmentStateIndex % 2 === 0 ? 10000 : 5000
+    );
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [alignment]);
+
   return (
-    <section id="praise" className="praise">
-      <div>
-        <i>
-          "Justin has an amazing skill to deconstruct a tough coding challenge
-          into granular pieces, [...]"
-        </i>
-        <h4> Dirk Bosman </h4>
-        <h5>Data Scientist</h5>
+    <section className="praise">
+      <h2>Praise I received:</h2>
+
+      <div className="cards">
+        <PraiseCard
+          alignment={alignment[0]}
+          praise={`I loved his passion for coding, as well as his patience to explain concepts around javascript data structures and react components.`}
+          name="Dirk J Bosman - graduated with me at WBS - Data Scientist"
+          source=""
+        />
+        <PraiseCard
+          alignment={alignment[1]}
+          praise={`[...] I was very lucky to have someone as talented as Justin as a student!`}
+          name="Federica Recanatini - my Tutor at WBS - Senior Developer"
+          source=""
+        />
+        <PraiseCard
+          alignment={alignment[2]}
+          praise={`Mr. Horn was able to quickly adapt to new challenges and problems and thus effortlessly understand the interrelationships and infrastructure of the epap app and cloud environment.`}
+          name="Certificate of employment - epap GmbH - a fintech Startup aiming to digitalize receipts"
+          source=""
+        />
       </div>
-      <div>
-        <i>
-          "Justin is an exceptionally capable coder who not only has a deep
-          understanding of design patterns and a solid grasp on architecture
-          fundamentals, but also can translate high-level concepts into robust,
-          functional code. [...]"
-        </i>
-        <h4>Federica Recanatini</h4>
-        <h5>Senior Developer and Tutor at the WBS Coding School </h5>
+
+      <div className="dots">
+        {alignment.map((x, index) => (
+          <div
+            className={`dot ${x === "center" && "active"}`}
+            onClick={() => setAlignmentStateIndex(index)}
+          />
+        ))}
       </div>
-      {/* <p>
-        Futhermore 16 people have confirmed my skill in React on Linkedin and 14
-        my skill in nodejs.
-      </p> */}
     </section>
   );
 };
+
+const PraiseCard = (props) => {
+  return (
+    <div className={`card ${props.alignment}`}>
+      <p className="text">
+        <i>"{props.praise}"</i>
+      </p>
+      <div className="data">
+        <h4 className="name">{props.name}</h4>
+        {props.source && <a>{props.source}</a>}
+      </div>
+    </div>
+  );
+};
+
+export default Praise;
