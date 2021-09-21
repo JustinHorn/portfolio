@@ -23,7 +23,6 @@ function Main() {
       <Head>
         <title>Justin Horn</title>
       </Head>
-      {/* <Nav /> */}
       <Header />
       <main id="main" ref={mainRef}>
         <Introduction />
