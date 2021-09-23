@@ -4,13 +4,16 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import Employment from "component/Employment";
 import Header from "component/Header";
 import Introduction from "component/Introduction";
-import Nav from "component/Nav";
 import Praise from "component/Praise";
 import Projects from "component/Projects";
 import Socials from "component/Socials";
 import { Technology } from "component/Technology";
 import Head from "next/head";
 import { useRef } from "react";
+
+Number.prototype.clamp = function (min, max) {
+  return Math.min(Math.max(this, min), max);
+};
 
 config.autoAddCss = false;
 library.add(fas, fab);

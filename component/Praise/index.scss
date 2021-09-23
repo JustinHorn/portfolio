@@ -10,6 +10,12 @@
 
     position: relative;
 
+    .content {
+      display: flex;
+      height: 11rem;
+      min-height: 160px;
+    }
+
     .card {
       position: absolute;
       max-width: min(600px, 100vw);
@@ -39,11 +45,11 @@
       }
 
       &.left {
-        margin-left: min(-100vw, calc(95vw - 4rem));
+        margin-left: -115%;
       }
 
       &.right {
-        margin-left: max(100vw, calc(95vw + 4rem));
+        margin-left: 115%;
       }
     }
   }

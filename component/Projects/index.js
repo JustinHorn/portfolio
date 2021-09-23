@@ -1,5 +1,4 @@
 import { useEffect, useState, useLayoutEffect, useRef } from "react";
-import MediaQuery from "react-responsive";
 
 import { FlutterProject } from "./FlutterProject";
 import { JoyOfCode } from "./JoyOfCode";
