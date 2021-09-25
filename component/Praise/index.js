@@ -5,6 +5,7 @@ import { useDrag } from "react-use-gesture";
 const Praise = () => {
   const [position, setPosition] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [holdAnimation, setHoldAnimation] = useState(false);
   const alignment = ["left", "center", "right"];
 
   const [{ x }, api, stop] = useSpring(() => ({
@@ -12,54 +13,51 @@ const Praise = () => {
     x: 0,
   }));
 
-  const bind = useDrag(({ movement: [mx] }) => {
-    if (isAnimating) return false;
-    const moveX = (mx / window.innerWidth) * 100;
-    console.log(moveX);
+  const bind = useDrag(
+    ({ movement: [mx], direction: [xDir], active, velocity }) => {
+      if (isAnimating) return false;
 
-    const currentValue = x.get();
-    const nextValue = (currentValue + moveX).clamp(-100, 100);
-    console.log(nextValue);
+      const trigger = velocity > 0.2 && !active;
 
-    if (nextValue < position * 115 - 25) {
-      setPosition((position - 1).clamp(-1, 1));
-      setIsAnimating(true);
-      setTimeout(() => setIsAnimating(() => false), 100);
-    } else if (nextValue > position * 115 + 25) {
-      setPosition((position + 1).clamp(-1, 1));
-      setIsAnimating(true);
-      setTimeout(() => setIsAnimating(() => false), 100);
-    } else {
-      api({
-        x: nextValue,
-      });
+      if (trigger) {
+        if (xDir < 0) {
+          setPosition((position + 1).clamp(-1, 1));
+          setIsAnimating(true);
+          setTimeout(() => setIsAnimating(() => false), 300);
+        } else if (xDir > 0) {
+          setPosition((position - 1).clamp(-1, 1));
+          setIsAnimating(true);
+          setTimeout(() => setIsAnimating(() => false), 300);
+        }
+      }
+      setHoldAnimation(active);
     }
-  });
+  );
 
   useEffect(() => {
     api({
-      x: position * 115,
+      x: -position * 115,
     });
   }, [position]);
 
-  // useEffect(() => {
-  //   const next = () => {
-  //     setAlignmentStateIndex(
-  //       alignmentStateIndex === 1 ? -1 : alignmentStateIndex + 1
-  //     );
-  //   };
-  //   const timeout = setTimeout(next, 5000);
+  useEffect(() => {
+    if (!holdAnimation) {
+      const next = () => {
+        setPosition(position === 1 ? -1 : position + 1);
+      };
+      const timeout = setTimeout(next, 5000);
 
-  //   return () => {
-  //     clearTimeout(timeout);
-  //   };
-  // }, [alignment]);
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  }, [position, holdAnimation]);
 
   return (
-    <section className="praise">
+    <section className="praise" {...bind()}>
       <h2>Praise I received:</h2>
 
-      <div className="cards" {...bind()}>
+      <div className="cards">
         <a.div style={{ transform: to([x], (x) => `translate(${x}%,0)`) }}>
           <div className="content">
             <PraiseCard
@@ -87,14 +85,15 @@ const Praise = () => {
         </a.div>
       </div>
 
-      {/* <div className="dots">
+      <div className="dots">
         {alignment.map((x, index) => (
           <div
-            className={`dot ${index === alignmentStateIndex + 1 && "active"}`}
-            onClick={() => setAlignmentStateIndex(index - 1)}
+            key={index}
+            className={`dot ${index === position + 1 && "active"}`}
+            onClick={() => setPosition(index - 1)}
           />
         ))}
-      </div> */}
+      </div>
     </section>
   );
 };
