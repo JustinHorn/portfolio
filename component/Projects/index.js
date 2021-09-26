@@ -46,7 +46,6 @@ const Projects = () => {
             ></div>
             <div className="monitor">
               <div className="monitor-nav">
-                <span />
                 <h2 className="headline">{show}</h2>
 
                 <img

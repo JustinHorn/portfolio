@@ -29,8 +29,12 @@ export const ReactProject = (props) => {
       </div>
       <p>{props.description}</p>
       <div className="links">
-        <a href={props.website}>Website</a>
-        <a href={props.code}>Code</a>
+        <a href={props.website}>
+          <button>Visit</button>
+        </a>
+        <a href={props.code}>
+          <button>View Code</button>
+        </a>
       </div>
     </div>
   );

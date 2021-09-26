@@ -16,7 +16,9 @@ export const FlutterProject = (props) => {
         </div>
 
         <div className="links">
-          <a href={props.code}>Code</a>
+          <a href={props.code}>
+            <button>View Code</button>
+          </a>
         </div>
       </div>
     </div>

@@ -58,7 +58,7 @@ const Praise = () => {
       <h2>Praise I received:</h2>
 
       <div className="cards">
-        <a.div style={{ transform: to([x], (x) => `translate(${x}%,0)`) }}>
+        <a.div style={{ transform: to([x], (x) => `translate(${x}vw,0)`) }}>
           <div className="content">
             <PraiseCard
               key={1}

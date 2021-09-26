@@ -49,19 +49,12 @@
       z-index: -1;
     }
 
-    @media screen and (max-width: 1400px) {
-      .monitor {
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-    }
-
     .monitor {
       max-height: 100vh;
       overflow-y: auto;
       z-index: 10;
       margin: auto 0;
+
       max-width: 1600px;
       color: $soft-yellow;
       background-color: #7f7f7f;
@@ -71,22 +64,39 @@
       display: flex;
       flex-direction: column;
 
+      section {
+        margin-bottom: 0;
+      }
+
       .monitor-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding-top: 1em;
         padding-right: 1em;
+        position: relative;
 
         .headline {
           margin: 0.5em 0;
         }
 
         .close {
+          position: absolute;
+          top: 1em;
+          right: 1em;
           filter: invert(89%) sepia(26%) saturate(529%) hue-rotate(9deg)
             brightness(105%) contrast(107%);
           width: 2em;
           height: 2em;
           cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+
+          @media screen and (max-width: 900px) {
+            position: fixed;
+          }
         }
       }
 

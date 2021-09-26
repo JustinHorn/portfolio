@@ -1,37 +1,38 @@
 .flutter {
   color: $soft-yellow;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 100%;
+  font-size: 1rem;
 
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
+  column-gap: 4em;
 
   .project {
     height: 100%;
-    color: $soft-yellow;
+    width: 100%;
 
-    .project-body {
-      width: 16em;
-      margin: 0 auto;
-    }
+    color: $soft-yellow;
 
     display: flex;
     flex-direction: column;
-    margin: auto;
 
     & > * {
       flex: 0 1 auto;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-body {
+      width: 16rem;
+      margin: 0 auto;
     }
 
     .fotos {
-      margin: 0 auto;
-
       img {
-        height: 28em;
-        width: 16em;
+        height: 28rem;
+        width: 16rem;
       }
     }
 
@@ -49,17 +50,5 @@
       color: $soft-yellow;
       margin-right: 0.25em;
     }
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .flutter {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .flutter {
-    font-size: 0.6rem;
   }
 }

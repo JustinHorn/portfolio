@@ -34,10 +34,9 @@ function Main() {
         <Technology />
         <Praise />
 
-        <section className="contact">
-          <h2>Contact me:</h2>
+        {/* <section className="contact">
           <Socials />
-        </section>
+        </section> */}
       </main>
     </div>
   );

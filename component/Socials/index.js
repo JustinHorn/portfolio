@@ -24,13 +24,13 @@ const Socials = () => {
       >
         <FontAwesomeIcon icon={["fab", "twitter"]} />
       </a>
-      <a
+      {/* <a
         href={"https://stackoverflow.com/users/12753573/justin?tab=profile"}
         title={"Stackoverflow"}
         className="social-icon"
       >
         <FontAwesomeIcon className="icon" icon={["fab", "stack-overflow"]} />
-      </a>
+      </a> */}
       <a
         href={"https://github.com/JustinHorn"}
         title={"Github"}

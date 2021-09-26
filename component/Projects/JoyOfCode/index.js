@@ -1,4 +1,17 @@
+import { useRef, useState, useLayoutEffect } from "react";
+
 export const JoyOfCode = (props) => {
+  const [height, setHeight] = useState("356");
+  const containerRef = useRef();
+
+  useLayoutEffect(() => {
+    setHeight(
+      Math.floor(
+        containerRef.current.getBoundingClientRect().width * 0.56
+      ).toString()
+    );
+  }, []);
+
   return (
     <section id="joy-of-code" className="joy-of-code">
       <div className="container">
@@ -56,8 +69,9 @@ export const JoyOfCode = (props) => {
           <div className="presentation">
             <h4>My presentation of the final project:</h4>
             <iframe
-              width="560"
-              height="315"
+              ref={containerRef}
+              width="100%"
+              height={height}
               src="https://www.youtube.com/embed/pXMu9oTCnDU?start=3540"
               title="YouTube video player"
               frameborder="0"
@@ -65,15 +79,6 @@ export const JoyOfCode = (props) => {
               allowfullscreen
             ></iframe>
           </div>
-          {/* <div className="tools">
-            <div>React</div>
-            <div>Apollo</div>
-            <div>GraphQL</div>
-            <div>Express</div>
-            <div>Prisma</div>
-            <div>HerokuSQL</div>
-            <div>AWS S3</div>
-          </div> */}
 
           <div>
             <a href="https://joyofcode.herokuapp.com/?lined=false">
