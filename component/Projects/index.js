@@ -1,4 +1,5 @@
 import { useEffect, useState, useLayoutEffect, useRef } from "react";
+import Section from "../Section";
 
 import { FlutterProject } from "./FlutterProject";
 import { JoyOfCode } from "./JoyOfCode";
@@ -18,7 +19,7 @@ const Projects = () => {
   }, [show]);
 
   return (
-    <section id="projects" className="projects">
+    <Section id="projects" className="projects">
       <h2>Some Projects I created:</h2>
 
       <div className="cards">
@@ -66,7 +67,7 @@ const Projects = () => {
           </div>
         </>
       )}
-    </section>
+    </Section>
   );
 };
 

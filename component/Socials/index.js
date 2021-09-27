@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Section from "../Section";
 
 const Socials = () => {
   return (
-    <div className="socials">
+    <Section className="socials">
       <a
         href={"https://www.linkedin.com/in/justin-christian-horn/"}
         title={"Linkedin"}
@@ -38,7 +39,7 @@ const Socials = () => {
       >
         <FontAwesomeIcon className="icon" icon={["fab", "github"]} />
       </a>
-    </div>
+    </Section>
   );
 };
 

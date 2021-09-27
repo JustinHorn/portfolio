@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { a, config, to, useSpring } from "react-spring";
 import { useDrag } from "react-use-gesture";
+import Section from "../Section";
 
 const Praise = () => {
   const [position, setPosition] = useState(0);
@@ -54,7 +55,7 @@ const Praise = () => {
   }, [position, holdAnimation]);
 
   return (
-    <section className="praise" {...bind()}>
+    <Section className="praise" {...bind()}>
       <h2>Praise I received:</h2>
 
       <div className="cards">
@@ -94,7 +95,7 @@ const Praise = () => {
           />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 

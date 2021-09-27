@@ -34,9 +34,9 @@ function Main() {
         <Technology />
         <Praise />
 
-        {/* <section className="contact">
+        <section className="contact">
           <Socials />
-        </section> */}
+        </section>
       </main>
     </div>
   );

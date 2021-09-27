@@ -1,6 +1,8 @@
+import Section from "../Section";
+
 const Employment = () => {
   return (
-    <section className="employment">
+    <Section className="employment">
       <h2>Whom I have worked for:</h2>
       <div className="employer">
         <img
@@ -35,7 +37,7 @@ const Employment = () => {
           </p>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

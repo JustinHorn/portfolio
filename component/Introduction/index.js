@@ -1,6 +1,8 @@
+import Section from "../Section";
+
 const Introduction = () => {
   return (
-    <section className="introduction">
+    <Section className="introduction">
       <div className="text">
         <h3>About me:</h3>
         <p>
@@ -20,7 +22,7 @@ const Introduction = () => {
       <div className="container">
         <div className="img" alt="me" />
       </div>
-    </section>
+    </Section>
   );
 };
 
