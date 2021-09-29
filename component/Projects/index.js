@@ -1,6 +1,6 @@
-import { useEffect, useState, useLayoutEffect, useRef } from "react";
-import Section from "../Section";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
+import Section from "../Section";
 import { FlutterProject } from "./FlutterProject";
 import { JoyOfCode } from "./JoyOfCode";
 import { ReactProject } from "./ReactProject";
@@ -19,25 +19,26 @@ const Projects = () => {
   }, [show]);
 
   return (
-    <Section id="projects" className="projects">
-      <h2>Some Projects I created:</h2>
+    <>
+      <Section id="projects" className="projects">
+        <h2>Some Projects I created:</h2>
 
-      <div className="cards">
-        <div className="tile" onClick={() => setShow("React")}>
-          <img src="img/icons/ReactJS.svg" alt="ReactJS" />
-          <h4>ReactJS</h4>
-        </div>
-        <div className="tile" onClick={() => setShow("Joy of Code")}>
-          <img src="/code.svg" alt="Joy of Code" />
-          <h4>Joy of Code</h4>
-        </div>
+        <div className="cards">
+          <div className="tile" onClick={() => setShow("React")}>
+            <img src="img/icons/ReactJS.svg" alt="ReactJS" />
+            <h4>ReactJS</h4>
+          </div>
+          <div className="tile" onClick={() => setShow("Joy of Code")}>
+            <img src="/code.svg" alt="Joy of Code" />
+            <h4>Joy of Code</h4>
+          </div>
 
-        <div className="tile" onClick={() => setShow("Flutter")}>
-          <img src="img/icons/Flutter.svg" alt="Flutter" />
-          <h4>Flutter</h4>
+          <div className="tile" onClick={() => setShow("Flutter")}>
+            <img src="img/icons/Flutter.svg" alt="Flutter" />
+            <h4>Flutter</h4>
+          </div>
         </div>
-      </div>
-
+      </Section>
       {show !== "nothing" && (
         <>
           <div className="monitor-overlay">
@@ -67,7 +68,7 @@ const Projects = () => {
           </div>
         </>
       )}
-    </Section>
+    </>
   );
 };
 

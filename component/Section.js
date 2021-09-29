@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 const Section = ({ children, ref: outerRef, ...props }) => {
   const ref = useRef();
@@ -19,7 +19,6 @@ const Section = ({ children, ref: outerRef, ...props }) => {
   return (
     <section
       {...props}
-      id={props.id}
       className={`hidden-section ${inview && "show"} ${props.className}`}
       ref={ref}
     >
