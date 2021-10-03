@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Section from "../Section";
 import { FlutterProject } from "./FlutterProject";
@@ -40,33 +40,28 @@ const Projects = () => {
         </div>
       </Section>
       {show !== "nothing" && (
-        <>
-          <div className="monitor-overlay">
-            <div
-              className="background"
-              onClick={() => setShow("nothing")}
-            ></div>
-            <div className="monitor">
-              <div className="monitor-nav">
-                <h2 className="headline">{show}</h2>
+        <div className="monitor-overlay">
+          <div className="background" onClick={() => setShow("nothing")}></div>
+          <div className="monitor">
+            <div className="monitor-nav">
+              <h2 className="headline">{show}</h2>
 
-                <img
-                  className="close"
-                  src="img/icons/X.svg"
-                  alt="Close"
-                  onClick={() => setShow("nothing")}
-                />
-              </div>
+              <img
+                className="close"
+                src="img/icons/X.svg"
+                alt="Close"
+                onClick={() => setShow("nothing")}
+              />
+            </div>
 
-              <div className="monitor-body">
-                {show === "React" && <ReactBody />}
-                {show === "Joy of Code" && <JoyOfCode />}
+            <div className="monitor-body">
+              {show === "React" && <ReactBody />}
+              {show === "Joy of Code" && <JoyOfCode />}
 
-                {show === "Flutter" && <FlutterBody />}
-              </div>
+              {show === "Flutter" && <FlutterBody />}
             </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );

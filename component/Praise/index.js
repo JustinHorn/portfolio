@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { a, config, to, useSpring } from "react-spring";
 import { useDrag } from "react-use-gesture";
+
 import Section from "../Section";
 
 const Praise = () => {
@@ -12,6 +13,7 @@ const Praise = () => {
   const [{ x }, api, stop] = useSpring(() => ({
     config: config.slow,
     x: 0,
+    onFrame: (props) => console.log(props),
   }));
 
   const bind = useDrag(
