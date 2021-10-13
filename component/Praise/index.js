@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { a, config, to, useSpring } from "react-spring";
 import { useDrag } from "react-use-gesture";
 

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Section = ({ children, ref: outerRef, ...props }) => {
   const ref = useRef();
@@ -6,14 +6,16 @@ const Section = ({ children, ref: outerRef, ...props }) => {
   const observer = useRef();
   const [inview, setInview] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     observer.current = new IntersectionObserver((entries) => {
       entries.forEach(
         (entry) => entry.isIntersecting && setInview(entry.isIntersecting)
       );
     });
 
-    observer.current.observe(ref.current);
+    setTimeout(() => {
+      observer.current.observe(ref.current);
+    }, 0);
   }, []);
 
   return (
