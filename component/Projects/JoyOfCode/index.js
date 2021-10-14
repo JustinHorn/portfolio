@@ -1,4 +1,5 @@
 import { useRef, useState, useLayoutEffect } from "react";
+import Image from "next/image";
 
 export const JoyOfCode = (props) => {
   const [height, setHeight] = useState("356");
@@ -18,24 +19,35 @@ export const JoyOfCode = (props) => {
         <div className="project-body">
           <div ref={props.headlineRef} className="joc-pictures">
             <div className="one">
-              <img
+              <Image
                 className="pag"
-                src="img/projects/JoyOfCode/Homepage.png"
+                src="/img/projects/JoyOfCode/Homepage.png"
                 alt="JoyOfCode -homepage"
+                layout="fill"
+                priority
+                loading="eager"
               />
             </div>
             <div>
-              <img
+              <Image
                 className="page"
-                src="img/projects/JoyOfCode/Projectpage.png"
+                src="/img/projects/JoyOfCode/Projectpage.png"
                 alt="JoyOfCode - projectpage"
+                layout="fill"
+                priority
+                loading="eager"
+                sizes="50vw"
               />
             </div>
             <div>
-              <img
+              <Image
                 className="page"
-                src="img/projects/JoyOfCode/Userpage.png"
+                src="/img/projects/JoyOfCode/Userpage.png"
                 alt="JoyOfCode - userpage"
+                layout="fill"
+                priority
+                loading="eager"
+                sizes="50vw"
               />
             </div>
           </div>
@@ -74,9 +86,9 @@ export const JoyOfCode = (props) => {
               height={height}
               src="https://www.youtube.com/embed/pXMu9oTCnDU?start=3540"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
 

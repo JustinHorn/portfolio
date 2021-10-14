@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Section from "../Section";
 
 const Introduction = () => {
@@ -20,7 +22,16 @@ const Introduction = () => {
         </p>
       </div>
       <div className="container">
-        <div className="img" alt="me" />
+        <Image
+          src="/img/me.jpg"
+          layout="fill"
+          objectFit="cover"
+          sizes="50vw"
+          objectPosition="top"
+          className="img"
+          alt="me in a suite"
+        />
+        {/* <div className="img" alt="me" /> */}
       </div>
     </Section>
   );

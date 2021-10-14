@@ -1,14 +1,20 @@
+import Image from "next/image";
+
 export const FlutterProject = (props) => {
   return (
     <div className="project">
       <h3>{props.name}</h3>
       <div className="project-body">
         <div className="fotos">
-          <img
-            src={`img/projects/${props.imgFolder}/${props.img[0]}`}
+          <Image
+            src={`/img/projects/${props.imgFolder}/${props.img[0]}`}
             alt={props.imgAlt[0]}
             title={props.imgAlt[0]}
             className="one"
+            loading="eager"
+            layout="fill"
+            sizes="50vw"
+            priority
           />
         </div>
         <div className="description">
