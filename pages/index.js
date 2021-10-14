@@ -1,15 +1,15 @@
-import { config, library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import Employment from "component/Employment";
-import Header from "component/Header";
-import Introduction from "component/Introduction";
-import Praise from "component/Praise";
-import Projects from "component/Projects";
-import Socials from "component/Socials";
-import { Technology } from "component/Technology";
-import Head from "next/head";
-import { useRef } from "react";
+import { config, library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import Employment from 'component/Employment';
+import Header from 'component/Header';
+import Introduction from 'component/Introduction';
+import Praise from 'component/Praise';
+import Projects from 'component/Projects';
+import Socials from 'component/Socials';
+import { Technology } from 'component/Technology';
+import Head from 'next/head';
+import { useRef } from 'react';
 
 Number.prototype.clamp = function (min, max) {
   return Math.min(Math.max(this, min), max);
@@ -33,7 +33,6 @@ function Main() {
         <Projects />
         <Technology />
         <Praise />
-
         <section className="contact">
           <Socials />
         </section>
