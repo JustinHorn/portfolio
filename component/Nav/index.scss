@@ -5,10 +5,18 @@ nav {
   top: 0;
   width: 100vw;
   justify-content: flex-end;
-  opacity: 0;
-  background-color: black;
 
-  &:hover {
-    opacity: 1;
+  button {
+    opacity: 0.25;
+    transition: 0.5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
   }
 }

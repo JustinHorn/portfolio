@@ -1,9 +1,13 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Nav = () => {
   return (
     <nav>
       <div className="navButtons">
-        <button>document</button>
-        <button>german/english</button>
+        <button onClick={() => window.open("/ResumeJustinHorn.pdf")}>
+          <FontAwesomeIcon icon={"file-alt"} />
+        </button>
+        {/* <button>german/english</button> */}
       </div>
     </nav>
   );
