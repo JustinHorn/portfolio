@@ -27,6 +27,10 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <meta
+            name="description"
+            content="The Portfolio of Justin Horn. Showing about him, his employment history, his work, projects he has created and praise he received."
+          />
         </Head>
         <body>
           <Main />

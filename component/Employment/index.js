@@ -23,7 +23,7 @@ const Employment = () => {
         </div>
       </div>
       <div className="employer">
-        <img src="img/company/epap.png" alt="epap-logo" className="logo" />
+        <img src="img/company/epap.png" alt="epap GmbH logo" className="logo" />
         <div className="description">
           <h3>Full Stack Development Internship</h3>
           <h4>Epap GmbH, Hannover / Remote</h4>
