@@ -7,7 +7,6 @@ const Nav = () => {
         <button onClick={() => window.open("/ResumeJustinHorn.pdf")}>
           <FontAwesomeIcon icon={"file-alt"} />
         </button>
-        {/* <button>german/english</button> */}
       </div>
     </nav>
   );

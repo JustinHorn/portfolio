@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <>
       <Section id="projects" className="projects">
-        <h2>Some Projects I created:</h2>
+        <h2>Some of the projects I created:</h2>
 
         <div className="cards">
           <div className="tile" onClick={() => setShow("React")}>

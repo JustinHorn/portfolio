@@ -20,7 +20,6 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-
   overflow-y: visible;
   text-align: center;
   min-height: 100vh;
@@ -41,7 +40,7 @@ button {
   margin: 0.5rem;
 
   &:hover {
-    background-color: $contrast-happy-hover;
+    background-color: $soft-yellow;
     color: black;
   }
 

@@ -3,7 +3,7 @@ import Section from "../Section";
 const Employment = () => {
   return (
     <Section className="employment">
-      <h2>Whom I have worked for:</h2>
+      <h2>My work experience:</h2>
       <div className="employer">
         <img
           src="img/company/Cadenas.png"
