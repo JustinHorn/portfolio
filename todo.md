@@ -1,0 +1,12 @@
+- images take too long to load and are to big.
+  -> Crop them and check aspect ratio
+  -> add a background so that the user expects them
+- monitor scrolling can be a bit unnatural
+  -> maybe position the monitor inside a scroll container
+  (how to handle on mobile?)
+- the current header (night sky)is a bit sleepy get some action in there
+  -> the greeting should have larger more masculine found that kind of gets thrown in there
+  -> have the stars staying still?
+  ->
+- when hovering on sth. it react's but it's color is kind of week
+  -> make hovering increase saturation instead of decreasing it

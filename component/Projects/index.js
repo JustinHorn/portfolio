@@ -1,22 +1,38 @@
-import { useEffect, useState } from "react";
+import { mergeClassNames } from "helper";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import Section from "../Section";
 import { FlutterProject } from "./FlutterProject";
 import { JoyOfCode } from "./JoyOfCode";
 import { ReactProject } from "./ReactProject";
 
-const Projects = () => {
-  const [show, setShow] = useState("nothing");
+const Projects = (props) => {
+  const { showMonitor, setShowMonitor } = props;
+  const [hideVerticalBorder, setHideVerticalBorder] = useState(false);
+  const [hideHorizontalBorder, setHideHorizontalBorder] = useState(false);
 
-  useEffect(() => {
-    const body = document.querySelector("body");
+  const bodyRef = useRef();
+  const monitorRef = useRef();
 
-    if (show !== "nothing") {
-      body.style = "overflow:hidden;";
-    } else {
-      body.style = "";
-    }
-  }, [show]);
+  useLayoutEffect(() => {
+    if (!bodyRef.current) bodyRef.current = document.querySelector("body");
+    if (showMonitor === "nothing") return;
+    // if (showMonitor === "nothing") {
+    //   bodyRef.current.style = "";
+    //   return;
+    // } else {
+    //   bodyRef.current.style = "overflow:hidden;";
+    // }
+
+    const monitorHeight = monitorRef.current.offsetHeight;
+    const monitorWidth = monitorRef.current.offsetWidth;
+
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    setHideVerticalBorder(monitorHeight >= viewportHeight);
+    setHideHorizontalBorder(monitorWidth >= viewportWidth);
+  }, [showMonitor]);
 
   return (
     <>
@@ -24,41 +40,51 @@ const Projects = () => {
         <h2>Some of the projects I created:</h2>
 
         <div className="cards">
-          <div className="tile" onClick={() => setShow("React")}>
+          <div className="tile" onClick={() => setShowMonitor("React")}>
             <img src="img/icons/ReactJS.svg" alt="ReactJS" />
             <h4>ReactJS</h4>
           </div>
-          <div className="tile" onClick={() => setShow("Joy of Code")}>
+          <div className="tile" onClick={() => setShowMonitor("Joy of Code")}>
             <img src="/code.svg" alt="Joy of Code" />
             <h4>Joy of Code</h4>
           </div>
 
-          <div className="tile" onClick={() => setShow("Flutter")}>
+          <div className="tile" onClick={() => setShowMonitor("Flutter")}>
             <img src="img/icons/Flutter.svg" alt="Flutter" />
             <h4>Flutter</h4>
           </div>
         </div>
       </Section>
-      {show !== "nothing" && (
+      {showMonitor !== "nothing" && (
         <div className="monitor-overlay">
-          <div className="background" onClick={() => setShow("nothing")}></div>
-          <div className="monitor">
+          <div
+            className="background"
+            onClick={() => setShowMonitor("nothing")}
+          ></div>
+          <div
+            className={mergeClassNames(
+              "monitor",
+              hideVerticalBorder && "hideVerticalBorder",
+              hideHorizontalBorder && "hideHorizontalBorder"
+            )}
+            ref={monitorRef}
+          >
             <div className="monitor-nav">
-              <h2 className="headline">{show}</h2>
+              <h2 className="headline">{showMonitor}</h2>
 
               <img
                 className="close"
                 src="img/icons/X.svg"
                 alt="Close"
-                onClick={() => setShow("nothing")}
+                onClick={() => setShowMonitor("nothing")}
               />
             </div>
 
             <div className="monitor-body">
-              {show === "React" && <ReactBody />}
-              {show === "Joy of Code" && <JoyOfCode />}
+              {showMonitor === "React" && <ReactBody />}
+              {showMonitor === "Joy of Code" && <JoyOfCode />}
 
-              {show === "Flutter" && <FlutterBody />}
+              {showMonitor === "Flutter" && <FlutterBody />}
             </div>
           </div>
         </div>
@@ -74,7 +100,11 @@ const ReactBody = () => (
     <ReactProject
       name="Meme Generator"
       imgFolder="MemeGenerator"
-      img={["Generator.png", "Home.png", "Freestyle.png"]}
+      img={[
+        "cropped_Generator.png",
+        "cropped_Home.png",
+        "cropped_Freestyle.png",
+      ]}
       imgAlt={[
         "showing the top/bottom generator with skeptical kid meme saying 'so you have build another generator?'",
         "showing the home screen",
@@ -91,7 +121,11 @@ const ReactBody = () => (
     <ReactProject
       name="Ultimate Tic Tac Toe"
       imgFolder="UltimateTicTacToe"
-      img={["AIvsRandom.png", "RandomVsRandom.png", "HvsH.png"]}
+      img={[
+        "cropped_AIvsRandom.png",
+        "cropped_RandomVsRandom.png",
+        "cropped_HvsH.png",
+      ]}
       imgAlt={[
         "the result of gamemode: AI vs Random - AI won",
         "the result of gamemode: randomAI vs randomAI - O won",
@@ -107,7 +141,11 @@ const ReactBody = () => (
     <ReactProject
       name="Rickys Quest"
       imgFolder="RickysQuest"
-      img={["QuizQuestion.png", "Quizzes.png", "Follower.png"]}
+      img={[
+        "cropped_QuizQuestion.png",
+        "cropped_Quizzes.png",
+        "cropped_Follower.png",
+      ]}
       imgAlt={[
         "An example Quiz",
         "List of Quizzes",
@@ -128,7 +166,7 @@ const FlutterBody = () => (
     <FlutterProject
       name="Chess 2048"
       imgFolder="android"
-      img={["2048chess.jpg"]}
+      img={["cropped_2048chess.jpg"]}
       imgAlt={["2048 with chess figures"]}
       description="A version of 2048 with chess figures as game pieces. Through this project I learned to make simple animations with Flutter. "
       code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
@@ -136,7 +174,7 @@ const FlutterBody = () => (
     <FlutterProject
       name="Movie-Suggester"
       imgFolder="android"
-      img={["movie_suggester.jpg"]}
+      img={["cropped_movie_suggester.jpg"]}
       imgAlt={["A suggested movie"]}
       description="An app that randomly suggest you movies. I scraped a list of recommended films from the internet."
       code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
@@ -144,7 +182,7 @@ const FlutterBody = () => (
     <FlutterProject
       name="Remindely"
       imgFolder="android"
-      img={["reminder.jpg"]}
+      img={["cropped_reminder.jpg"]}
       imgAlt={["Cards of some reminders."]}
       description="An app that allows you to schedule reminders. My first Flutter App, that I created for the application process of Epap GmbH."
       code="https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp"

@@ -8,6 +8,7 @@ import { Technology } from "component/Technology";
 import Head from "next/head";
 import { useRef } from "react";
 import Nav from "component/Nav";
+import { useState } from "react";
 
 Number.prototype.clamp = function (min, max) {
   return Math.min(Math.max(this, min), max);
@@ -16,6 +17,8 @@ Number.prototype.clamp = function (min, max) {
 function Main() {
   const mainRef = useRef();
 
+  const [showMonitor, setShowMonitor] = useState("nothing");
+
   return (
     <div className="PortfolioView">
       <Head>
@@ -23,11 +26,11 @@ function Main() {
         <meta name="robots" content="index, follow" />
       </Head>
       <Header />
-      <Nav />
+      {showMonitor === "nothing" && <Nav />}
       <main id="main" ref={mainRef}>
         <Introduction />
         <Employment />
-        <Projects />
+        <Projects {...{ showMonitor, setShowMonitor }} />
         <Technology />
         <Praise />
         <Contact />

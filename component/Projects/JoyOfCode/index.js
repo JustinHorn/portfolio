@@ -1,5 +1,5 @@
-import { useRef, useState, useLayoutEffect } from "react";
 import Image from "next/image";
+import { useLayoutEffect, useRef, useState } from "react";
 
 export const JoyOfCode = (props) => {
   const [height, setHeight] = useState("356");
@@ -21,7 +21,7 @@ export const JoyOfCode = (props) => {
             <div className="one">
               <Image
                 className="pag"
-                src="/img/projects/JoyOfCode/Homepage.png"
+                src="/img/projects/JoyOfCode/cropped_homepage.png"
                 alt="JoyOfCode -homepage"
                 layout="fill"
                 priority
@@ -31,7 +31,7 @@ export const JoyOfCode = (props) => {
             <div>
               <Image
                 className="page"
-                src="/img/projects/JoyOfCode/Projectpage.png"
+                src="/img/projects/JoyOfCode/cropped_projectpage.png"
                 alt="JoyOfCode - projectpage"
                 layout="fill"
                 priority
@@ -42,7 +42,7 @@ export const JoyOfCode = (props) => {
             <div>
               <Image
                 className="page"
-                src="/img/projects/JoyOfCode/Userpage.png"
+                src="/img/projects/JoyOfCode/cropped_userpage.png"
                 alt="JoyOfCode - userpage"
                 layout="fill"
                 priority
