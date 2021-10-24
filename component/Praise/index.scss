@@ -1,3 +1,5 @@
+@import "styles/color.scss";
+
 .praise {
   width: 100%;
   max-width: 100vw;
@@ -22,7 +24,7 @@
       transform: translate(-50%, -50%);
 
       max-width: min(600px, 100vw);
-      background-color: #17141d;
+      background-color: $contrast-background;
       width: 40rem;
       transition: 700ms ease-in-out;
       margin: 0;
