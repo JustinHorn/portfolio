@@ -16,13 +16,12 @@ const Projects = (props) => {
 
   useLayoutEffect(() => {
     if (!bodyRef.current) bodyRef.current = document.querySelector("body");
-    if (showMonitor === "nothing") return;
-    // if (showMonitor === "nothing") {
-    //   bodyRef.current.style = "";
-    //   return;
-    // } else {
-    //   bodyRef.current.style = "overflow:hidden;";
-    // }
+    if (showMonitor === "nothing") {
+      bodyRef.current.style = "";
+      return;
+    } else {
+      bodyRef.current.style = "overflow:hidden;";
+    }
 
     const monitorHeight = monitorRef.current.offsetHeight;
     const monitorWidth = monitorRef.current.offsetWidth;

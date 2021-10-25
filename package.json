@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start"  },
+    "start": "next start"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -14,6 +15,7 @@
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-spoiler-tag": "^1.1.7",
     "react-spring": "^9.0.0-rc.3",
     "react-use-gesture": "^9.1.3",
     "sass": "^1.38.2"
