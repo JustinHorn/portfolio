@@ -14,7 +14,7 @@ const Header = () => {
     <header style={{ height: `calc(100vh + ${height / 2}px)` }}>
       <div className="header-container">
         <h3 className="justin-headline">
-          Hi I am Justin, <br /> WELCOME TO MY FULL STACK PORTFOLIO.
+          Hi I am Justin, <br /> welcome to my fullstack portfolio.
         </h3>
       </div>
       <div className="sky">
