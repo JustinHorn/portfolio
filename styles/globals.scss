@@ -2,6 +2,14 @@
 @import "./main.scss";
 @import "/component/";
 
+@font-face {
+  font-family: "Gunplay-RG";
+  src: url("/fonts/gunplay-rg.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }

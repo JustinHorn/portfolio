@@ -15,11 +15,10 @@ const Introduction = () => {
 
           A skelet wants to cross a street in california, but can't. <br/> Why? <Spoiler textColor="hsl(60, 100%, 80%)" revealedColor="black" text="It lacks the nerfs to do it."/> <br/> <br/>
           Welcome to my portfolio! I usually am more serious. Often pretty serious. I can't help it, I just care a lot.
-          When I am doing sth. I always evolve the desire to be the best at it. Might it be making youtube videos,
-          playing games, working out or coding. I choose to drop out of university because I wanted to become better
-          at entrepreneurship and programming. I make sacrifices for my goals. Yet I have not become best at anything. I got top 5% of the lesser known games I used to play everyday.
-          RUSE and Mount & Blade Napoleonic Wars. For coding and entrepreneurship I still have a lot to learn.
-    
+          When I am doing sth. I always evolve the desire to be to get good at it. Might it be making youtube videos,
+          playing games, working out or coding. I chose to drop out of university because I wanted to become better
+          at entrepreneurship and programming. I make sacrifices for my goals. One of the most satisfying feelings for me is having purposefully crafted out
+          a feature after having thought of the pros and cons of the implementation and compared them to alternatives, consulted with coworkers and at best involved the users of the product.    
         </p>
       </div>
       <div className="container">

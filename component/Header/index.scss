@@ -1,3 +1,5 @@
+@import "styles/color.scss";
+
 $starFieldWidth: 2560;
 $starFieldHeight: 2560;
 $starStartOffset: 600px;
@@ -23,13 +25,26 @@ header {
     height: 40px;
   }
 
-  .justin-headline {
-    text-align: left;
-  }
-
   .small-icon {
     width: 20px;
     height: 20px;
+  }
+
+  .header-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .justin-headline {
+      font-family: Gunplay-RG;
+      color: $contrast-happy-hover;
+      font-size: clamp(2rem, 2rem + 10vw, 5rem);
+      text-align: left;
+    }
   }
 }
 
@@ -40,23 +55,6 @@ header {
   left: 0;
   margin-bottom: -2px;
   margin-left: -1px;
-}
-
-.header-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: auto minmax(auto, 600px) auto;
-  grid-template-areas: ". a .";
-
-  .center {
-    grid-area: a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 
 @function create-stars($n) {
