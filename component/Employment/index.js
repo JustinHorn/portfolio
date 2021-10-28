@@ -15,8 +15,8 @@ const Employment = () => {
           <h4>CADENAS GmbH, Augsburg</h4>
           <span>01 June 2021 - today</span>
           <p>
-            As Frontend Developer I work on their 3DfindIT web-app adding
-            features, fixing bugs and maintaining a clean code base. I have
+            As Frontend Developer I work on their 3DfindIT web app adding
+            features, fixing bugs, and maintaining a clean codebase. I have
             introduced several coding guidelines to our team and am regarded as
             Expert in React.
           </p>
@@ -30,9 +30,9 @@ const Employment = () => {
           <span>19 Januar - 31. March 2021</span>
           <p>
             As Full Stack Developer I have worked on epaps front- and backend,
-            adding features, fixing bugs and creating internal tools for the
-            employees to use. I am proud on my contribution to give the startup
-            more structure in its work process by introducing scrum
+            adding features, fixing bugs, and creating internal tools for the
+            employees to use. I am proud of my contribution to giving the
+            startup more structure in its work process by introducing scrum
             methodologies to the team.
           </p>
         </div>

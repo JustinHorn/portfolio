@@ -93,18 +93,31 @@
         margin: 0.5em 0;
       }
 
-      .close {
+      .close-container {
         position: absolute;
         top: 1em;
         right: 1em;
-        filter: invert(89%) sepia(26%) saturate(529%) hue-rotate(9deg)
-          brightness(105%) contrast(107%);
         width: 2em;
         height: 2em;
-        cursor: pointer;
-        transition: transform 0.2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &:hover {
+        img {
+          height: 100%;
+          width: 100%;
+          filter: invert(89%) sepia(26%) saturate(529%) hue-rotate(9deg)
+            brightness(105%) contrast(107%);
+
+          cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+        }
+
+        &:hover img {
           transform: rotate(90deg);
         }
 

@@ -71,12 +71,14 @@ const Projects = (props) => {
             <div className="monitor-nav">
               <h2 className="headline">{showMonitor}</h2>
 
-              <img
-                className="close"
-                src="img/icons/X.svg"
-                alt="Close"
-                onClick={() => setShowMonitor("nothing")}
-              />
+              <div className="close-container">
+                <img
+                  className="close"
+                  src="img/icons/X.svg"
+                  alt="Close"
+                  onClick={() => setShowMonitor("nothing")}
+                />
+              </div>
             </div>
 
             <div className="monitor-body">
@@ -110,10 +112,10 @@ const ReactBody = () => (
         "Showing freestyle editor where you can place the text everywhere",
       ]}
       tags={["CSS", "React", "Firebase Auth"]}
-      description={`At the WBS Coding school we were told to build a meme generator to improve our react skills. 
-      So Bruno and me grouped up and developed the shown web-app together. At first we focused on creating the top/bottom editor. 
-      When that one was soon to be finished I moved to create a freestyle version as well, while Bruno continued to improve the overall design. 
-      As a caveat I added a firebase authentication requirement for the freestyle version.`}
+      description={`At the WBS Coding school, we were told to build a meme generator to improve our react skills. 
+      So Bruno and I grouped up and developed the shown web app together. 
+      At first, we focused on creating the top/bottom editor. 
+      When that one was soon to be finished I moved to create a freestyle version as well, while Bruno continued to improve the overall design. As a caveat, I added a firebase authentication requirement for the freestyle version.`}
       website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
       code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
     />
@@ -131,9 +133,9 @@ const ReactBody = () => (
         "an empty board and gamemode: Humans vs Humans",
       ]}
       tags={["CSS", "React", "Webworker"]}
-      description={`Actually one of my first react projects. The web-app version my Java ultimate Tic Tac Toe project.
-      I forked a git repo to have some code basics and added a random and a Monte Carlo AI. 
-      In order to not have the web-app freeze when the AI calculates its moves - I had to implement web-worker as well.`}
+      description={`At the WBS Coding School, Joss, Erick, and I belonged to the top 3 of students of our batch, so we were given the special task of building an app outside of the regular activity.
+      Since we all love Rick and Morty we went on to build sth. with their official API.
+      The result was a Quiz-Game where you solve quizzes to collect Characters from the Rick and Morty multiverses.`}
       website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
       code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
     />
@@ -167,7 +169,7 @@ const FlutterBody = () => (
       imgFolder="android"
       img={["cropped_2048chess.jpg"]}
       imgAlt={["2048 with chess figures"]}
-      description="A version of 2048 with chess figures as game pieces. Through this project I learned to make simple animations with Flutter. "
+      description="A version of 2048 with chess figures as game pieces. Through this project, I learned to make simple animations with Flutter."
       code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
     />
     <FlutterProject
@@ -175,7 +177,7 @@ const FlutterBody = () => (
       imgFolder="android"
       img={["cropped_movie_suggester.jpg"]}
       imgAlt={["A suggested movie"]}
-      description="An app that randomly suggest you movies. I scraped a list of recommended films from the internet."
+      description="An app that randomly suggests you movies. I scraped a list of recommended films from the internet."
       code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
     />
     <FlutterProject

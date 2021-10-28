@@ -53,29 +53,29 @@ export const JoyOfCode = (props) => {
           </div>
           <p>
             My final project to complete the WBS-Coding School and to present at
-            the demo day. I wanted to create a a platform. We constantly
+            the demo day. I wanted to create a platform. We constantly
             recommended each other learning resources for certain topics. So I
             thought of building a site for it, but I then decided to rather make
-            a site where we can share each others web projects, display them and
-            flex with the awesome tech that we used.
+            a site where we can share each other's web projects, display them
+            and flex with the awesome tech that we used.
             <br />
             <br />I set on developing the site iteratively. With React on the
             frontend, GraphQL as Api and Express, Prisma and PostgreSQL on the
             backend. I choose Heroku to easily make many deployments.
             <br />
             <br />
-            Through this process my data model constantly kept growing. Thanks
-            to prisma these migrations were easy to manage and I could
+            Through this process, my data model constantly kept growing. Thanks
+            to Prisma these migrations were easy to manage and I could
             constantly react to the feedback of my friends. Some more
             challenging changes I made were switching from my own email
-            authentication to github third-party authentication and switching my
+            authentication to GitHub third-party authentication and switching my
             database provider from ElephantDB to Heroku Postgres.
             <br />
             <br />
             As intended we used the platform to collect the projects we have
             made during those 15 weeks and I am proud that I was able to create
             so much in the 4 four weeks I worked on it. Since the demoed version
-            I have made some design chances and migrated the codebase to
+            I have made some design changes and migrated the codebase to
             typescript.
           </p>
           <div className="presentation">
