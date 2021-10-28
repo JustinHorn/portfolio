@@ -21,6 +21,35 @@ body {
   line-height: 1.5;
 }
 
+/* total width */
+body::-webkit-scrollbar {
+  background-image: linear-gradient(
+    $header-background-first-color 0%,
+    $header-background-second-color 15.5%,
+    $main-background-first-color 16.5%,
+    $main-background-second-color 100%
+  );
+}
+
+/* background of the scrollbar except button or resizer */
+// body::-webkit-scrollbar-track {
+//   background-color: transparent;
+//   color: transparent;
+// }
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: $main-background-second-color;
+  border-radius: 4px;
+  border: none;
+  opacity: 0.5;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;

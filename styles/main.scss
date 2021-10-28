@@ -1,7 +1,10 @@
 @import "./color.scss";
 
 main {
-  background: linear-gradient(hsl(0, 0%, 10%), hsl(0, 0%, 0%));
+  background: linear-gradient(
+    $main-background-first-color,
+    $main-background-second-color
+  );
   padding-top: 2.5rem;
   box-sizing: border-box;
   min-height: 100vh;

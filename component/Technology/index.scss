@@ -10,7 +10,10 @@
     flex-direction: column;
     align-items: center;
 
-    margin-right: 2rem;
+    &.mobile,
+    &.scripting {
+      padding: 0 1rem;
+    }
 
     .tiles {
       display: flex;

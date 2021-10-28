@@ -26,14 +26,14 @@ export const Technology = () => {
         </div>
       </div>
       <div className="merge">
-        <div className="skill-area">
+        <div className="skill-area mobile">
           <h3>For the mobile version:</h3>
           <div className="tiles">
             <Tile name="Flutter" iconName="Flutter.svg" />
             <Tile name="Java" iconName="Java.svg" />
           </div>
         </div>
-        <div className="skill-area">
+        <div className="skill-area scripting">
           <h3>For a helpful script:</h3>
           <div className="tiles">
             <Tile name="NodeJS" iconName="NodeJS.svg" />
