@@ -17,8 +17,8 @@ const Employment = () => {
           <p>
             As Frontend Developer I work on their 3DfindIT web app adding
             features, fixing bugs, and maintaining a clean codebase. I have
-            introduced several coding guidelines to our team and am regarded as
-            Expert in React.
+            introduced several coding guidelines to our team and lead major
+            refactors.
           </p>
         </div>
       </div>

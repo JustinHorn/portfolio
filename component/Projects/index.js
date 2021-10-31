@@ -133,9 +133,9 @@ const ReactBody = () => (
         "an empty board and gamemode: Humans vs Humans",
       ]}
       tags={["CSS", "React", "Webworker"]}
-      description={`At the WBS Coding School, Joss, Erick, and I belonged to the top 3 of students of our batch, so we were given the special task of building an app outside of the regular activity.
-      Since we all love Rick and Morty we went on to build sth. with their official API.
-      The result was a Quiz-Game where you solve quizzes to collect Characters from the Rick and Morty multiverses.`}
+      description={`Actually one of my first react projects. The web-app version of my Java ultimate Tic Tac Toe project.
+      I forked a git repo to have some code basics and added a random and a Monte Carlo AI. 
+      In order to not have the web-app freeze when the AI calculates its moves - I had to implement web-worker as well.`}
       website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
       code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
     />

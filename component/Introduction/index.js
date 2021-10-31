@@ -11,14 +11,16 @@ const Introduction = () => {
       <div className="text">
         <h3>About me:</h3>
         <p>
-      
+          A skelet wants to cross a street in california, but can't. <br/> Why? <Spoiler textColor="hsl(60, 100%, 80%)" revealedColor="black" text="It lacks the nerves to do it."/> <br/> <br/>
+          Welcome to my portfolio! I am Justin and usually am more serious.
+          Especially regarding software.
+          I often rework my code to make it more readable and reposition elements for a more intuitive UI.
+          My mission is to bring the world well-written and easy-to-use applications.
+          Few things are as powerful as good software that solves an important problem.
+          Even fewer things are as much fun as working in a motivated team, supporting each other, sharing tips and tricks for creating such software.
 
-          A skelet wants to cross a street in california, but can't. <br/> Why? <Spoiler textColor="hsl(60, 100%, 80%)" revealedColor="black" text="It lacks the nerfs to do it."/> <br/> <br/>
-          Welcome to my portfolio! I usually am more serious. Often pretty serious. I can't help it, I just care a lot.
-          When I am doing sth. I always evolve the desire to be to get good at it. Might it be making youtube videos,
-          playing games, working out or coding. I chose to drop out of university because I wanted to become better
-          at entrepreneurship and programming. I make sacrifices for my goals. One of the most satisfying feelings for me is having purposefully crafted out
-          a feature after having thought of the pros and cons of the implementation and compared them to alternatives, consulted with coworkers and at best involved the users of the product.    
+          <br/> <br/>
+          In my free time, I like to code as well, but you also find me working out or playing chess at a bar.
         </p>
       </div>
       <div className="container">
@@ -28,10 +30,18 @@ const Introduction = () => {
           objectFit="cover"
           sizes="50vw"
           objectPosition="top"
-          className="img"
+          className="img professional"
           alt="me in a suite"
         />
-        {/* <div className="img" alt="me" /> */}
+        <Image
+          src="/img/meInTheWild.jpg"
+          layout="fill"
+          objectFit="cover"
+          sizes="50vw"
+          objectPosition="top"
+          className="img wild"
+          alt="me in at the mountains"
+        />
       </div>
     </Section>
   );
