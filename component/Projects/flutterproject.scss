@@ -1,0 +1,53 @@
+.flutter {
+  color: $soft-yellow;
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+  font-size: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  column-gap: 4em;
+
+  .project {
+    height: 100%;
+    width: 100%;
+
+    color: $soft-yellow;
+
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      flex: 0 1 auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-body {
+      width: 16rem;
+      margin: 0 auto;
+    }
+
+    .fotos {
+      position: relative;
+      height: 28rem;
+      width: 16rem;
+    }
+
+    p {
+      text-align: left;
+      color: $soft-yellow;
+    }
+
+    .links {
+      align-self: flex-start;
+    }
+
+    a {
+      display: inline-block;
+      color: $soft-yellow;
+      margin-right: 0.25em;
+    }
+  }
+}

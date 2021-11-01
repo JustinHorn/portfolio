@@ -1,0 +1,57 @@
+.introduction {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  .container {
+    position: relative;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border: 1px solid $contrast-happy;
+
+    .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 15rem;
+      height: 15rem;
+      transition: transform 0.1s ease-in-out;
+
+      &.wild {
+        z-index: -1;
+      }
+    }
+
+    &:hover {
+      .wild {
+        z-index: 2;
+      }
+    }
+  }
+
+  .text {
+    h3 {
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      line-height: 1.5;
+    }
+
+    width: min(40rem, 100%);
+    grid-area: text;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 5rem;
+    }
+  }
+}

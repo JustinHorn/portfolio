@@ -1,0 +1,52 @@
+.employment {
+  * {
+    margin-left: 0;
+  }
+  .employer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 2rem;
+
+    .logo {
+      max-width: 10rem;
+      margin: auto;
+      height: auto;
+    }
+
+    .description {
+      margin-left: 1rem;
+      & > * {
+        margin-top: 0;
+      }
+
+      h3 {
+        margin-top: 0;
+
+        font-size: 1.5rem;
+      }
+
+      h4,
+      span,
+      p {
+        font-size: 1rem;
+      }
+
+      span {
+        margin: 0.5rem 0;
+      }
+
+      max-width: 30rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      @media screen and (max-width: 500px) {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      margin: 2rem 0;
+    }
+  }
+}

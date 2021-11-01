@@ -8,8 +8,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          <link rel="shortcut icon" href="/code.svg" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -25,6 +26,10 @@ class MyDocument extends Document {
             });
           `,
             }}
+          />
+          <meta
+            name="description"
+            content="The Portfolio of Justin Horn. Showing about him, his employment history, his work, projects he has created and praise he received."
           />
         </Head>
         <body>

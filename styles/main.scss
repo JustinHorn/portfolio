@@ -1,0 +1,20 @@
+@import "./color.scss";
+
+main {
+  background: linear-gradient(
+    $main-background-first-color,
+    $main-background-second-color
+  );
+  padding-top: 2.5rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: $soft-yellow;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+
+  section {
+    max-width: 1000px;
+    margin-bottom: 5rem;
+  }
+}
