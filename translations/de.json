@@ -1,0 +1,9 @@
+{
+  "test": {
+    "helloWorld": "hallo welt"
+  },
+  "Header": {
+    "HiIAmJustin": "Hi ich bin Justin,",
+    "headline": "Hi I am Justin, <br></br> welcome to my portfolio!"
+  }
+}

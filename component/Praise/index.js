@@ -13,7 +13,6 @@ const Praise = () => {
   const [{ x }, api, stop] = useSpring(() => ({
     config: config.slow,
     x: 0,
-    onFrame: (props) => console.log(props),
   }));
 
   const bind = useDrag(

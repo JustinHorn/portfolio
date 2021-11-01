@@ -12,7 +12,7 @@ const Contact = () => {
       <form action="https://formspree.io/f/mleakdwo" method="POST">
         <fieldset id="fs-frm-inputs">
           <div>
-            <label for="full-name">Name</label>
+            <label htmlFor="full-name">Name</label>
             <input
               type="text"
               name="name"
@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <label for="email-address">Email</label>
+            <label htmlFor="email-address">Email</label>
             <input
               type="email"
               name="_replyto"
@@ -33,7 +33,7 @@ const Contact = () => {
             />
           </div>
           <div className="message-container">
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               rows="5"
               name="message"
