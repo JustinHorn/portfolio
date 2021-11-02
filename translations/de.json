@@ -3,7 +3,104 @@
     "helloWorld": "hallo welt"
   },
   "Header": {
-    "HiIAmJustin": "Hi ich bin Justin,",
-    "headline": "Hi I am Justin, <br></br> welcome to my portfolio!"
+    "headline": "Hi, ich bin Justin. <br></br> Willkommen auf meinem Portfolio!"
+  },
+  "Introduction": {
+    "AboutMe": {
+      "Headline": "Über mich:",
+      "Paragraph": {
+        "Joke": {
+          "intro": "Ein Skelett will in Kalifornien eine Straße überqueren, schafft es aber nicht.",
+          "why": "Warum?:",
+          "resolution": "Es fehlen ihm die Nerven."
+        },
+        "Main": "Willkommen auf meinem Portfolio! Ich bin Justin und normalerweise ernster. Vor allem in Bezug auf Software. Ich refactor meinen Code oft, um ihn besser lesbarer zu machen oder Elemente für eine intuitivere Benutzeroberfläche neu zu positionieren. Ich sehe es als meine Mission, der Welt gut geschriebene und einfach zu bedienende Anwendungen anzubieten. Nur wenige Dinge sind so cool wie gute Software, die ein Problem löst. Fast nichts macht so viel Spaß, wie in einem motivierten Team zu arbeiten, sich gegenseitig zu unterstützen und Tipps und Tricks zur Erstellung einer solchen Software auszutauschen.",
+        "Subset": "In meiner Freizeit programmiere ich auch gerne, aber man findest mich auch beim Training oder beim Schachspielen in einer Bar."
+      }
+    }
+  },
+  "Employment": {
+    "Header": "Meine Berufserfahrung:",
+    "Employer": {
+      "CADENAS": {
+        "description": "Als Frontend-Entwickler arbeite ich an der 3DfindIT-Web-App, füge Funktionen hinzu, behebe Fehler und pflege eine saubere Codebasis. Ich habe bei unserem Team mehrere Code-Konventionen eingeführt und wichtige Refactorings initiiert.",
+        "date": "01 Juni 2021 - heute"
+      },
+      "EPAP": {
+        "description": "Als Full Stack Developer habe ich am Front- und Backend von epap gearbeitet, Funktionen hinzugefügt, Fehler behoben und interne Tools für die Mitarbeiter geschrieben. Ich bin stolz auf meinen Beitrag, dem Startup mehr Struktur in seinem Arbeitsprozess zu geben, indem ich Scrum-Methoden im Team einführte.",
+        "date": "19 Januar - 31. März 2021 "
+      }
+    }
+  },
+  "Praise": {
+    "Headline": "Lob, das ich erhielt:",
+    "Dirk": {
+      "Name": "Dirk J Bosman - lernte mit mir bei WBS - Data Scientist"
+    },
+    "Fey": {
+      "Name": "Federica Recanatini - meine Tutorin bei WBS - Senior Developer"
+    },
+    "EPAP": {
+      "Name": "Arbeitszeugnis - epap GmbH - ein fintech Startup das Belege digitalisiert"
+    }
+  },
+  "Technology": {
+    "Headline": "Technologien die ich nutze:",
+    "Frontend": {
+      "Headline": "Für das, was man sieht:"
+    },
+    "Backend": {
+      "Headline": "Um Information zu verbinden und zu speichern:"
+    },
+    "Mobile": {
+      "Headline": "Für die mobile Version:",
+      "Scripts": "Für ein nützliches Skript:"
+    }
+  },
+  "Contact": {
+    "Headline": "Sie mögen meine Arbeit?",
+    "Paragraph": "Schreiben Sie mir eine Nachricht:",
+    "Form": {
+      "Message": "Nachricht",
+      "textArea": {
+        "placeHolder": "Veni, vedi, vici, du Bastard!"
+      },
+      "SendButton": "senden"
+    }
+  },
+  "Projects": {
+    "Headline": "Einige der von mir erstellten Projekte:",
+    "Template": {
+      "VisitWebsiteButton": "Besuche Website",
+      "CheckoutCodeButton": "Sehe den Code"
+    },
+    "React": {
+      "MemeGenerator": {
+        "description": "An der WBS Coding School wurde uns aufgetragen einen Meme-Generator zu entwickeln, um unsere Reaktionsfähigkeiten zu verbessern. Also haben Bruno und ich uns zusammengetan und die Web-App gemeinsam entwickelt. Zuerst haben wir uns auf die Erstellung des Top/Bottom-Editors konzentriert. Als dieser wir mit diesem schnell vorrankamen, habe ich zusätzlich eine Freestyle-Version entwickelt, während Bruno das Gesamtdesign weiter verbesserte. Als Nutzungsbedingung für die Freestyle-Version habe ich eine Firebase-Authentifizierungsanforderung hinzugefügt."
+      },
+      "UltimateTicTacToe": {
+        "description": "Eigentlich eines meiner ersten React-Projeckte. Die Web-App-Version meines ultimativen Java-Tic-Tac-Toe-Projekts. Ich habe ein Git-Repo gegabelt, um einige Codegrundlagen zu haben, und eine zufällige, sowie eine Monte Carlo-KI hinzugefügt. Damit die Web-App nicht einfriert, wenn die KI ihre Züge berechnet, implementierte ich auch noch Web-Worker."
+      },
+      "RickysQuest": {
+        "description": "An der WBS Coding School gehörten Joss, Erick und ich zu den Top 3. Deshalb wurde uns eine besondere Aufgabe gegeben: eine App außerhalb des regulären Betriebs zu entwicklen. Da wir Rick und Morty alle lieben, haben wir etwas mit ihrer offiziellen API gebaut. Das Ergebnis war ein Quiz-Spiel, bei dem Sie Quizfragen lösen, um Charaktere aus den Rick- und Morty-Multiversen zu sammeln."
+      }
+    },
+    "Flutter": {
+      "Chess2048": {
+        "description": "Eine Version von 2048 mit Schachfiguren. Durch dieses Projekt habe ich gelernt, einfache Animationen mit Flutter zu erstellen."
+      },
+      "MovieSuggester": {
+        "description": "Eine App, die dem Nutzer zufällig Filme vorschlägt. Ich habe eine Liste mit empfohlenen Filmen aus dem Internet gescraped."
+      },
+      "Remindely": {
+        "description": "Eine App, mit der man Erinnerungen einrichten kann. Meine erste Flutter App, die ich für den Bewerbungsprozess der Epap GmbH erstellt habe."
+      }
+    },
+    "JoyOfCode": {
+      "description": "Mein Abschlussprojekt zum Abschluss der WBS-Coding School und zur Präsentation am Demotag. Ich wollte eine Plattform erstellen. Während des Kurses haben uns ständig Lernressourcen zu bestimmten Themen weiter empfohlen. Also dachte ich daran, eine Seite dafür zu erstellen, entschied mich dann aber, lieber eine Plattform zu erstellen, auf der wir die Webprojekte des anderen teilen, anzeigen und mit der wunderbaren Technologie, die wir verwendet haben, kombinieren können. <br ></br> <br ></br>Ich habe die Site iterativ entwickelt. Mit React im Frontend, GraphQL als Api und Express, Prisma und PostgreSQL im Backend. Ich wählte Heroku, um viele Deployments problemlos durchzuführen. <br ></br> <br ></br> Durch diesen Prozess ist mein Datenmodell ständig gewachsen. Dank Prisma waren diese Migrationen einfach zu bewältigen und ich konnte ständig auf das Feedback meiner Freunde reagieren. Einige schwierigere Änderungen, die ich vorgenommen habe, waren der Wechsel von meiner eigenen E-Mail-Authentifizierung zur GitHub-Thirdparty-Authentifizierung und der Wechsel meines Datenbankanbieters von ElephantDB zu Heroku Postgres. <br ></br> <br ></br> Wie beabsichtigt haben wir die Plattform genutzt, um die Projekte, die wir in diesen 15 Wochen gemacht haben, zu sammeln und ich bin stolz, dass ich in den 4 Wochen, in denen ich gearbeitet habe, so viel schaffen konnte. Seit der Demoversion habe ich einige Designänderungen vorgenommen und die Codebasis auf TypeScript umgestellt.",
+      "Presentation": {
+        "headline": "Projektpräsentation:"
+      }
+    }
   }
 }

@@ -1,10 +1,106 @@
 {
   "test": {
-    "helloWorld": "hello world",
-    "lol": "abc"
+    "helloWorld": "hello world"
   },
   "Header": {
-    "HiIAmJustin": "Hi I am Justin,",
-    "headline": "Hi I am Justin, <br></br> welcome to my portfolio!"
+    "headline": "Hi, I am Justin. <br></br> Welcome to my portfolio!"
+  },
+  "Introduction": {
+    "AboutMe": {
+      "Headline": "About me:",
+      "Paragraph": {
+        "Joke": {
+          "intro": "A skelet wants to cross a street in california, but fails to do so.",
+          "why": "Why?:",
+          "resolution": "It lacks the nerves to do it."
+        },
+        "Main": "Welcome to my portfolio! I am Justin and usually am more serious. Especially regarding software. I often rework my code to make it more readable and reposition elements for a more intuitive UI. My mission is to bring the world well-written and easy-to-use applications. Few things are as powerful as good software that solves an important problem. Even fewer things are as much fun as working in a motivated team, supporting each other, sharing tips and tricks for creating such software.",
+        "Subset": " In my free time, I like to code as well, but you also find me working out or playing chess at a bar."
+      }
+    }
+  },
+  "Employment": {
+    "Header": "My work experience:",
+    "Employer": {
+      "CADENAS": {
+        "description": "As Frontend Developer I work on their 3DfindIT web app adding features, fixing bugs, and maintaining a clean codebase. I have introduced several coding guidelines to our team and lead major refactors.",
+        "date": "01 June 2021 - today"
+      },
+      "EPAP": {
+        "description": "As Full Stack Developer I have worked on epaps front- and backend, adding features, fixing bugs, and creating internal tools for the employees to use. I am proud of my contribution to giving the startup more structure in its work process by introducing scrum methodologies to the team.",
+        "date": "19 Januar - 31. March 2021 "
+      }
+    }
+  },
+  "Praise": {
+    "Headline": "Praise I received:",
+    "Dirk": {
+      "Name": "Dirk J Bosman - graduated with me at WBS - Data Scientist"
+    },
+    "Fey": {
+      "Name": "Federica Recanatini - my Tutor at WBS - Senior Developer"
+    },
+    "EPAP": {
+      "Name": "Certificate of employment - epap GmbH - a fintech Startup aiming to digitalize receipts"
+    }
+  },
+  "Technology": {
+    "Headline": "Technologies I use:",
+    "Frontend": {
+      "Headline": "For what you see:"
+    },
+    "Backend": {
+      "Headline": "To connect and store the information:"
+    },
+    "Mobile": {
+      "Headline": "For the mobile version:",
+      "Scripts": "For a useful script:"
+    }
+  },
+  "Contact": {
+    "Headline": "You like my work?",
+    "Paragraph": "Send me a message:",
+    "Form": {
+      "Message": "Message",
+      "textArea": {
+        "placeHolder": "Veni, vedi, vici, you bastard!"
+      },
+      "SendButton": "send"
+    }
+  },
+  "Projects": {
+    "Headline": "Some of the projects I created:",
+    "Template": {
+      "VisitWebsiteButton": "Visit Website",
+      "CheckoutCodeButton": "Checkout Code"
+    },
+    "React": {
+      "MemeGenerator": {
+        "description": "At the WBS Coding school, we were told to build a meme generator to improve our react skills. So Bruno and I grouped up and developed the shown web app together. At first, we focused on creating the top/bottom editor. When that one was soon to be finished I moved to create a freestyle version as well, while Bruno continued to improve the overall design. As a caveat, I added a firebase authentication requirement for the freestyle version."
+      },
+      "UltimateTicTacToe": {
+        "description": "Actually one of my first react projects. The web-app version of my Java ultimate Tic Tac Toe project. I forked a git repo to have some code basics and added a random and a Monte Carlo AI. In order to not have the web-app freeze when the AI calculates its moves - I had to implement web-worker as well."
+      },
+      "RickysQuest": {
+        "description": "At the WBS Coding School, Joss, Erick and me belonged to the top 3 of students of our batch, so we were giving the special task of building an app outside of the regular activity. Since we all love Rick and Morty we went on to build sth. with their official Api. The result was a Quiz-Game were you solve quizzes to collect Characters from the Rick and Morty multiverses. "
+      }
+    },
+    "Flutter": {
+      "Chess2048": {
+        "description": "A version of 2048 with chess figures as game pieces. Through this project, I learned to make simple animations with Flutter."
+      },
+      "MovieSuggester": {
+        "description": "An app that randomly suggests you movies. I scraped a list of recommended films from the internet."
+      },
+      "Remindely": {
+        "description": "An app that allows you to schedule reminders. My first Flutter App, that I created for the application process of Epap GmbH."
+      }
+    },
+    "JoyOfCode": {
+      "description": " My final project to complete the WBS-Coding School and to present at the demo day. I wanted to create a platform. We constantly recommended each other learning resources for certain topics. So I thought of building a site for it, but I then decided to rather make a site where we can share each other's web projects, display them and flex with the awesome tech that we used. <br ></br> <br ></br>I set on developing the site iteratively. With React on the frontend, GraphQL as Api and Express, Prisma and PostgreSQL on the backend. I choose Heroku to easily make many deployments. <br ></br> <br ></br> Through this process, my data model constantly kept growing. Thanks to Prisma these migrations were easy to manage and I could constantly react to the feedback of my friends. Some more challenging changes I made were switching from my own email authentication to GitHub third-party authentication and switching my database provider from ElephantDB to Heroku Postgres. <br ></br> <br ></br> As intended we used the platform to collect the projects we have made during those 15 weeks and I am proud that I was able to create so much in the 4 four weeks I worked on it. Since the demoed version I have made some design changes and migrated the codebase to typescript.",
+      "Presentation": {
+        "headline": "Project presentation:"
+      }
+    }
   }
 }

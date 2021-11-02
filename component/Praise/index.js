@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { a, config, to, useSpring } from "react-spring";
 import { useDrag } from "react-use-gesture";
@@ -9,6 +10,8 @@ const Praise = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [holdAnimation, setHoldAnimation] = useState(false);
   const alignment = ["left", "center", "right"];
+
+  const t = useTranslations();
 
   const [{ x }, api, stop] = useSpring(() => ({
     config: config.slow,
@@ -57,7 +60,7 @@ const Praise = () => {
 
   return (
     <Section className="praise" {...bind()}>
-      <h2>Praise I received:</h2>
+      <h2>{t("Praise.Headline")}</h2>
 
       <div className="cards">
         <a.div style={{ transform: to([x], (x) => `translate(${x}vw,0)`) }}>
@@ -66,21 +69,21 @@ const Praise = () => {
               key={1}
               alignment={alignment[0]}
               praise={`I loved his passion for coding, as well as his patience to explain concepts around javascript data structures and react components.`}
-              name="Dirk J Bosman - graduated with me at WBS - Data Scientist"
+              name={t("Praise.Dirk.Name")}
               source=""
             />
             <PraiseCard
               key={2}
               alignment={alignment[1]}
               praise={`[...] I was very lucky to have someone as talented as Justin as a student!`}
-              name="Federica Recanatini - my Tutor at WBS - Senior Developer"
+              name={t("Praise.Fey.Name")}
               source=""
             />
             <PraiseCard
               key={3}
               alignment={alignment[2]}
               praise={`Mr. Horn was able to quickly adapt to new challenges and problems and thus effortlessly understand the interrelationships and infrastructure of the epap app and cloud environment.`}
-              name="Certificate of employment - epap GmbH - a fintech Startup aiming to digitalize receipts"
+              name={t("Praise.EPAP.Name")}
               source=""
             />
           </div>

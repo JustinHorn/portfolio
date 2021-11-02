@@ -1,4 +1,5 @@
 import { mergeClassNames } from "helper";
+import { useTranslations } from "next-intl";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import Section from "../Section";
@@ -10,6 +11,8 @@ const Projects = (props) => {
   const { showMonitor, setShowMonitor } = props;
   const [hideVerticalBorder, setHideVerticalBorder] = useState(false);
   const [hideHorizontalBorder, setHideHorizontalBorder] = useState(false);
+
+  const t = useTranslations();
 
   const bodyRef = useRef();
   const monitorRef = useRef();
@@ -36,7 +39,7 @@ const Projects = (props) => {
   return (
     <>
       <Section id="projects" className="projects">
-        <h2>Some of the projects I created:</h2>
+        <h2>{t("Projects.Headline")}</h2>
 
         <div className="cards">
           <div className="tile" onClick={() => setShowMonitor("React")}>
@@ -96,97 +99,98 @@ const Projects = (props) => {
 
 export default Projects;
 
-const ReactBody = () => (
-  <div className="react">
-    <ReactProject
-      name="Meme Generator"
-      imgFolder="MemeGenerator"
-      img={[
-        "cropped_Generator.png",
-        "cropped_Home.png",
-        "cropped_Freestyle.png",
-      ]}
-      imgAlt={[
-        "showing the top/bottom generator with skeptical kid meme saying 'so you have build another generator?'",
-        "showing the home screen",
-        "Showing freestyle editor where you can place the text everywhere",
-      ]}
-      tags={["CSS", "React", "Firebase Auth"]}
-      description={`At the WBS Coding school, we were told to build a meme generator to improve our react skills. 
-      So Bruno and I grouped up and developed the shown web app together. 
-      At first, we focused on creating the top/bottom editor. 
-      When that one was soon to be finished I moved to create a freestyle version as well, while Bruno continued to improve the overall design. As a caveat, I added a firebase authentication requirement for the freestyle version.`}
-      website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
-      code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
-    />
-    <ReactProject
-      name="Ultimate Tic Tac Toe"
-      imgFolder="UltimateTicTacToe"
-      img={[
-        "cropped_AIvsRandom.png",
-        "cropped_RandomVsRandom.png",
-        "cropped_HvsH.png",
-      ]}
-      imgAlt={[
-        "the result of gamemode: AI vs Random - AI won",
-        "the result of gamemode: randomAI vs randomAI - O won",
-        "an empty board and gamemode: Humans vs Humans",
-      ]}
-      tags={["CSS", "React", "Webworker"]}
-      description={`Actually one of my first react projects. The web-app version of my Java ultimate Tic Tac Toe project.
-      I forked a git repo to have some code basics and added a random and a Monte Carlo AI. 
-      In order to not have the web-app freeze when the AI calculates its moves - I had to implement web-worker as well.`}
-      website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
-      code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
-    />
-    <ReactProject
-      name="Rickys Quest"
-      imgFolder="RickysQuest"
-      img={[
-        "cropped_QuizQuestion.png",
-        "cropped_Quizzes.png",
-        "cropped_Follower.png",
-      ]}
-      imgAlt={[
-        "An example Quiz",
-        "List of Quizzes",
-        "Profile showing the characters",
-      ]}
-      tags={["CSS", "React", "Firebase", "Styled-Components"]}
-      description={`At the WBS Coding School, Joss, Erick and me belonged to the top 3 of students of our batch, so we were giving the special task of building an app outside of the regular activity.
-      Since we all love Rick and Morty we went on to build sth. with their official Api. The result was a Quiz-Game were you solve quizzes to collect Characters from the Rick and Morty multiverses.
-      `}
-      website="https://rickysquest.netlify.app/"
-      code="https://github.com/JustinHorn/rickysquest"
-    />
-  </div>
-);
+const ReactBody = () => {
+  const t = useTranslations();
 
-const FlutterBody = () => (
-  <div className="flutter">
-    <FlutterProject
-      name="Chess 2048"
-      imgFolder="android"
-      img={["cropped_2048chess.jpg"]}
-      imgAlt={["2048 with chess figures"]}
-      description="A version of 2048 with chess figures as game pieces. Through this project, I learned to make simple animations with Flutter."
-      code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
-    />
-    <FlutterProject
-      name="Movie-Suggester"
-      imgFolder="android"
-      img={["cropped_movie_suggester.jpg"]}
-      imgAlt={["A suggested movie"]}
-      description="An app that randomly suggests you movies. I scraped a list of recommended films from the internet."
-      code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
-    />
-    <FlutterProject
-      name="Remindely"
-      imgFolder="android"
-      img={["cropped_reminder.jpg"]}
-      imgAlt={["Cards of some reminders."]}
-      description="An app that allows you to schedule reminders. My first Flutter App, that I created for the application process of Epap GmbH."
-      code="https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp"
-    />
-  </div>
-);
+  return (
+    <div className="react">
+      <ReactProject
+        name="Meme Generator"
+        imgFolder="MemeGenerator"
+        img={[
+          "cropped_Generator.png",
+          "cropped_Home.png",
+          "cropped_Freestyle.png",
+        ]}
+        imgAlt={[
+          "showing the top/bottom generator with skeptical kid meme saying 'so you have build another generator?'",
+          "showing the home screen",
+          "Showing freestyle editor where you can place the text everywhere",
+        ]}
+        tags={["CSS", "React", "Firebase Auth"]}
+        description={t("Projects.React.MemeGenerator.description")}
+        website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
+        code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
+      />
+      <ReactProject
+        name="Ultimate Tic Tac Toe"
+        imgFolder="UltimateTicTacToe"
+        img={[
+          "cropped_AIvsRandom.png",
+          "cropped_RandomVsRandom.png",
+          "cropped_HvsH.png",
+        ]}
+        imgAlt={[
+          "the result of gamemode: AI vs Random - AI won",
+          "the result of gamemode: randomAI vs randomAI - O won",
+          "an empty board and gamemode: Humans vs Humans",
+        ]}
+        tags={["CSS", "React", "Webworker"]}
+        description={t("Projects.React.UltimateTicTacToe.description")}
+        website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
+        code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
+      />
+      <ReactProject
+        name="Rickys Quest"
+        imgFolder="RickysQuest"
+        img={[
+          "cropped_QuizQuestion.png",
+          "cropped_Quizzes.png",
+          "cropped_Follower.png",
+        ]}
+        imgAlt={[
+          "An example Quiz",
+          "List of Quizzes",
+          "Profile showing the characters",
+        ]}
+        tags={["CSS", "React", "Firebase", "Styled-Components"]}
+        description={t("Projects.React.RickysQuest.description")}
+        website="https://rickysquest.netlify.app/"
+        code="https://github.com/JustinHorn/rickysquest"
+      />
+    </div>
+  );
+};
+
+const FlutterBody = () => {
+  const t = useTranslations();
+
+  return (
+    <div className="flutter">
+      <FlutterProject
+        name="2048 Chess"
+        imgFolder="android"
+        img={["cropped_2048chess.jpg"]}
+        imgAlt={["2048 with chess figures"]}
+        description={t("Projects.Flutter.Chess2048.description")}
+        code="https://github.com/JustinHorn/flutter_projects/tree/master/flutter_2048"
+      />
+      <FlutterProject
+        name="Movie-Suggester"
+        imgFolder="android"
+        img={["cropped_movie_suggester.jpg"]}
+        imgAlt={["A suggested movie"]}
+        description={t("Projects.Flutter.MovieSuggester.description")}
+        code="https://github.com/JustinHorn/flutter_projects/tree/master/MovieSuggestionApp"
+      />
+      <FlutterProject
+        name="Remindely"
+        imgFolder="android"
+        img={["cropped_reminder.jpg"]}
+        imgAlt={["Cards of some reminders."]}
+        description={t("Projects.Flutter.Remindely.description")}
+        code="https://github.com/JustinHorn/FlutterChallenge/tree/master/1a%20ReminderApp"
+      />
+    </div>
+  );
+};

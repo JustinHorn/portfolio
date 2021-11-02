@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useTranslations } from "use-intl";
 
 export const ReactProject = (props) => {
+  const t = useTranslations();
+
   return (
     <div className="project">
       <h3>{props.name}</h3>
@@ -40,10 +43,10 @@ export const ReactProject = (props) => {
       <p>{props.description}</p>
       <div className="links">
         <a href={props.website}>
-          <button>Visit</button>
+          <button>{t("Projects.Template.VisitWebsiteButton")}</button>
         </a>
         <a href={props.code}>
-          <button>View Code</button>
+          <button>{t("Projects.Template.CheckoutCodeButton")}</button>
         </a>
       </div>
     </div>
