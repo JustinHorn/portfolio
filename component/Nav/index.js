@@ -4,7 +4,10 @@ const Nav = () => {
   return (
     <nav>
       <div className="navButtons">
-        <button onClick={() => window.open("/ResumeJustinHorn.pdf")}>
+        <button
+          title="Download Resume"
+          onClick={() => window.open("/ResumeJustinHorn.pdf")}
+        >
           <FontAwesomeIcon icon={"file-alt"} />
         </button>
       </div>

@@ -3,19 +3,19 @@
     "helloWorld": "hello world"
   },
   "Header": {
-    "headline": "Hi, I am Justin. <br></br> Welcome to my portfolio!"
+    "headline": "Hi, I am Justin. <br></br> Welcome to my portfolio page!"
   },
   "Introduction": {
     "AboutMe": {
       "Headline": "About me:",
       "Paragraph": {
         "Joke": {
-          "intro": "A skelet wants to cross a street in california, but fails to do so.",
+          "intro": "A skeleton tries to cross a street in California, but fails to do so.",
           "why": "Why?:",
           "resolution": "It lacks the nerves to do it."
         },
-        "Main": "Welcome to my portfolio! I am Justin and usually am more serious. Especially regarding software. I often rework my code to make it more readable and reposition elements for a more intuitive UI. My mission is to bring the world well-written and easy-to-use applications. Few things are as powerful as good software that solves an important problem. Even fewer things are as much fun as working in a motivated team, supporting each other, sharing tips and tricks for creating such software.",
-        "Subset": " In my free time, I like to code as well, but you also find me working out or playing chess at a bar."
+        "Main": "Welcome to my portfolio! I am Justin and usually am more serious. Especially regarding software. I often rework my code to make it more readable and reposition elements for a more intuitive UI. For me, creating well-written and easy-to-use applications is a mission for the benefit of the whole world. Because of its scalability, few things are as powerful as good software. Thereby it just feels great to work in a motivated team, to support each other and to give tips and tricks for creating such software.",
+        "Subset": "In my spare time you can often find me in the gym or playing chess in a bar. From time to time I also code on personal projects - most recently I tried to migrate a library from JavaScript to Dart."
       }
     }
   },

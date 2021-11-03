@@ -3,19 +3,19 @@
     "helloWorld": "hallo welt"
   },
   "Header": {
-    "headline": "Hi, ich bin Justin. <br></br> Willkommen auf meinem Portfolio!"
+    "headline": "Hi, ich bin Justin. <br></br> Willkommen auf meiner Portfolio Seite!"
   },
   "Introduction": {
     "AboutMe": {
       "Headline": "Über mich:",
       "Paragraph": {
         "Joke": {
-          "intro": "Ein Skelett will in Kalifornien eine Straße überqueren, schafft es aber nicht.",
+          "intro": "Ein Skelett versucht in Kalifornien eine Straße überqueren, schafft es aber nicht.",
           "why": "Warum?:",
           "resolution": "Es fehlen ihm die Nerven."
         },
-        "Main": "Willkommen auf meinem Portfolio! Ich bin Justin und normalerweise ernster. Vor allem in Bezug auf Software. Ich refactor meinen Code oft, um ihn besser lesbarer zu machen oder Elemente für eine intuitivere Benutzeroberfläche neu zu positionieren. Ich sehe es als meine Mission, der Welt gut geschriebene und einfach zu bedienende Anwendungen anzubieten. Nur wenige Dinge sind so cool wie gute Software, die ein Problem löst. Fast nichts macht so viel Spaß, wie in einem motivierten Team zu arbeiten, sich gegenseitig zu unterstützen und Tipps und Tricks zur Erstellung einer solchen Software auszutauschen.",
-        "Subset": "In meiner Freizeit programmiere ich auch gerne, aber man findest mich auch beim Training oder beim Schachspielen in einer Bar."
+        "Main": "Willkommen auf meinem Portfolio! Ich bin Justin und normalerweise ernster. Vor allem in Bezug auf Software. Ich refactor meinen Code oft, um ihn besser lesbarer zu machen oder Elemente für eine intuitivere Benutzeroberfläche neu zu positionieren. Für mich ist das Erstellen von gut geschriebener und einfach zu bedienenden Anwendungen eine Mission zum Nutzen für die ganze Welt. Aufgrund der Skalierbarkeit sind nur wenige Dinge sind so mächtig wie gute Software. Dabei ist es das höchste der Gefühle in einem motivierten Team zu arbeiten, sich gegenseitig zu unterstützen und Tipps und Tricks zur Erstellung von solcher Software zu geben.",
+        "Subset": "In meiner Freizeit findet man mich öfters im Gym oder beim Schach spielen in einer Bar. Immer wieder programmiere ich aber auch an persönlichen Projekten - zuletzt habe ich versucht eine Bibliothek von JavaScript nach Dart zu migrieren."
       }
     }
   },
