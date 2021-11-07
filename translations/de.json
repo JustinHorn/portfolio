@@ -15,7 +15,7 @@
           "resolution": "Es fehlen ihm die Nerven."
         },
         "Main": "Willkommen auf meinem Portfolio! Ich bin Justin und normalerweise ernster. Vor allem in Bezug auf Software. Ich refactor meinen Code oft, um ihn besser lesbarer zu machen oder Elemente für eine intuitivere Benutzeroberfläche neu zu positionieren. Für mich ist das Erstellen von gut geschriebener und einfach zu bedienenden Anwendungen eine Mission zum Nutzen für die ganze Welt. Aufgrund der Skalierbarkeit sind nur wenige Dinge sind so mächtig wie gute Software. Dabei ist es das höchste der Gefühle in einem motivierten Team zu arbeiten, sich gegenseitig zu unterstützen und Tipps und Tricks zur Erstellung von solcher Software zu geben.",
-        "Subset": "In meiner Freizeit findet man mich öfters im Gym oder beim Schach spielen in einer Bar. Immer wieder programmiere ich aber auch an persönlichen Projekten - zuletzt habe ich versucht eine Bibliothek von JavaScript nach Dart zu migrieren."
+        "Subset": "In meiner Freizeit findet man mich öfters im Gym oder beim Schach spielen in einer Bar. Immer wieder programmiere ich aber auch an eigenen Projekten - zuletzt habe ich versucht eine Bibliothek von JavaScript nach Dart zu migrieren."
       }
     }
   },
@@ -27,7 +27,7 @@
         "date": "01 Juni 2021 - heute"
       },
       "EPAP": {
-        "description": "Als Full Stack Developer habe ich am Front- und Backend von epap gearbeitet, Funktionen hinzugefügt, Fehler behoben und interne Tools für die Mitarbeiter geschrieben. Ich bin stolz auf meinen Beitrag, dem Startup mehr Struktur in seinem Arbeitsprozess zu geben, indem ich Scrum-Methoden im Team einführte.",
+        "description": "Als Full Stack Developer habe ich am Front- und Backend von epap gearbeitet, Funktionen hinzugefügt, Fehler behoben und interne Tools für die Mitarbeiter geschrieben. Ich gab dem Startup mehr Struktur, indem ich die Einführung von Scrum-Sprints intiierte und plante.",
         "date": "19 Januar - 31. März 2021 "
       }
     }
@@ -71,18 +71,18 @@
   "Projects": {
     "Headline": "Einige der von mir erstellten Projekte:",
     "Template": {
-      "VisitWebsiteButton": "Besuche Website",
-      "CheckoutCodeButton": "Sehe den Code"
+      "VisitWebsiteButton": "Website",
+      "CheckoutCodeButton": "Code"
     },
     "React": {
       "MemeGenerator": {
-        "description": "An der WBS Coding School wurde uns aufgetragen einen Meme-Generator zu entwickeln, um unsere Reaktionsfähigkeiten zu verbessern. Also haben Bruno und ich uns zusammengetan und die Web-App gemeinsam entwickelt. Zuerst haben wir uns auf die Erstellung des Top/Bottom-Editors konzentriert. Als dieser wir mit diesem schnell vorrankamen, habe ich zusätzlich eine Freestyle-Version entwickelt, während Bruno das Gesamtdesign weiter verbesserte. Als Nutzungsbedingung für die Freestyle-Version habe ich eine Firebase-Authentifizierungsanforderung hinzugefügt."
+        "description": "An der WBS Coding School wurde uns aufgetragen im Team eine Meme-Generator zu entwickeln. Mit meinen Kollgen habe ich mich auf die Erstellung eines Top/Bottom-Editors konzentriert. Da es mit diesem schnell vorran ging, entwickelte ich zusätzlich eine Freestyle-Version, bei der man die Texte frei platzien kann. Als Nutzungsbedingung für diese fügte ich auch noch eine Firebase-Authentifizierungsanforderung hinzu."
       },
       "UltimateTicTacToe": {
-        "description": "Eigentlich eines meiner ersten React-Projeckte. Die Web-App-Version meines ultimativen Java-Tic-Tac-Toe-Projekts. Ich habe ein Git-Repo gegabelt, um einige Codegrundlagen zu haben, und eine zufällige, sowie eine Monte Carlo-KI hinzugefügt. Damit die Web-App nicht einfriert, wenn die KI ihre Züge berechnet, implementierte ich auch noch Web-Worker."
+        "description": "Eigentlich eines meiner ersten React-Projeckte. Die Web-App-Version meines ultimativen Java-Tic-Tac-Toe-Projekts. Für die UI forkte ich ein Git-repo und fügte dann eine zufällige und eine berechnende KI hinzu. Damit die Web-App nicht einfriert, wenn die KI ihre Züge berechnet, implementierte ich auch noch Web-Worker."
       },
       "RickysQuest": {
-        "description": "An der WBS Coding School gehörten Joss, Erick und ich zu den Top 3. Deshalb wurde uns eine besondere Aufgabe gegeben: eine App außerhalb des regulären Betriebs zu entwicklen. Da wir Rick und Morty alle lieben, haben wir etwas mit ihrer offiziellen API gebaut. Das Ergebnis war ein Quiz-Spiel, bei dem Sie Quizfragen lösen, um Charaktere aus den Rick- und Morty-Multiversen zu sammeln."
+        "description": "An der WBS Coding School gehörten Joss, Erick und ich zu den Top 3. Deshalb wurde uns die besondere Aufgabe gegeben, eine App außerhalb des regulären Unterrichts zu entwicklen. Da wir drei alle Rick und Morty Fans sind, bauten wir etwas mit deren offizieller API. Das Ergebnis war ein Spiel bei dem man Quizfragen lösen muss um Charaktere aus den Rick- und Morty-Multiversen zu sammeln."
       }
     },
     "Flutter": {
@@ -97,7 +97,7 @@
       }
     },
     "JoyOfCode": {
-      "description": "Mein Abschlussprojekt zum Abschluss der WBS-Coding School und zur Präsentation am Demotag. Ich wollte eine Plattform erstellen. Während des Kurses haben uns ständig Lernressourcen zu bestimmten Themen weiter empfohlen. Also dachte ich daran, eine Seite dafür zu erstellen, entschied mich dann aber, lieber eine Plattform zu erstellen, auf der wir die Webprojekte des anderen teilen, anzeigen und mit der wunderbaren Technologie, die wir verwendet haben, kombinieren können. <br ></br> <br ></br>Ich habe die Site iterativ entwickelt. Mit React im Frontend, GraphQL als Api und Express, Prisma und PostgreSQL im Backend. Ich wählte Heroku, um viele Deployments problemlos durchzuführen. <br ></br> <br ></br> Durch diesen Prozess ist mein Datenmodell ständig gewachsen. Dank Prisma waren diese Migrationen einfach zu bewältigen und ich konnte ständig auf das Feedback meiner Freunde reagieren. Einige schwierigere Änderungen, die ich vorgenommen habe, waren der Wechsel von meiner eigenen E-Mail-Authentifizierung zur GitHub-Thirdparty-Authentifizierung und der Wechsel meines Datenbankanbieters von ElephantDB zu Heroku Postgres. <br ></br> <br ></br> Wie beabsichtigt haben wir die Plattform genutzt, um die Projekte, die wir in diesen 15 Wochen gemacht haben, zu sammeln und ich bin stolz, dass ich in den 4 Wochen, in denen ich gearbeitet habe, so viel schaffen konnte. Seit der Demoversion habe ich einige Designänderungen vorgenommen und die Codebasis auf TypeScript umgestellt.",
+      "description": "Mein Projekt zum Abschluss der WBS-Coding School. Mir war klar: Ich wollte eine Plattform erstellen. Während des Kurses haben wir uns ständig Lernressourcen zu bestimmten Themen weiter empfohlen. Also dachte ich daran, dafür Seite eine zu erstellen. Entschied mich dann jedoch für eine Seite zum Teilen der von uns erstellten Projekte. Ein Feature gegenüber anderen Plattformen sollte sein: Verwendete Technologie sollen direkt angepreißt werden. <br ></br> <br ></br> Ich entwickelte die Seite iterativ. Mit React im Frontend, GraphQL als Api und Express, Prisma und PostgreSQL im Backend. Ich wählte Heroku, um den Code problemlos ins www zu deployen. <br ></br> <br ></br> Während des Entwicklungsprozesses musste ich immer wieder neue Spalten in meine Datenbank einführen. Dank Prisma Migrations-Unterstützung war dies einfach zu bewältigen und ich konnte ständig neue Features hinzufügen. Einige Herausforderungen des Projektes waren der Wechsel von meiner eigenen E-Mail- zur GitHub-Thirdparty-Authentifizierung und der Wechsel meines Datenbankanbieters von ElephantDB zu Heroku Postgres. <br ></br> <br ></br> Wie beabsichtigt wurde die Plattform genutzt, um unsere Code-Projekte zu sammeln und ich bin stolz, dass ich in 5 Wochen so viel geschafft habe. Seit der Demoversion hatte ich noch einige Designänderungen vorgenommen und die Codebasis von JavaScript auf TypeScript umgeschrieben.",
       "Presentation": {
         "headline": "Projektpräsentation:"
       }

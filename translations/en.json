@@ -15,7 +15,7 @@
           "resolution": "It lacks the nerves to do it."
         },
         "Main": "Welcome to my portfolio! I am Justin and usually am more serious. Especially regarding software. I often rework my code to make it more readable and reposition elements for a more intuitive UI. For me, creating well-written and easy-to-use applications is a mission for the benefit of the whole world. Because of its scalability, few things are as powerful as good software. Thereby it just feels great to work in a motivated team, to support each other and to give tips and tricks for creating such software.",
-        "Subset": "In my spare time you can often find me in the gym or playing chess in a bar. From time to time I also code on personal projects - most recently I tried to migrate a library from JavaScript to Dart."
+        "Subset": "In my spare time you can often find me in the gym or playing chess in a bar. From time to time I also code on my own projects - most recently I tried to migrate a library from JavaScript to Dart."
       }
     }
   },
@@ -23,7 +23,7 @@
     "Header": "My work experience:",
     "Employer": {
       "CADENAS": {
-        "description": "As Frontend Developer I work on their 3DfindIT web app adding features, fixing bugs, and maintaining a clean codebase. I have introduced several coding guidelines to our team and lead major refactors.",
+        "description": "As Frontend Developer I work on their 3DfindIT web app adding features, fixing bugs, and maintaining a clean codebase. I have introduced several coding guidelines to our team and initiated big refactors.",
         "date": "01 June 2021 - today"
       },
       "EPAP": {
@@ -71,8 +71,8 @@
   "Projects": {
     "Headline": "Some of the projects I created:",
     "Template": {
-      "VisitWebsiteButton": "Visit Website",
-      "CheckoutCodeButton": "Checkout Code"
+      "VisitWebsiteButton": "Website",
+      "CheckoutCodeButton": "Code"
     },
     "React": {
       "MemeGenerator": {

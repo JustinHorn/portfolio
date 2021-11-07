@@ -32,9 +32,9 @@ function Main() {
       <Header />
       {showMonitor === "nothing" && <Nav />}
       <main id="main" ref={mainRef}>
+        <Projects {...{ showMonitor, setShowMonitor }} />
         <Introduction />
         <Employment />
-        <Projects {...{ showMonitor, setShowMonitor }} />
         <Technology />
         <Praise />
         <Contact />

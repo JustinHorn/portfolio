@@ -119,8 +119,8 @@ const ReactBody = () => {
         ]}
         tags={["CSS", "React", "Firebase Auth"]}
         description={t("Projects.React.MemeGenerator.description")}
-        website="https://justinhorn.name/ultimate-tic-tac-toe-react/"
-        code="https://github.com/JustinHorn/ultimate-tic-tac-toe-react"
+        website="https://meme-creator-seven.vercel.app/"
+        code="https://github.com/JustinHorn/memeCreator"
       />
       <ReactProject
         name="Ultimate Tic Tac Toe"
