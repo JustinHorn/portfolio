@@ -1,3 +1,5 @@
+@import "styles/color.scss";
+
 nav {
   display: flex;
   position: fixed;
@@ -5,7 +7,23 @@ nav {
   top: 0;
   width: 100vw;
   padding: 0 1rem;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  .local-links {
+    span {
+      z-index: 5;
+      background-color: rgba(black, 0.5);
+      margin-right: 1ch;
+      text-decoration: none;
+      color: $soft-yellow;
+      cursor: pointer;
+    }
+
+    .active {
+      text-decoration: underline;
+      color: $contrast-happy;
+    }
+  }
 
   button {
     opacity: 0.25;

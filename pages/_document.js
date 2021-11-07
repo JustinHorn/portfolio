@@ -1,14 +1,18 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
+import { useRouter } from "next/router";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    const { pathname } = ctx;
+    const lang = pathname.startsWith("/de") ? "de" : "en";
+
+    return { ...initialProps, lang };
   }
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang={this.props.lang}>
         <Head>
           <link rel="shortcut icon" href="/code.svg" />
           <script

@@ -1,18 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslations } from "next-intl";
 
 import Section from "../Section";
 
 const Contact = () => {
+  const t = useTranslations();
+
   return (
     <Section id="contact" className="contact">
-      <h2>You like my work?</h2>
+      <h2>{t("Contact.Headline")}</h2>
 
-      <p>Write me a quick text:</p>
+      <p>{t("Contact.Paragraph")}</p>
 
       <form action="https://formspree.io/f/mleakdwo" method="POST">
         <fieldset id="fs-frm-inputs">
           <div>
-            <label for="full-name">Name</label>
+            <label htmlFor="full-name">Name</label>
             <input
               type="text"
               name="name"
@@ -23,7 +26,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <label for="email-address">Email</label>
+            <label htmlFor="email-address">Email</label>
             <input
               type="email"
               name="_replyto"
@@ -33,12 +36,12 @@ const Contact = () => {
             />
           </div>
           <div className="message-container">
-            <label for="message">Message</label>
+            <label htmlFor="message">{t("Contact.Form.Message")}</label>
             <textarea
               rows="5"
               name="message"
               id="message"
-              placeholder="Veni, vedi, vici, you bastard!"
+              placeholder={t("Contact.Form.textArea.placeHolder")}
               required
             ></textarea>
           </div>
@@ -49,7 +52,11 @@ const Contact = () => {
             value="Contact Form Submission"
           />
         </fieldset>
-        <input className="submitButton" type="submit" value="Send" />
+        <input
+          className="submitButton"
+          type="submit"
+          value={t("Contact.Form.SendButton")}
+        />
       </form>
       <div className="socials">
         <a

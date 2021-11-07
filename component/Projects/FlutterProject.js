@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export const FlutterProject = (props) => {
+  const t = useTranslations();
+
   return (
     <div className="project">
       <h3>{props.name}</h3>
@@ -23,7 +26,7 @@ export const FlutterProject = (props) => {
 
         <div className="links">
           <a href={props.code}>
-            <button>View Code</button>
+            <button>{t("Projects.Template.CheckoutCodeButton")}</button>
           </a>
         </div>
       </div>

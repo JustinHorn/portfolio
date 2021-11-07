@@ -1,8 +1,10 @@
+import { useTranslations } from "next-intl";
 import React, { useEffect, useRef, useState } from "react";
 
 const Header = () => {
   const [height, setHeight] = useState(0);
   const heightRef = useRef();
+  const t = useTranslations();
 
   useEffect(() => {
     const { height } = heightRef.current.getBoundingClientRect();
@@ -14,7 +16,7 @@ const Header = () => {
     <header style={{ height: `calc(100vh + ${height / 2}px)` }}>
       <div className="header-container">
         <h3 className="justin-headline">
-          Hi I am Justin, <br /> welcome to my fullstack portfolio.
+          {t.rich("Header.headline", { br: () => <br /> })}
         </h3>
       </div>
       <div className="sky">
@@ -26,5 +28,7 @@ const Header = () => {
     </header>
   );
 };
+
+//
 
 export default Header;

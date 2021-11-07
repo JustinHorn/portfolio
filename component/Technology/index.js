@@ -1,11 +1,15 @@
+import { useTranslations } from "next-intl";
+
 import Section from "../Section";
 
 export const Technology = () => {
+  const t = useTranslations();
+
   return (
     <Section id="technology" className="technology">
-      <h2>Technologies I use:</h2>
+      <h2>{t("Technology.Headline")}</h2>
       <div className="skill-area">
-        <h3>For what you see:</h3>
+        <h3>{t("Technology.Frontend.Headline")}</h3>
         <div className="tiles">
           <Tile name="HTML5" iconName="HTML5.svg" />
           <Tile name="CSS/SCSS" iconName="CSS3.svg" />
@@ -15,7 +19,7 @@ export const Technology = () => {
         </div>
       </div>
       <div className="skill-area">
-        <h3>To connect and store the information:</h3>
+        <h3>{t("Technology.Backend.Headline")}</h3>
 
         <div className="tiles">
           <Tile name="NextJS" iconName="NextJS.svg" />
@@ -27,14 +31,14 @@ export const Technology = () => {
       </div>
       <div className="merge">
         <div className="skill-area mobile">
-          <h3>For the mobile version:</h3>
+          <h3>{t("Technology.Mobile.Headline")}</h3>
           <div className="tiles">
             <Tile name="Flutter" iconName="Flutter.svg" />
             <Tile name="Java" iconName="Java.svg" />
           </div>
         </div>
         <div className="skill-area scripting">
-          <h3>For a helpful script:</h3>
+          <h3>{t("Technology.Mobile.Scripts")}</h3>
           <div className="tiles">
             <Tile name="NodeJS" iconName="NodeJS.svg" />
             <Tile name="Python" iconName="Python.svg" />
