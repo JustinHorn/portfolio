@@ -39,8 +39,8 @@ function Main() {
         <Praise />
         <Contact />
       </main>
-      <div style={{width:"100%",position:"absolute",top:0,left:0,height:"10vh", background:"black",display:"flex",justifyContent:"center", zIndex:9999999}}>
-        <h1>This website is outdated - check my <a href="https://www.linkedin.com/in/justin-christian-horn/">linkedin</a>!</h1>
+      <div style={{width:"100%",position:"absolute",top:0,left:0,height:"15vh", background:"black",display:"flex",justifyContent:"center", zIndex:9999999}}>
+        <h1 style={{fontSize:"4rem"}}>This website is outdated - check my <a href="https://www.linkedin.com/in/justin-christian-horn/">linkedin</a>!</h1>
       </div>
     </div>
   );
